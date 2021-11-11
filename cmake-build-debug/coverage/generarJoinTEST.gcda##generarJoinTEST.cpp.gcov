@@ -1,0 +1,614 @@
+        -:    0:Source:C:/Users/valum/Documents/GitHub/TPI-AED1-2C2021/test/generarJoinTEST.cpp
+        -:    0:Graph:C:\Users\valum\Documents\GitHub\TPI-AED1-2C2021\cmake-build-debug\CMakeFiles\tpi.dir\test\generarJoinTEST.gcno
+        -:    0:Data:C:\Users\valum\Documents\GitHub\TPI-AED1-2C2021\cmake-build-debug\CMakeFiles\tpi.dir\test\generarJoinTEST.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:#include "../definiciones.h"
+        -:    2:#include "../Funciones_TPI.h"
+        -:    3:#include "../ejercicios.h"
+        -:    4:#include "../auxiliares.h"
+        -:    5:#include "gtest/gtest.h"
+        -:    6:#include <iostream>
+        -:    7:#include <string>
+        -:    8:
+        -:    9:using namespace std;
+        -:   10:
+        -:   11:
+function _ZN30generarJoinTEST_casoFacil_TestD0Ev called 1 returned 100% blocks executed 100%
+function _ZN30generarJoinTEST_casoFacil_TestD1Ev called 1 returned 100% blocks executed 100%
+function _ZN30generarJoinTEST_casoFacil_Test8TestBodyEv called 1 returned 100% blocks executed 55%
+function _ZN30generarJoinTEST_casoFacil_TestC1Ev called 1 returned 100% blocks executed 100%
+        8:   12:TEST(generarJoinTEST, casoFacil) {
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   12-block  0
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:   12-block  1
+call   10 returned 1
+branch 11 taken 1 (fallthrough)
+branch 12 taken 0 (throw)
+        1:   12-block  2
+call   13 returned 1
+call   14 returned 1
+call   15 returned 1
+    %%%%%:   12-block  3
+call   16 never executed
+    %%%%%:   12-block  4
+call   17 never executed
+    %%%%%:   12-block  5
+call   18 never executed
+        1:   12-block  6
+        1:   12-block  7
+call   19 returned 1
+call   20 returned 1
+        1:   12-block  8
+        1:   12-block  9
+call   21 returned 1
+        1:   12-block 10
+        1:   12-block 11
+        1:   12-block 12
+call   22 returned 1
+        -:   13:    eph_h th = {{22114, 2018,   3,  319611, 629088, 3,  41, 1,  1,  3,  1,  2},
+        -:   14:               {31117, 2018,   3,  332870, 642475, 3,  40, 1,  1,  6,  6,  1},
+        -:   15:               {22866, 2018,   3,  317157, 627217, 2,  42, 1,  3,  2,  2,  1},
+        6:   16:               {20957, 2018,   3,  313965, 623297, 1,  43, 0,  1,  3,  1,  1}};
+        1:   16-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   16-block  1
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   16-block  2
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   16-block  3
+call   12 returned 1
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:   16-block  4
+call   16 returned 1
+call   17 returned 1
+branch 18 taken 1 (fallthrough)
+branch 19 taken 0 (throw)
+        1:   16-block  5
+call   20 returned 1
+        5:   16-block  6
+branch 21 taken 4 (fallthrough)
+branch 22 taken 1
+        4:   16-block  7
+call   23 returned 4
+        1:   16-block  8
+call   24 returned 1
+call   25 returned 1
+call   26 returned 1
+call   27 returned 1
+call   28 returned 1
+    %%%%%:   16-block  9
+    %%%%%:   16-block 10
+branch 29 never executed
+branch 30 never executed
+    %%%%%:   16-block 11
+call   31 never executed
+    %%%%%:   16-block 12
+    %%%%%:   16-block 13
+call   32 never executed
+    %%%%%:   16-block 14
+call   33 never executed
+    %%%%%:   16-block 15
+call   34 never executed
+    %%%%%:   16-block 16
+call   35 never executed
+    %%%%%:   16-block 17
+call   36 never executed
+    %%%%%:   16-block 18
+call   37 never executed
+        -:   17:
+        -:   18:    eph_i ti = {{20957, 2018,   1,  1,  3,  1,  88, 0,  0,  90000,  1},
+        -:   19:               {20957, 2018,   2,  1,  3,  2,  82, 0,  0,  25000,  1},
+        -:   20:               {22866, 2018,   1,  0,  3,  1,  31, 1,  3,  59000,  1},
+        -:   21:               {22866, 2018,   2,  1,  3,  2,  28, 1,  3,  0,      6},
+        -:   22:               {31117, 2018,   3,  0,  3,  2,  46, 1,  3,  17000,  1},
+        -:   23:               {31117, 2018,   4,  0,  3,  1,  20, 1,  3,  5000,   6},
+        -:   24:               {31117, 2018,   5,  0,  3,  2,  15, 0,  0,  5000,   1},
+       10:   25:               {22114, 2018,   1,  0,  3,  1,  18, 0,  0,  20000,  1}};
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   25-block  0
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   25-block  1
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   25-block  2
+call   12 returned 1
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:   25-block  3
+call   16 returned 1
+call   17 returned 1
+branch 18 taken 1 (fallthrough)
+branch 19 taken 0 (throw)
+        1:   25-block  4
+call   20 returned 1
+call   21 returned 1
+branch 22 taken 1 (fallthrough)
+branch 23 taken 0 (throw)
+        1:   25-block  5
+call   24 returned 1
+call   25 returned 1
+branch 26 taken 1 (fallthrough)
+branch 27 taken 0 (throw)
+        1:   25-block  6
+call   28 returned 1
+call   29 returned 1
+branch 30 taken 1 (fallthrough)
+branch 31 taken 0 (throw)
+        1:   25-block  7
+call   32 returned 1
+call   33 returned 1
+branch 34 taken 1 (fallthrough)
+branch 35 taken 0 (throw)
+        1:   25-block  8
+call   36 returned 1
+        9:   25-block  9
+branch 37 taken 8 (fallthrough)
+branch 38 taken 1
+        8:   25-block 10
+call   39 returned 8
+        1:   25-block 11
+call   40 returned 1
+call   41 returned 1
+call   42 returned 1
+call   43 returned 1
+call   44 returned 1
+call   45 returned 1
+call   46 returned 1
+call   47 returned 1
+call   48 returned 1
+    %%%%%:   25-block 12
+    %%%%%:   25-block 13
+branch 49 never executed
+branch 50 never executed
+    %%%%%:   25-block 14
+call   51 never executed
+    %%%%%:   25-block 15
+    %%%%%:   25-block 16
+call   52 never executed
+    %%%%%:   25-block 17
+call   53 never executed
+    %%%%%:   25-block 18
+call   54 never executed
+    %%%%%:   25-block 19
+call   55 never executed
+    %%%%%:   25-block 20
+call   56 never executed
+    %%%%%:   25-block 21
+call   57 never executed
+    %%%%%:   25-block 22
+call   58 never executed
+    %%%%%:   25-block 23
+call   59 never executed
+    %%%%%:   25-block 24
+call   60 never executed
+    %%%%%:   25-block 25
+call   61 never executed
+        -:   26:
+        -:   27:
+        -:   28:    join_hi junta = {{{20957, 2018,   3,  313965, 623297, 1,  43, 0,  1,  3,  1,  1},
+        -:   29:                      {20957, 2018,   1,  1,  3,  1,  88, 0,  0,  90000,  1}},
+        -:   30:                     {{20957, 2018,   3,  313965, 623297, 1,  43, 0,  1,  3,  1,  1},
+        -:   31:                      {20957, 2018,   2,  1,  3,  2,  82, 0,  0,  25000,  1}},
+        -:   32:                     {{22866, 2018,   3,  317157, 627217, 2,  42, 1,  3,  2,  2,  1},
+        -:   33:                      {22866, 2018,   1,  0,  3,  1,  31, 1,  3,  59000,  1}},
+        -:   34:                     {{22866, 2018,   3,  317157, 627217, 2,  42, 1,  3,  2,  2,  1},
+        -:   35:                      {22866, 2018,   2,  1,  3,  2,  28, 1,  3,  0,      6}},
+        -:   36:                     {{31117, 2018,   3,  332870, 642475, 3,  40, 1,  1,  6,  6,  1},
+        -:   37:                      {31117, 2018,   3,  0,  3,  2,  46, 1,  3,  17000,  1}},
+        -:   38:                     {{31117, 2018,   3,  332870, 642475, 3,  40, 1,  1,  6,  6,  1},
+        -:   39:                      {31117, 2018,   4,  0,  3,  1,  20, 1,  3,  5000,   6}},
+        -:   40:                     {{31117, 2018,   3,  332870, 642475, 3,  40, 1,  1,  6,  6,  1},
+        -:   41:                      {31117, 2018,   5,  0,  3,  2,  15, 0,  0,  5000,   1}},
+        -:   42:                     {{22114, 2018,   3,  319611, 629088, 3,  41, 1,  1,  3,  1,  2},
+       10:   43:                      {22114, 2018,   1,  0,  3,  1,  18, 0,  0,  20000,  1}}};
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   43-block  0
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   43-block  1
+call    8 returned 1
+branch  9 taken 1 (fallthrough)
+branch 10 taken 0 (throw)
+        1:   43-block  2
+call   11 returned 1
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:   43-block  3
+call   15 returned 1
+call   16 returned 1
+branch 17 taken 1 (fallthrough)
+branch 18 taken 0 (throw)
+        1:   43-block  4
+call   19 returned 1
+branch 20 taken 1 (fallthrough)
+branch 21 taken 0 (throw)
+        1:   43-block  5
+call   22 returned 1
+call   23 returned 1
+branch 24 taken 1 (fallthrough)
+branch 25 taken 0 (throw)
+        1:   43-block  6
+call   26 returned 1
+call   27 returned 1
+branch 28 taken 1 (fallthrough)
+branch 29 taken 0 (throw)
+        1:   43-block  7
+call   30 returned 1
+branch 31 taken 1 (fallthrough)
+branch 32 taken 0 (throw)
+        1:   43-block  8
+call   33 returned 1
+call   34 returned 1
+branch 35 taken 1 (fallthrough)
+branch 36 taken 0 (throw)
+        1:   43-block  9
+call   37 returned 1
+call   38 returned 1
+branch 39 taken 1 (fallthrough)
+branch 40 taken 0 (throw)
+        1:   43-block 10
+call   41 returned 1
+branch 42 taken 1 (fallthrough)
+branch 43 taken 0 (throw)
+        1:   43-block 11
+call   44 returned 1
+call   45 returned 1
+branch 46 taken 1 (fallthrough)
+branch 47 taken 0 (throw)
+        1:   43-block 12
+call   48 returned 1
+call   49 returned 1
+branch 50 taken 1 (fallthrough)
+branch 51 taken 0 (throw)
+        1:   43-block 13
+call   52 returned 1
+branch 53 taken 1 (fallthrough)
+branch 54 taken 0 (throw)
+        1:   43-block 14
+call   55 returned 1
+call   56 returned 1
+branch 57 taken 1 (fallthrough)
+branch 58 taken 0 (throw)
+        1:   43-block 15
+call   59 returned 1
+call   60 returned 1
+branch 61 taken 1 (fallthrough)
+branch 62 taken 0 (throw)
+        1:   43-block 16
+call   63 returned 1
+branch 64 taken 1 (fallthrough)
+branch 65 taken 0 (throw)
+        1:   43-block 17
+call   66 returned 1
+call   67 returned 1
+branch 68 taken 1 (fallthrough)
+branch 69 taken 0 (throw)
+        1:   43-block 18
+call   70 returned 1
+call   71 returned 1
+branch 72 taken 1 (fallthrough)
+branch 73 taken 0 (throw)
+        1:   43-block 19
+call   74 returned 1
+branch 75 taken 1 (fallthrough)
+branch 76 taken 0 (throw)
+        1:   43-block 20
+call   77 returned 1
+call   78 returned 1
+branch 79 taken 1 (fallthrough)
+branch 80 taken 0 (throw)
+        1:   43-block 21
+call   81 returned 1
+call   82 returned 1
+branch 83 taken 1 (fallthrough)
+branch 84 taken 0 (throw)
+        1:   43-block 22
+call   85 returned 1
+branch 86 taken 1 (fallthrough)
+branch 87 taken 0 (throw)
+        1:   43-block 23
+call   88 returned 1
+call   89 returned 1
+branch 90 taken 1 (fallthrough)
+branch 91 taken 0 (throw)
+        1:   43-block 24
+call   92 returned 1
+        9:   43-block 25
+branch 93 taken 8 (fallthrough)
+branch 94 taken 1
+        8:   43-block 26
+call   95 returned 8
+        1:   43-block 27
+call   96 returned 1
+call   97 returned 1
+call   98 returned 1
+call   99 returned 1
+call   100 returned 1
+call   101 returned 1
+call   102 returned 1
+call   103 returned 1
+call   104 returned 1
+call   105 returned 1
+call   106 returned 1
+call   107 returned 1
+call   108 returned 1
+call   109 returned 1
+call   110 returned 1
+call   111 returned 1
+call   112 returned 1
+call   113 returned 1
+call   114 returned 1
+call   115 returned 1
+call   116 returned 1
+call   117 returned 1
+call   118 returned 1
+call   119 returned 1
+call   120 returned 1
+call   121 returned 1
+call   122 returned 1
+call   123 returned 1
+call   124 returned 1
+call   125 returned 1
+call   126 returned 1
+call   127 returned 1
+call   128 returned 1
+    %%%%%:   43-block 28
+    %%%%%:   43-block 29
+branch 129 never executed
+branch 130 never executed
+    %%%%%:   43-block 30
+call   131 never executed
+    %%%%%:   43-block 31
+    %%%%%:   43-block 32
+call   132 never executed
+    %%%%%:   43-block 33
+call   133 never executed
+    %%%%%:   43-block 34
+call   134 never executed
+    %%%%%:   43-block 35
+call   135 never executed
+    %%%%%:   43-block 36
+call   136 never executed
+    %%%%%:   43-block 37
+call   137 never executed
+    %%%%%:   43-block 38
+call   138 never executed
+    %%%%%:   43-block 39
+call   139 never executed
+    %%%%%:   43-block 40
+call   140 never executed
+    %%%%%:   43-block 41
+call   141 never executed
+    %%%%%:   43-block 42
+call   142 never executed
+    %%%%%:   43-block 43
+call   143 never executed
+    %%%%%:   43-block 44
+call   144 never executed
+    %%%%%:   43-block 45
+call   145 never executed
+    %%%%%:   43-block 46
+call   146 never executed
+    %%%%%:   43-block 47
+call   147 never executed
+    %%%%%:   43-block 48
+call   148 never executed
+    %%%%%:   43-block 49
+call   149 never executed
+    %%%%%:   43-block 50
+call   150 never executed
+    %%%%%:   43-block 51
+call   151 never executed
+    %%%%%:   43-block 52
+call   152 never executed
+    %%%%%:   43-block 53
+call   153 never executed
+    %%%%%:   43-block 54
+call   154 never executed
+    %%%%%:   43-block 55
+call   155 never executed
+    %%%%%:   43-block 56
+call   156 never executed
+    %%%%%:   43-block 57
+call   157 never executed
+    %%%%%:   43-block 58
+call   158 never executed
+    %%%%%:   43-block 59
+call   159 never executed
+    %%%%%:   43-block 60
+call   160 never executed
+    %%%%%:   43-block 61
+call   161 never executed
+    %%%%%:   43-block 62
+call   162 never executed
+    %%%%%:   43-block 63
+call   163 never executed
+    %%%%%:   43-block 64
+call   164 never executed
+        -:   44:
+        1:   45:    EXPECT_TRUE(esEncuestaValida(th, ti));
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   45-block  0
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   45-block  1
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   45-block  2
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   45-block  3
+call   12 returned 1
+call   13 returned 1
+call   14 returned 1
+branch 15 taken 1 (fallthrough)
+branch 16 taken 0
+        1:   45-block  4
+call   17 returned 1
+branch 18 taken 1 (fallthrough)
+branch 19 taken 0 (throw)
+        1:   45-block  5
+call   20 returned 1
+branch 21 taken 1 (fallthrough)
+branch 22 taken 0 (throw)
+        1:   45-block  6
+call   23 returned 1
+call   24 returned 1
+branch 25 taken 1 (fallthrough)
+branch 26 taken 0 (throw)
+        1:   45-block  7
+call   27 returned 1
+branch 28 taken 1 (fallthrough)
+branch 29 taken 0 (throw)
+        1:   45-block  8
+call   30 returned 1
+call   31 returned 1
+call   32 returned 1
+        1:   45-block  9
+call   33 returned 1
+    %%%%%:   45-block 10
+    %%%%%:   45-block 11
+call   34 never executed
+    %%%%%:   45-block 12
+call   35 never executed
+    %%%%%:   45-block 13
+call   36 never executed
+    %%%%%:   45-block 14
+call   37 never executed
+    %%%%%:   45-block 15
+call   38 never executed
+    %%%%%:   45-block 16
+call   39 never executed
+    %%%%%:   45-block 17
+    %%%%%:   45-block 18
+call   40 never executed
+        -:   46:
+        2:   47:    join_hi obtenido = generarJoin(th, ti);
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   47-block  0
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   47-block  1
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   47-block  2
+call    9 returned 1
+call   10 returned 1
+call   11 returned 1
+    %%%%%:   47-block  3
+call   12 never executed
+    %%%%%:   47-block  4
+call   13 never executed
+        -:   48:
+        1:   49:    sort(junta.begin(), junta.end());
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+branch  3 taken 1 (fallthrough)
+branch  4 taken 0 (throw)
+        1:   50:    sort(obtenido.begin(), obtenido.end());
+        1:   50-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+branch  3 taken 1 (fallthrough)
+branch  4 taken 0 (throw)
+        -:   51:
+        1:   52:    EXPECT_EQ(junta, obtenido);
+        1:   52-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   52-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0
+        1:   52-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   52-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   52-block  4
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:   52-block  5
+call   15 returned 1
+branch 16 taken 1 (fallthrough)
+branch 17 taken 0 (throw)
+        1:   52-block  6
+call   18 returned 1
+call   19 returned 1
+        1:   52-block  7
+call   20 returned 1
+    %%%%%:   52-block  8
+call   21 never executed
+    %%%%%:   52-block  9
+call   22 never executed
+    %%%%%:   52-block 10
+call   23 never executed
+    %%%%%:   52-block 11
+function _GLOBAL__sub_I__ZN30generarJoinTEST_casoFacil_Test10test_info_E called 1 returned 100% blocks executed 100%
+function _Z41__static_initialization_and_destruction_0ii called 1 returned 100% blocks executed 77%
+        5:   53:}
+        1:   53-block  0
+        1:   53-block  1
+call    0 returned 1
+        1:   53-block  2
+        1:   53-block  3
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0
+        1:   53-block  4
+branch  3 taken 1 (fallthrough)
+branch  4 taken 0
+        1:   53-block  5
+    %%%%%:   53-block  6
+call    5 never executed
