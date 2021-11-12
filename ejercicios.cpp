@@ -42,12 +42,38 @@ bool creceElTeleworkingEnCiudadesGrandes ( eph_h t1h, eph_i t1i, eph_h t2h, eph_
 }
 
 // Implementacion Problema 5
-int costoSubsidioMejora( eph_h th, eph_i ti, int monto ){
-	int resp = -1;
+int costoSubsidioMejora(eph_h th , eph_i ti, int monto){
+	int resp = monto;
+	int codusu = 0;
+	int cantDeHabitaciones = 0;
 	
-	// TODO
 	
-  return  resp;
+	for(int i = 0; i< 4;i++){
+		
+		codusu = th[i][0];
+		cantDeHabitaciones = th[i][10];
+			
+				if(th[i][5] == 1){
+					
+					int cantHab = 0;
+					cantHab = cantidadDeHabitantes (codusu, ti);
+					
+					if((cantHab - 2) > cantDeHabitaciones){
+						
+						resp = resp + monto; 
+						
+					}	
+				
+				}
+				
+		codusu = 0;
+		cantDeHabitaciones=0; 
+	}
+	
+	
+		return resp-monto;
+	
+  
 }
 
 // Implementacion Problema 6
@@ -64,9 +90,76 @@ join_hi generarJoin( eph_h th, eph_i ti ){
 // Implementacion Problema 7
 void ordenarRegionYCODUSU (eph_h & th, eph_i & ti) {
 	
-	// TODO
-	
-	return;
+	// Ordeno por region
+		
+		for(int n=0; n<4; n++){
+			for(int i=0; i<4; i++){
+				if(i==3){
+					if(th[i][6] > th[i-3][6]){
+				
+						for(int j=0; j<12; j++){
+							int aux=0;
+				
+							aux = th[i-3][j];
+							th[i-3][j] = th[i-3][j];
+							th[i-3][j] = aux;
+						}
+				
+					}	
+				}else{
+		
+					if(th[i][6] > th[i+1][6]){
+				
+						for(int j=0; j<12; j++){
+							int aux=0;
+				
+							aux = th[i][j];
+							th[i][j] = th[i+1][j];
+							th[i+1][j] = aux;
+				
+				
+						}	
+					}
+				}
+			}
+		}
+		
+		// Ordena el CODUSU
+		
+		for(int n=0; n<4; n++){
+			for(int i=0; i<4; i++){
+				if(i==3){
+					if(th[i][6] == th[i-3][6] && th[i][0] > th[i-3][0]){
+				
+						for(int j=0; j<12; j++){
+							int aux=0;
+				
+							aux = th[i-3][j];
+							th[i-3][j] = th[i-3][j];
+							th[i-3][j] = aux;
+						}
+				
+					}	
+				}else{
+		
+					if(th[i][6] == th[i+1][6] && th[i][0] > th[i+1][0]){
+				
+						for(int j=0; j<12; j++){
+							int aux=0;
+				
+							aux = th[i][j];
+							th[i][j] = th[i+1][j];
+							th[i+1][j] = aux;
+				
+				
+						}	
+					}
+				}
+			}
+		}
+		
+		
+		return;
 }
 
 // Implementacion Problema 8
