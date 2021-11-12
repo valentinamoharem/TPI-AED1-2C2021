@@ -11,6 +11,10 @@ float proporcionCasasConHC(eph_h th, eph_i ti, int region);
 
 float proporcionTeleworking(eph_h th, eph_i ti);
 
+// Auxiliares Problema 5
+
+int cantidadDeHabitantes (int codusu,eph_i ti);
+
 // Auxiliares Problema 9
 
 // Auxiliares Problema 10
