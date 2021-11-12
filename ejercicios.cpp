@@ -30,7 +30,14 @@ vector< pair < int, float > > laCasaEstaQuedandoChica ( eph_h th, eph_i ti ) {
                                         make_pair(42,-1.0),
                                         make_pair(43,-1.0),
                                         make_pair(44,-1.0)};
-	// TODO
+
+    for(int i = 0; i < resp.size(); i++) {
+        for(int j = 0; j < th.size(); j++) {
+            if(th[j][6] == resp[i].first) {
+                resp[i].second = proporcionCasasConHC(th, ti, resp[i].first);
+            }
+        }
+    }
 	
   return resp;
 }

@@ -3,9 +3,13 @@
 
 #include "definiciones.h"
 
+// Auxiliares Problema 3
+
+float proporcionCasasConHC(eph_h th, eph_i ti, int region);
+
 // Auxiliares Problema 4
 
-double proporcionTeleworking(eph_h th, eph_i ti);
+float proporcionTeleworking(eph_h th, eph_i ti);
 
 // Auxiliares Problema 9
 
