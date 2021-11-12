@@ -17,5 +17,4 @@ float proporcionTeleworking(eph_h th, eph_i ti);
 
 int cantidadHogaresEnAnillo(int distDesde, int distHasta, pair <int ,int> centro, eph_h th);
 
-
 #endif //SOLUCION_AUXILIARES_H
