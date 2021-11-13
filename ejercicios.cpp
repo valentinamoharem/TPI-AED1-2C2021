@@ -5,20 +5,21 @@
 using namespace std;
 // Implementacion Problema 1
 bool esEncuestaValida ( eph_h th, eph_i ti ) {
-	bool resp = false;
-	
-	// TODO
-	
-	return resp;
+    bool resp = esValida(th, ti);
+    return resp;
 }
 
 // Implementacion Problema 2
 vector < int > histHabitacional ( eph_h th, eph_i ti, int region ) {
-	vector < int > resultado = {-1, -1, -1, -1, -1, -1};
-	
-	// TODO
-	
-	return resultado;
+    vector < int > resultado = {-1, -1, -1, -1, -1, -1};
+    for(int i=0; i<maximaCantidadHabitaciones(th,region); i++){
+        resultado[i]=cantHogaresCasaConNHabitaciones(th, region, i+1);
+    }
+    if(maximaCantidadHabitaciones(th,region) < resultado.size()){
+        resultado.pop_back();
+        maximaCantidadHabitaciones(th,region) +1;
+    }
+    return resultado;
 }
 
 // Implementacion Problema 3
@@ -87,11 +88,19 @@ int costoSubsidioMejora(eph_h th , eph_i ti, int monto){
 join_hi generarJoin( eph_h th, eph_i ti ){
     hogar h = {};
     individuo i = {};
-	join_hi resp = {make_pair(h,i)};
-	
-	// TODO
-	
-  return  resp;
+    join_hi resp = {make_pair(h,i)};
+    vector<pair<vector<dato>, vector<dato>>> temp;
+    for(int k=0; k<th.size(); k++){
+        for(int j=0; j<ti.size(); j++){
+            if(esSuHogar(th[k],ti[j])){
+                temp.push_back(make_pair(th[k],ti[j]));
+            }
+        }
+    }
+    if(sinRepetidos(temp)){
+        resp = temp;
+    }
+    return  resp;
 }
 
 // Implementacion Problema 7
@@ -217,8 +226,16 @@ pair < eph_h, eph_i > quitarIndividuos(eph_i & ti, eph_h & th, vector < pair < i
     eph_h rth = {{-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1}};
     eph_i rti = {{-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1}};
     pair < eph_h, eph_i > resp = make_pair(rth, rti);
-		
-	// TODO
-	
-	return resp;
+    pair < eph_h, eph_i > temp;
+    for(int k=0; k<th.size(); k++){
+        for(int j=0; j<ti.size(); j++){
+            if(cumpleCondicion(busqueda, ti[j]) && th[k][HOGCODUSU]==ti[j][INDCODUSU]){
+                temp.first.push_back(th[k]);
+                temp.second.push_back(ti[j]);
+                make_pair(temp.first, temp.second);
+            }
+        }
+    }
+    resp = temp;
+    return resp;
 }
