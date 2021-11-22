@@ -4,24 +4,11 @@
 #include "ejercicios.h"
 
 bool trabaja(individuo i) {
-    return i[7] == 1;
+    return i[ESTADO] == OCUPADO;
 }
 
 bool esSuHogar(hogar h, individuo i){
-    bool esSuHogar = h[HOGCODUSU]==i[INDCODUSU];
-    return esSuHogar;
-}
-
-bool esDeCiudadGrande(individuo i, eph_h th) {
-    bool resp = false;
-    for (int k = 0; k < th.size(); k++) {
-        if(esSuHogar(i,th[k]) && th[k][7] == 1) {
-            resp = true;
-        } else {
-            resp = false;
-        }
-    }
-    return resp;
+    return h[HOGCODUSU]==i[INDCODUSU];
 }
 
 int cantidadHabitantes(hogar h, eph_i ti) {
@@ -350,8 +337,8 @@ bool haceTeleworking(individuo i, hogar h) {
     return i[PP04G] == 6 && h[II3] == 1;
 }
 
-int individuosQueTrabajan(eph_h th, eph_i ti) {
-    int cantidad = 0;
+float individuosQueTrabajan(eph_h th, eph_i ti) {
+    float cantidad = 0;
     for (int i = 0; i < ti.size(); i++) {
         hogar h = suHogar(ti[i],th);
         if (trabaja(ti[i]) && viveEnHogarValido(ti[i], h)) {
@@ -361,8 +348,8 @@ int individuosQueTrabajan(eph_h th, eph_i ti) {
     return cantidad;
 }
 
-int individuosTeleworking(eph_h th, eph_i ti) {
-    int cantidad = 0;
+float individuosTeleworking(eph_h th, eph_i ti) {
+    float cantidad = 0;
     for (int i = 0; i < ti.size(); i++) {
         hogar h = suHogar(ti[i],th);
         if (trabaja(ti[i]) && viveEnHogarValido(ti[i], h) && haceTeleworking(ti[i], h)) {
