@@ -332,56 +332,40 @@ float proporcionCasasConHC(eph_h th, eph_i ti, int region) {
     return resp;
 }
 
-bool suHogarEsCasaODepto(individuo i, eph_h th) {
-    bool resp = false;
+hogar suHogar(individuo i, eph_h th){
+    hogar h;
     for (int k = 0; k < th.size(); k++) {
-        if(esSuHogar(i,th[k]) && (th[k][8] == 1 || th[k][8] == 2)) {
-            resp = true;
-        } else {
-            resp = false;
+        if(esSuHogar(i,th[k])) {
+            h = th[k];
         }
     }
-    return resp;
+    return h;
 }
 
-bool viveEnHogarValido(individuo i, eph_h th) {
-    return esDeCiudadGrande(i, th) && suHogarEsCasaODepto(i, th);
+bool viveEnHogarValido(individuo i, hogar h) {
+    return h[MAS_500]==1 && (h[IV1]==CASA || h[IV1]==2);
 }
 
-bool suHogarTieneEspaciosReservadosParaElTrabajo(individuo i, eph_h th) {
-    bool resp = false;
-    for (int k = 0; k < th.size(); k++) {
-        if(esSuHogar(i,th[k]) && th[k][11] == 1) {
-            resp = true;
-        } else {
-            resp = false;
-        }
-    }
-    return resp;
+bool haceTeleworking(individuo i, hogar h) {
+    return i[PP04G] == 6 && h[II3] == 1;
 }
 
-bool realizaSusTareasEnEsteHogar(individuo i) {
-    return i[10] == 6;
-}
-
-bool haceTeleworking(individuo i, eph_h th) {
-    return realizaSusTareasEnEsteHogar(i) && suHogarTieneEspaciosReservadosParaElTrabajo(i,th);
-}
-
-int cantidadIndividuosQueTrabajan(eph_h th, eph_i ti) {
+int individuosQueTrabajan(eph_h th, eph_i ti) {
     int cantidad = 0;
     for (int i = 0; i < ti.size(); i++) {
-        if (trabaja(ti[i]) && viveEnHogarValido(ti[i], th)) {
+        hogar h = suHogar(ti[i],th);
+        if (trabaja(ti[i]) && viveEnHogarValido(ti[i], h)) {
             cantidad++;
         }
     }
     return cantidad;
 }
 
-int cantidadIndividuosTeleworking(eph_h th, eph_i ti) {
+int individuosTeleworking(eph_h th, eph_i ti) {
     int cantidad = 0;
     for (int i = 0; i < ti.size(); i++) {
-        if (trabaja(ti[i]) && haceTeleworking(ti[i], th) && viveEnHogarValido(ti[i],th)) {
+        hogar h = suHogar(ti[i],th);
+        if (trabaja(ti[i]) && viveEnHogarValido(ti[i], h) && haceTeleworking(ti[i], h)) {
             cantidad++;
         }
     }
@@ -389,11 +373,7 @@ int cantidadIndividuosTeleworking(eph_h th, eph_i ti) {
 }
 
 float proporcionTeleworking(eph_h th, eph_i ti) {
-    if (cantidadIndividuosQueTrabajan(th, ti) > 0) {
-        return cantidadIndividuosTeleworking(th, ti)/cantidadIndividuosQueTrabajan(th, ti);
-    } else {
-        return 0;
-    }
+    return individuosQueTrabajan(th, ti) > 0 ? individuosTeleworking(th, ti)/individuosQueTrabajan(th, ti) : 0;
 }
 
 int cantidadDeHabitantes (int codusu,eph_i ti){
