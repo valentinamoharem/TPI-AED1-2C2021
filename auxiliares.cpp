@@ -384,7 +384,7 @@ double distanciaEuclideana(pair <int ,int> centro, int latitud, int longitud) {
 }
 
 bool hogarEnAnillo(int distDesde, int distHasta, pair <int ,int> centro, hogar h) {
-    bool resp = distDesde < distanciaEuclideana(centro, h[3], h[4]) && distanciaEuclideana(centro, h[3], h[4]) >= distHasta;
+    bool resp = distDesde < distanciaEuclideana(centro, h[HOGLATITUD], h[HOGLONGITUD]) && distanciaEuclideana(centro, h[HOGLATITUD], h[HOGLONGITUD]) <= distHasta;
     return resp;
 }
 
