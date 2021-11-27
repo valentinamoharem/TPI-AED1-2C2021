@@ -21,22 +21,10 @@
     <list default="true" id="6f7ff648-0396-444e-a5ba-f71cbf49a1b5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auxiliares.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/auxiliares.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/Funciones_TPI.gcda" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/Funciones_TPI.gcda" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/auxiliares.gcda" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/auxiliares.gcda" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/ejercicios.gcda" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/ejercicios.gcda" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/main.gcda" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/main.gcda" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/test/corregirRegionTEST.gcda" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/test/corregirRegionTEST.gcda" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/test/costoSubsidioMejoraTEST.gcda" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/test/costoSubsidioMejoraTEST.gcda" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/test/creceElTeleworkingEnCiudadesGrandesTEST.gcda" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/test/creceElTeleworkingEnCiudadesGrandesTEST.gcda" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/test/esEncuestaValidaTEST.gcda" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/test/esEncuestaValidaTEST.gcda" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/test/generarJoinTEST.gcda" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/test/generarJoinTEST.gcda" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/test/histHabitacionalTEST.gcda" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/test/histHabitacionalTEST.gcda" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/test/histogramaDeAnillosConcentricosTEST.gcda" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/test/histogramaDeAnillosConcentricosTEST.gcda" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/test/laCasaEstaQuedandoChicaTEST.gcda" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/test/laCasaEstaQuedandoChicaTEST.gcda" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/test/muestraHomogeneaTEST.gcda" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/test/muestraHomogeneaTEST.gcda" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/test/ordenarRegionYCODUSUTEST.gcda" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/test/ordenarRegionYCODUSUTEST.gcda" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/test/quitarIndividuosTEST.gcda" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/test/quitarIndividuosTEST.gcda" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/histHabitacionalTEST.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/test/histHabitacionalTEST.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/laCasaEstaQuedandoChicaTEST.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/test/laCasaEstaQuedandoChicaTEST.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/ordenarRegionYCODUSUTEST.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/test/ordenarRegionYCODUSUTEST.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/quitarIndividuosTEST.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/test/quitarIndividuosTEST.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,7 +111,7 @@
       <workItem from="1636664044444" duration="11214000" />
       <workItem from="1636759737401" duration="2043000" />
       <workItem from="1637597033162" duration="5668000" />
-      <workItem from="1638042377474" duration="2088000" />
+      <workItem from="1638042377474" duration="2772000" />
     </task>
     <servers />
   </component>

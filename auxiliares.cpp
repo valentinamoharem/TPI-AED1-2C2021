@@ -265,7 +265,7 @@ bool valoresEnRangoH(eph_h th){
 
 
 bool esValida(eph_i ti, eph_h th){
-    return  !esVacia(ti) && !esVacia(th) && esMatriz(ti) && esMatriz(th) && cantidadCorrectaDeColumnasI(ti)
+    return !esVacia(ti) && !esVacia(th) && esMatriz(ti) && esMatriz(th) && cantidadCorrectaDeColumnasI(ti)
             && cantidadCorrectaDeColumnasH(th) && !hayIndividuosSinHogares(ti,th) && !hayHogaresSinIndividuos(ti,th)
             && !hayRepetidosI(ti)&& !hayRepetidosH(th) && mismoAnioYTrimestre(ti,th) && menosDe21MiembrosPorHogar(th,ti)
             && cantidadValidaDormitorios(th) && valoresEnRangoI(ti) && valoresEnRangoH(th);
