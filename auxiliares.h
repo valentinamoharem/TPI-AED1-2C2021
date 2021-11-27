@@ -33,6 +33,9 @@ int cantidadDeHabitantes (int codusu,eph_i ti);
 
 bool sinRepetidos(vector < par_hi > pair);
 
+// Auxiliares Problema 8
+int ingresos(hogar h, eph_i ti);
+
 // Auxiliares Problema 9
 
 // Auxiliares Problema 10

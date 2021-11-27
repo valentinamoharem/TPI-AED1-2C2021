@@ -181,10 +181,23 @@ void ordenarRegionYCODUSU (eph_h & th, eph_i & ti) {
 vector < hogar > muestraHomogenea( eph_h & th, eph_i & ti ){
     hogar h = {};
     vector < hogar > resp = {h};
-
-    // TODO
-
-    return  resp;
+    vector < hogar > aux;
+    int dif = ingresos(th[1],ti) - ingresos(th[0],ti);
+    for (int i = 0; i < th.size() - 1; i++) {
+        if(ingresos(th[i+1],ti) - ingresos(th[i],ti) == dif) {
+            aux.push_back(th[i]);
+        } else {
+            dif = ingresos(th[i+1],ti) - ingresos(th[i],ti);
+            if(aux.size() > resp.size()) {
+                resp = aux;
+                aux.clear();
+            }
+        }
+    }
+    if (resp.size() < 3) {
+        resp.clear();
+    }
+    return resp;
 }
 
 // Implementacion Problema 9
