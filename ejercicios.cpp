@@ -43,12 +43,12 @@ bool creceElTeleworkingEnCiudadesGrandes ( eph_h t1h, eph_i t1i, eph_h t2h, eph_
 
 // Implementacion Problema 5
 int costoSubsidioMejora(eph_h th , eph_i ti, int monto){
-	int resp = monto;
+	int resp = 0;
 	int codusu = 0;
 	int cantDeHabitaciones = 0;
 	
 	
-	for(int i = 0; i< 4;i++){
+	for(int i = 0; i< th.size() ;i++){
 		
 		codusu = th[i][0];
 		cantDeHabitaciones = th[i][10];
@@ -62,7 +62,9 @@ int costoSubsidioMejora(eph_h th , eph_i ti, int monto){
 						
 						resp = resp + monto; 
 						
-					}	
+					}
+					
+					cantHab = 0;	
 				
 				}
 				
@@ -71,7 +73,7 @@ int costoSubsidioMejora(eph_h th , eph_i ti, int monto){
 	}
 	
 	
-		return resp-monto;
+		return resp;
 	
   
 }

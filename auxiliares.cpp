@@ -94,11 +94,11 @@ double proporcionTeleworking(eph_h th, eph_i ti) {
 int cantidadDeHabitantes (int codusu,eph_i ti){
 	int habitantes = 0;
 	
-	for(int i = 0;i<18;i++){
+	for(int i = 0; i < ti.size(); i++){
 			
 			if (codusu == ti [i][0]){
 				
-				habitantes = habitantes + 1;
+				habitantes++;
 				
 			}
 		
