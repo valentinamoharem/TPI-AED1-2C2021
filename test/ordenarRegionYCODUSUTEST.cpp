@@ -59,38 +59,3 @@ TEST(ordenarRegionYCODUSUTEST, regionesDistintas) {
     EXPECT_EQ(ti_esperado, ti);
 
 }
-
-TEST(ordenarRegionYCODUSUTEST, dosHogaresOrdenadosYDosIndividuosCodusuOrdenadosConDiferenteComponente) {
-    eph_i ti_esperado = {{1, 2020,   1,  0,  3,  1,  18, 0,  0,  20000,  10},
-                         {2, 2020,   1,  0,  3,  1,  18, 0,  0,  20000,  10}
-    };
-    eph_h th_esperado = {{1, 2020,   3,  319611, 629088, 3,  41, 0,  1,  3,  1,  2},
-                         {2, 2020,   3,  319611, 629088, 3,  41, 0,  1,  3,  1,  2}
-    };
-
-    eph_i ti = ti_esperado;
-    eph_h th = th_esperado;
-
-
-    ordenarRegionYCODUSU(th, ti);
-    EXPECT_EQ(th_esperado, th);
-    EXPECT_EQ(ti_esperado, ti);
-}
-
-TEST(ordenarRegionYCODUSUTEST, deberiaOrdenarIndividuosSegunRegion) {
-    eph_i ti_esperado = {{2, 2020,   1,  0,  3,  1,  18, 0,  0,  20000,  10},
-                         {1, 2020,   1,  0,  3,  1,  18, 0,  0,  20000,  10}
-    };
-    eph_h th_esperado = {{2, 2020,   3,  319611, 629088, 3,  40, 0,  1,  3,  1,  2},
-                         {1, 2020,   3,  319611, 629088, 3,  41, 0,  1,  3,  1,  2}
-    };
-
-
-    eph_h th = {th_esperado[1], th_esperado[0]};
-    eph_i ti = {ti_esperado[1], ti_esperado[0]};
-
-
-    ordenarRegionYCODUSU(th, ti);
-    EXPECT_EQ(th_esperado, th);
-    EXPECT_EQ(ti_esperado, ti);
-}

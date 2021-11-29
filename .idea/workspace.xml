@@ -65,6 +65,10 @@
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/test/quitarIndividuosTEST.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/test/quitarIndividuosTEST.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ejercicios.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/ejercicios.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/histHabitacionalTEST.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/test/histHabitacionalTEST.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/laCasaEstaQuedandoChicaTEST.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/test/laCasaEstaQuedandoChicaTEST.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/ordenarRegionYCODUSUTEST.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/test/ordenarRegionYCODUSUTEST.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/quitarIndividuosTEST.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/test/quitarIndividuosTEST.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tpi.exe" beforeDir="false" afterPath="$PROJECT_DIR$/tpi.exe" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -100,20 +104,32 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
-  <component name="RunManager" selected="Google Test.muestraHomogeneaTEST.dosSolucionesDe3">
-    <configuration name="muestraHomogeneaTEST.dosSolucionesDe3" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tpi" TARGET_NAME="tpi" RUN_TARGET_PROJECT_NAME="tpi" RUN_TARGET_NAME="tpi" TEST_CLASS="muestraHomogeneaTEST" TEST_METHOD="dosSolucionesDe3" TEST_MODE="SUITE_TEST">
+  <component name="RunManager" selected="Google Test.esEncuestaValidaTEST.validaTrimestreEnRango">
+    <configuration name="esEncuestaValidaTEST.invalidaIndividuosSinHogares" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tpi" TARGET_NAME="tpi" RUN_TARGET_PROJECT_NAME="tpi" RUN_TARGET_NAME="tpi" TEST_CLASS="esEncuestaValidaTEST" TEST_METHOD="invalidaIndividuosSinHogares" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
         <option name="BeforeTestRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ordenarRegionYCODUSUTEST.deberiaOrdenarIndividuosSegunRegion" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tpi" TARGET_NAME="tpi" RUN_TARGET_PROJECT_NAME="tpi" RUN_TARGET_NAME="tpi" TEST_CLASS="ordenarRegionYCODUSUTEST" TEST_METHOD="deberiaOrdenarIndividuosSegunRegion" TEST_MODE="SUITE_TEST">
+    <configuration name="esEncuestaValidaTEST.invalidaTrimestreNegativo" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tpi" TARGET_NAME="tpi" RUN_TARGET_PROJECT_NAME="tpi" RUN_TARGET_NAME="tpi" TEST_CLASS="esEncuestaValidaTEST" TEST_METHOD="invalidaTrimestreNegativo" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
         <option name="BeforeTestRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ordenarRegionYCODUSUTEST.dosHogaresOrdenadosYDosIndividuosCodusuOrdenadosConDiferenteComponente" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tpi" TARGET_NAME="tpi" RUN_TARGET_PROJECT_NAME="tpi" RUN_TARGET_NAME="tpi" TEST_CLASS="ordenarRegionYCODUSUTEST" TEST_METHOD="dosHogaresOrdenadosYDosIndividuosCodusuOrdenadosConDiferenteComponente" TEST_MODE="SUITE_TEST">
+    <configuration name="esEncuestaValidaTEST.validaAnioNegativo" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tpi" TARGET_NAME="tpi" RUN_TARGET_PROJECT_NAME="tpi" RUN_TARGET_NAME="tpi" TEST_CLASS="esEncuestaValidaTEST" TEST_METHOD="validaAnioNegativo" TEST_MODE="SUITE_TEST">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="BeforeTestRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="esEncuestaValidaTEST.validaMenosOIgualA20MiembrosEnElHogar" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tpi" TARGET_NAME="tpi" RUN_TARGET_PROJECT_NAME="tpi" RUN_TARGET_NAME="tpi" TEST_CLASS="esEncuestaValidaTEST" TEST_METHOD="validaMenosOIgualA20MiembrosEnElHogar" TEST_MODE="SUITE_TEST">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="BeforeTestRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="esEncuestaValidaTEST.validaTrimestreEnRango" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tpi" TARGET_NAME="tpi" RUN_TARGET_PROJECT_NAME="tpi" RUN_TARGET_NAME="tpi" TEST_CLASS="esEncuestaValidaTEST" TEST_METHOD="validaTrimestreEnRango" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
         <option name="BeforeTestRunTask" enabled="true" />
@@ -156,15 +172,19 @@
       <item itemvalue="CMake Application.gtest" />
       <item itemvalue="CMake Application.gtest_main" />
       <item itemvalue="Google Test.tpi" />
-      <item itemvalue="Google Test.ordenarRegionYCODUSUTEST.deberiaOrdenarIndividuosSegunRegion" />
-      <item itemvalue="Google Test.ordenarRegionYCODUSUTEST.dosHogaresOrdenadosYDosIndividuosCodusuOrdenadosConDiferenteComponente" />
-      <item itemvalue="Google Test.muestraHomogeneaTEST.dosSolucionesDe3" />
+      <item itemvalue="Google Test.esEncuestaValidaTEST.invalidaTrimestreNegativo" />
+      <item itemvalue="Google Test.esEncuestaValidaTEST.validaTrimestreEnRango" />
+      <item itemvalue="Google Test.esEncuestaValidaTEST.validaAnioNegativo" />
+      <item itemvalue="Google Test.esEncuestaValidaTEST.invalidaIndividuosSinHogares" />
+      <item itemvalue="Google Test.esEncuestaValidaTEST.validaMenosOIgualA20MiembrosEnElHogar" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Google Test.muestraHomogeneaTEST.dosSolucionesDe3" />
-        <item itemvalue="Google Test.ordenarRegionYCODUSUTEST.dosHogaresOrdenadosYDosIndividuosCodusuOrdenadosConDiferenteComponente" />
-        <item itemvalue="Google Test.ordenarRegionYCODUSUTEST.deberiaOrdenarIndividuosSegunRegion" />
+        <item itemvalue="Google Test.esEncuestaValidaTEST.validaTrimestreEnRango" />
+        <item itemvalue="Google Test.esEncuestaValidaTEST.validaMenosOIgualA20MiembrosEnElHogar" />
+        <item itemvalue="Google Test.esEncuestaValidaTEST.invalidaIndividuosSinHogares" />
+        <item itemvalue="Google Test.esEncuestaValidaTEST.validaAnioNegativo" />
+        <item itemvalue="Google Test.esEncuestaValidaTEST.invalidaTrimestreNegativo" />
       </list>
     </recent_temporary>
   </component>
@@ -180,7 +200,9 @@
       <workItem from="1636664044444" duration="11214000" />
       <workItem from="1636759737401" duration="2043000" />
       <workItem from="1637597033162" duration="5668000" />
-      <workItem from="1638042377474" duration="6371000" />
+      <workItem from="1638042377474" duration="7698000" />
+      <workItem from="1638129978220" duration="6915000" />
+      <workItem from="1638225266928" duration="2327000" />
     </task>
     <servers />
   </component>

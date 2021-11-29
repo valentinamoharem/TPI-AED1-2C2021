@@ -52,15 +52,6 @@ TEST(histHabitacionalTEST, vectorLargo4) {
 
 }
 
-TEST(histHabitacionalTEST, eph2020_NOA) {
-    eph_h th;
-    eph_i ti;
-    leerEncuesta ( "eph_3c_2020_100", th, ti );
-
-    vector<int> resultado_esperado = { 2, 3, 6, 7, 1, 4 };
-    EXPECT_EQ( resultado_esperado, histHabitacional(th, ti, 40) );
-}
-
 TEST(histHabitacionalTEST, eph2020_CUYO) {
     eph_h th;
     eph_i ti;

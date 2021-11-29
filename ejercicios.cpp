@@ -5,21 +5,26 @@
 using namespace std;
 // Implementacion Problema 1
 bool esEncuestaValida ( eph_h th, eph_i ti ) {
-    bool resp = esValida(th, ti);
-    return resp;
+    return !esVacia(ti) && !esVacia(th) && esMatriz(ti) && esMatriz(th) && cantidadCorrectaDeColumnasI(ti)
+           && cantidadCorrectaDeColumnasH(th) && !hayIndividuosSinHogares(ti,th) && !hayHogaresSinIndividuos(ti,th)
+           && !hayRepetidosI(ti)&& !hayRepetidosH(th) && mismoAnioYTrimestre(ti,th) && menosDe21MiembrosPorHogar(th,ti)
+           && cantidadValidaDormitorios(th) && valoresEnRangoI(ti) && valoresEnRangoH(th);
 }
 
 // Implementacion Problema 2
 vector < int > histHabitacional ( eph_h th, eph_i ti, int region ) {
-    vector < int > resultado = {-1, -1, -1, -1, -1, -1};
-    for(int i=0; i<maximaCantidadHabitaciones(th,region); i++){
-        resultado[i]=cantHogaresCasaConNHabitaciones(th, region, i+1);
+    vector<int> histograma;
+    for(int i = 0; i < th.size(); i++) {
+        if (th[i][REGION] == region) {
+            while (histograma.size() < th[i][IV2]) {
+                histograma.push_back(0);
+            }
+            if (esCasa(th[i])) {
+                histograma[th[i][IV2]-1]++;
+            }
+        }
     }
-    if(maximaCantidadHabitaciones(th,region) < resultado.size()){
-        resultado.pop_back();
-        maximaCantidadHabitaciones(th,region) +1;
-    }
-    return resultado;
+    return histograma;
 }
 
 // Implementacion Problema 3
@@ -34,7 +39,7 @@ vector< pair < int, float > > laCasaEstaQuedandoChica ( eph_h th, eph_i ti ) {
 
     for(int i = 0; i < resp.size(); i++) {
         for(int j = 0; j < th.size(); j++) {
-            if(th[j][6] == resp[i].first) {
+            if(th[j][REGION] == resp[i].first) {
                 resp[i].second = proporcionCasasConHC(th, ti, resp[i].first);
             }
         }
@@ -50,160 +55,76 @@ bool creceElTeleworkingEnCiudadesGrandes (eph_h t1h, eph_i t1i, eph_h t2h, eph_i
 
 // Implementacion Problema 5
 int costoSubsidioMejora(eph_h th , eph_i ti, int monto){
-    int resp = monto;
+    int resp = 0;
     int codusu = 0;
     int cantDeHabitaciones = 0;
-
-
-    for(int i = 0; i< 4;i++){
-
-        codusu = th[i][0];
-        cantDeHabitaciones = th[i][10];
-
-        if(th[i][5] == 1){
-
+    for(int i = 0; i< th.size() ;i++){
+        codusu = th[i][HOGCODUSU];
+        cantDeHabitaciones = th[i][IV2];
+        if(th[i][II7] == 1){
             int cantHab = 0;
-            cantHab = cantidadDeHabitantes (codusu, ti);
-
+            cantHab = cantidadHabitantes(codusu, ti);
             if((cantHab - 2) > cantDeHabitaciones){
-
-                resp = resp + monto;
-
+                resp += monto;
             }
-
+            cantHab = 0;
         }
-
         codusu = 0;
-        cantDeHabitaciones=0;
+        cantDeHabitaciones = 0;
     }
-
-
-    return resp-monto;
-
-
+    return resp;
 }
 
 // Implementacion Problema 6
 join_hi generarJoin( eph_h th, eph_i ti ){
-    hogar h = {};
-    individuo i = {};
-    join_hi resp = {make_pair(h,i)};
+    join_hi resp;
     vector<pair<vector<dato>, vector<dato>>> temp;
     for(int k=0; k<th.size(); k++){
         for(int j=0; j<ti.size(); j++){
             if(esSuHogar(th[k],ti[j])){
-                temp.push_back(make_pair(th[k],ti[j]));
+                resp.push_back(make_pair(th[k],ti[j]));
             }
         }
-    }
-    if(sinRepetidos(temp)){
-        resp = temp;
     }
     return  resp;
 }
 
 // Implementacion Problema 7
 void ordenarRegionYCODUSU (eph_h & th, eph_i & ti) {
-	
-	// Ordeno por region
-
-		for(int n=0; n<4; n++){
-			for(int i=0; i<4; i++){
-				if(i==3){
-					if(th[i][6] > th[i-3][6]){
-
-						for(int j=0; j<12; j++){
-							int aux=0;
-
-							aux = th[i-3][j];
-							th[i-3][j] = th[i-3][j];
-							th[i-3][j] = aux;
-						}
-
-					}
-				}else{
-
-					if(th[i][6] > th[i+1][6]){
-
-						for(int j=0; j<12; j++){
-							int aux=0;
-
-							aux = th[i][j];
-							th[i][j] = th[i+1][j];
-							th[i+1][j] = aux;
-
-
-						}
-					}
-				}
-			}
-		}
-
-		// Ordena el CODUSU
-
-		for(int n=0; n<4; n++){
-			for(int i=0; i<4; i++){
-				if(i==3){
-					if(th[i][6] == th[i-3][6] && th[i][0] > th[i-3][0]){
-
-						for(int j=0; j<12; j++){
-							int aux=0;
-
-							aux = th[i-3][j];
-							th[i-3][j] = th[i-3][j];
-							th[i-3][j] = aux;
-						}
-
-					}
-				}else{
-
-					if(th[i][6] == th[i+1][6] && th[i][0] > th[i+1][0]){
-
-						for(int j=0; j<12; j++){
-							int aux=0;
-
-							aux = th[i][j];
-							th[i][j] = th[i+1][j];
-							th[i+1][j] = aux;
-
-
-						}
-					}
-				}
-			}
-		}
-
-
-		return;
+    ordenarPorRegion(th);
+    ordenarPorCODUSU(th);
+    ordenarIndividuosPorCODUSUDeHogar(th,ti);
+    ordenarIndividuosPorComponente(ti);
+    return;
 }
 
 // Implementacion Problema 8
 vector < hogar > muestraHomogenea( eph_h & th, eph_i & ti ){
     hogar h = {};
-    vector < hogar > resp = {h};
+    vector < hogar > res = {h};
     vector < hogar > aux;
     int dif = ingresos(th[1],ti) - ingresos(th[0],ti);
-    for (int i = 0; i < th.size() - 1; i++) {
-        if(ingresos(th[i+1],ti) - ingresos(th[i],ti) == dif) {
+    for (int i = 1; i < th.size(); i++) {
+        if(ingresos(th[i],ti) - ingresos(th[i-1],ti) == dif) {
             aux.push_back(th[i]);
         } else {
             dif = ingresos(th[i+1],ti) - ingresos(th[i],ti);
-            if(aux.size() > resp.size()) {
-                resp = aux;
+            if(aux.size() > res.size()) {
+                res = aux;
                 aux.clear();
             }
         }
     }
-    if (resp.size() < 3) {
-        resp.clear();
+    if (res.size() < 3) {
+        res.clear();
     }
-    return resp;
+    return res;
 }
 
 // Implementacion Problema 9
 void corregirRegion( eph_h & th, eph_i ti ) {
     for (int i = 0; i < th.size(); i++) {
-        if(th[i][6] == 1) {
+        if(th[i][REGION] == 1) {
             for (int k = 0; k < th[i].size(); k++) {
                 if (k == 6) {
                     th[i][k] = 43;
@@ -211,8 +132,6 @@ void corregirRegion( eph_h & th, eph_i ti ) {
                     th[i][k] = th[i][k];
                 }
             }
-        } else {
-            th[i] = th[i];
         }
     }
 
