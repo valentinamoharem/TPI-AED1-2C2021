@@ -98,26 +98,31 @@ void ordenarRegionYCODUSU (eph_h & th, eph_i & ti) {
     return;
 }
 
-// Implementacion Problema 8
-vector < hogar > muestraHomogenea( eph_h & th, eph_i & ti ){
-    hogar h = {};
-    vector < hogar > res = {h};
-    vector < hogar > aux;
-    int dif = ingresos(th[1],ti) - ingresos(th[0],ti);
-    for (int i = 1; i < th.size(); i++) {
-        if(ingresos(th[i],ti) - ingresos(th[i-1],ti) == dif) {
-            aux.push_back(th[i]);
-        } else {
-            dif = ingresos(th[i+1],ti) - ingresos(th[i],ti);
-            if(aux.size() > res.size()) {
-                res = aux;
-                aux.clear();
-            }
+// Implementación Problema 8
+vector < hogar > muestraHomogenea( eph_h & th, eph_i & ti ) {
+    vector<hogar> res;
+    ordenarPorIngresos(th,ti);
+
+    vector<int> diferencias;
+    for(int i = 0; i < th.size() - 1; i++) {
+        if(ingresos(th[i+1],ti) - ingresos(th[i],ti) > 0){
+            diferencias.push_back(ingresos(th[i+1],ti) - ingresos(th[i],ti));
         }
     }
-    if (res.size() < 3) {
-        res.clear();
+
+    int diferenciaConMasApariciones = masApariciones(diferencias);
+
+    for(int i = 0; i < th.size() - 1; i++) {
+        if(ingresos(th[i+1],ti) - ingresos(th[i],ti) == diferenciaConMasApariciones){
+            res.push_back(th[i]);
+            res.push_back(th[i+1]);
+        }
     }
+
+    if(res.size() < 3){
+        res = {};
+    }
+
     return res;
 }
 

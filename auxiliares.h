@@ -66,6 +66,10 @@ void ordenarIndividuosPorComponente(eph_i &ti);
 // Auxiliares Problema 8
 int ingresos(hogar h, eph_i ti);
 
+int masApariciones(vector<int> v);
+
+void ordenarPorIngresos(eph_h &th, eph_i ti);
+
 // Auxiliares Problema 9
 
 // Auxiliares Problema 10

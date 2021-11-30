@@ -42,19 +42,23 @@ bool esMatriz(vector<vector<int>> t){
 }
 
 bool individuoEnTabla (individuo ind, eph_i ti){
-    int i=0;
-    while(i<ti.size() && ti[i] == ind){
-        i++;
+    bool res = false;
+    for(int i = 0; i < ti.size(); i++){
+        if(ti[i] == ind){
+            res = true;
+        }
     }
-    return i < ti.size();
+    return res;
 }
 
 bool hogarEnTabla (hogar hog, eph_h th){
-    int i=0;
-    while( i<th.size() && th[i] == hog){
-        i++;
+    bool res = false;
+    for(int i = 0; i < th.size(); i++){
+        if(th[i] == hog){
+            res = true;
+        }
     }
-    return i < th.size();
+    return res;
 }
 
 bool cantidadCorrectaDeColumnasI(eph_i ti){
@@ -78,20 +82,20 @@ bool cantidadCorrectaDeColumnasH(eph_h th){
 }
 
 bool hayIndividuoConCodigo (eph_i ti, int c){
-    bool tieneCodigo = true;
+    bool tieneCodigo = false;
     for(int i = 0; i<ti.size(); i++){
-        if(!(individuoEnTabla(ti[i], ti) && ti[i][INDCODUSU] == c)){
-            tieneCodigo = false;
+        if(individuoEnTabla(ti[i], ti) && ti[i][INDCODUSU] == c){
+            tieneCodigo = true;
         };
     }
     return tieneCodigo;
 }
 
 bool hayHogarConCodigo (eph_h th, int c){
-    bool tieneCodigo = true;
+    bool tieneCodigo = false;
     for(int i = 0; i<th.size(); i++){
-        if(!(hogarEnTabla(th[i], th) && th[i][HOGCODUSU]==c)){
-            tieneCodigo = false;
+        if(hogarEnTabla(th[i], th) && th[i][HOGCODUSU]==c){
+            tieneCodigo = true;
         };
     }
     return tieneCodigo;
@@ -108,10 +112,10 @@ bool hayIndividuosSinHogares (eph_i ti, eph_h th){
 }
 
 bool hayHogaresSinIndividuos (eph_i ti, eph_h th){
-    bool res = true;
+    bool res = false;
     for(int i = 0; i<th.size() && hogarEnTabla(th[i], th); i++){
-        if(!((hayIndividuoConCodigo(ti, th[i][HOGCODUSU])))){
-            res = false;
+        if(!hayIndividuoConCodigo(ti, th[i][HOGCODUSU])){
+            res = true;
         };
     }
     return res;
@@ -150,7 +154,7 @@ bool mismoAnioYTrimestre (eph_i ti, eph_h th) {
     for(int i=0; i<ti.size(); i++){
         for(int j=0; j<th.size(); j++){
             if(individuoEnTabla(ti[i], ti) && hogarEnTabla(th[j], th)){
-                if(!(ti[i][INDANIO]==th[j][HOGANIO] && ti[i][INDTRIMESTRE]==th[j][HOGTRIMESTRE] && th[j][HOGANIO] > 0 && th[j][HOGTRIMESTRE] < 5 && th[j][HOGTRIMESTRE] > 0)){
+                if(!(ti[i][INDANIO]==th[j][HOGANIO] && ti[i][INDTRIMESTRE]==th[j][HOGTRIMESTRE])){
                     res = false;
                 };
             }
@@ -237,6 +241,26 @@ int ingresos (hogar h, eph_i ti) {
         }
     }
     return cantidad;
+}
+
+int apariciones(vector<int> v, int x) {
+    int res = 0;
+    for(int i = 0; i < v.size(); i++){
+        if(v[i] == x){
+            res++;
+        }
+    }
+    return res;
+}
+
+int masApariciones(vector<int> v){
+    int res = 0;
+    for(int i = 0; i < v.size(); i++){
+        if(apariciones(v, v[i]) > res){
+            res = v[i];
+        }
+    }
+    return res;
 }
 
 int cantHogaresCasaConNHabitaciones (eph_h th, int region, int habitaciones){
@@ -429,6 +453,16 @@ int hallarMinRegion(eph_h &th, int d, int h){
     return min;
 }
 
+int hallarMinIngresos(eph_h &th, int d, int h, eph_i ti){
+    int min = d;
+    for (int i = d + 1; i < h; i++){
+        if (ingresos(th[i], ti) <= ingresos(th[min], ti)){
+            min = i;
+        }
+    }
+    return min;
+}
+
 int hallarMinHOGCODUSU(eph_h &th, int d, int h){
     int min = d;
     for (int i = d + 1; i < h; i++){
@@ -459,6 +493,13 @@ void swapInd(eph_i &ti, int i, int j){
     individuo aux = ti[i];
     ti[i] = ti[j];
     ti[j] = aux;
+}
+
+void ordenarPorIngresos(eph_h &th, eph_i ti) {
+    for (int i = 0; i < th.size() - 1; i++){
+        int minIngresos = hallarMinIngresos(th, i, th.size(), ti);
+        swap(th, i, minIngresos);
+    }
 }
 
 void ordenarPorRegion(eph_h &th) {

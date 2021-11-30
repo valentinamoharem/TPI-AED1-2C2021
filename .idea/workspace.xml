@@ -46,14 +46,10 @@
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/test/generarJoinTEST.gcno" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/test/generarJoinTEST.gcno" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/test/generarJoinTEST.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/test/generarJoinTEST.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/test/histHabitacionalTEST.gcda" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/test/histHabitacionalTEST.gcda" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/test/histHabitacionalTEST.gcno" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/test/histHabitacionalTEST.gcno" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/test/histHabitacionalTEST.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/test/histHabitacionalTEST.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/test/histogramaDeAnillosConcentricosTEST.gcda" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/test/histogramaDeAnillosConcentricosTEST.gcda" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/test/histogramaDeAnillosConcentricosTEST.gcno" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/test/histogramaDeAnillosConcentricosTEST.gcno" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/test/histogramaDeAnillosConcentricosTEST.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/test/histogramaDeAnillosConcentricosTEST.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/test/laCasaEstaQuedandoChicaTEST.gcda" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/test/laCasaEstaQuedandoChicaTEST.gcda" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/test/laCasaEstaQuedandoChicaTEST.gcno" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/test/laCasaEstaQuedandoChicaTEST.gcno" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/test/laCasaEstaQuedandoChicaTEST.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/test/laCasaEstaQuedandoChicaTEST.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/test/muestraHomogeneaTEST.gcda" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/test/muestraHomogeneaTEST.gcda" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/test/muestraHomogeneaTEST.gcno" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/test/muestraHomogeneaTEST.gcno" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/test/muestraHomogeneaTEST.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/test/muestraHomogeneaTEST.obj" afterDir="false" />
@@ -65,10 +61,7 @@
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/test/quitarIndividuosTEST.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/test/quitarIndividuosTEST.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ejercicios.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/ejercicios.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/histHabitacionalTEST.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/test/histHabitacionalTEST.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/laCasaEstaQuedandoChicaTEST.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/test/laCasaEstaQuedandoChicaTEST.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/ordenarRegionYCODUSUTEST.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/test/ordenarRegionYCODUSUTEST.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/quitarIndividuosTEST.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/test/quitarIndividuosTEST.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/muestraHomogeneaTEST.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/test/muestraHomogeneaTEST.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tpi.exe" beforeDir="false" afterPath="$PROJECT_DIR$/tpi.exe" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -104,32 +97,32 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
-  <component name="RunManager" selected="Google Test.esEncuestaValidaTEST.validaTrimestreEnRango">
-    <configuration name="esEncuestaValidaTEST.invalidaIndividuosSinHogares" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tpi" TARGET_NAME="tpi" RUN_TARGET_PROJECT_NAME="tpi" RUN_TARGET_NAME="tpi" TEST_CLASS="esEncuestaValidaTEST" TEST_METHOD="invalidaIndividuosSinHogares" TEST_MODE="SUITE_TEST">
+  <component name="RunManager" selected="Google Test.muestraHomogeneaTEST.unaSolucionDe4">
+    <configuration name="costoSubsidioMejoraTEST.casoFacil" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tpi" TARGET_NAME="tpi" RUN_TARGET_PROJECT_NAME="tpi" RUN_TARGET_NAME="tpi" TEST_CLASS="costoSubsidioMejoraTEST" TEST_METHOD="casoFacil" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
         <option name="BeforeTestRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="esEncuestaValidaTEST.invalidaTrimestreNegativo" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tpi" TARGET_NAME="tpi" RUN_TARGET_PROJECT_NAME="tpi" RUN_TARGET_NAME="tpi" TEST_CLASS="esEncuestaValidaTEST" TEST_METHOD="invalidaTrimestreNegativo" TEST_MODE="SUITE_TEST">
+    <configuration name="generarJoinTEST.casoFacil" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tpi" TARGET_NAME="tpi" RUN_TARGET_PROJECT_NAME="tpi" RUN_TARGET_NAME="tpi" TEST_CLASS="generarJoinTEST" TEST_METHOD="casoFacil" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
         <option name="BeforeTestRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="esEncuestaValidaTEST.validaAnioNegativo" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tpi" TARGET_NAME="tpi" RUN_TARGET_PROJECT_NAME="tpi" RUN_TARGET_NAME="tpi" TEST_CLASS="esEncuestaValidaTEST" TEST_METHOD="validaAnioNegativo" TEST_MODE="SUITE_TEST">
+    <configuration name="muestraHomogeneaTEST.dosSolucionesDe3" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tpi" TARGET_NAME="tpi" RUN_TARGET_PROJECT_NAME="tpi" RUN_TARGET_NAME="tpi" TEST_CLASS="muestraHomogeneaTEST" TEST_METHOD="dosSolucionesDe3" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
         <option name="BeforeTestRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="esEncuestaValidaTEST.validaMenosOIgualA20MiembrosEnElHogar" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tpi" TARGET_NAME="tpi" RUN_TARGET_PROJECT_NAME="tpi" RUN_TARGET_NAME="tpi" TEST_CLASS="esEncuestaValidaTEST" TEST_METHOD="validaMenosOIgualA20MiembrosEnElHogar" TEST_MODE="SUITE_TEST">
+    <configuration name="muestraHomogeneaTEST.unaSolucionDe4" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tpi" TARGET_NAME="tpi" RUN_TARGET_PROJECT_NAME="tpi" RUN_TARGET_NAME="tpi" TEST_CLASS="muestraHomogeneaTEST" TEST_METHOD="unaSolucionDe4" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
         <option name="BeforeTestRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="esEncuestaValidaTEST.validaTrimestreEnRango" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tpi" TARGET_NAME="tpi" RUN_TARGET_PROJECT_NAME="tpi" RUN_TARGET_NAME="tpi" TEST_CLASS="esEncuestaValidaTEST" TEST_METHOD="validaTrimestreEnRango" TEST_MODE="SUITE_TEST">
+    <configuration name="ordenarRegionYCODUSUTEST.regionesDistintas" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tpi" TARGET_NAME="tpi" RUN_TARGET_PROJECT_NAME="tpi" RUN_TARGET_NAME="tpi" TEST_CLASS="ordenarRegionYCODUSUTEST" TEST_METHOD="regionesDistintas" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
         <option name="BeforeTestRunTask" enabled="true" />
@@ -139,6 +132,11 @@
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
         <option name="BeforeTestRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <configuration name="gmock" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tpi" TARGET_NAME="gmock" CONFIG_NAME="Debug">
@@ -161,30 +159,25 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="CMake Application.gmock" />
       <item itemvalue="CMake Application.gmock_main" />
       <item itemvalue="CMake Application.gtest" />
       <item itemvalue="CMake Application.gtest_main" />
       <item itemvalue="Google Test.tpi" />
-      <item itemvalue="Google Test.esEncuestaValidaTEST.invalidaTrimestreNegativo" />
-      <item itemvalue="Google Test.esEncuestaValidaTEST.validaTrimestreEnRango" />
-      <item itemvalue="Google Test.esEncuestaValidaTEST.validaAnioNegativo" />
-      <item itemvalue="Google Test.esEncuestaValidaTEST.invalidaIndividuosSinHogares" />
-      <item itemvalue="Google Test.esEncuestaValidaTEST.validaMenosOIgualA20MiembrosEnElHogar" />
+      <item itemvalue="Google Test.costoSubsidioMejoraTEST.casoFacil" />
+      <item itemvalue="Google Test.generarJoinTEST.casoFacil" />
+      <item itemvalue="Google Test.ordenarRegionYCODUSUTEST.regionesDistintas" />
+      <item itemvalue="Google Test.muestraHomogeneaTEST.unaSolucionDe4" />
+      <item itemvalue="Google Test.muestraHomogeneaTEST.dosSolucionesDe3" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Google Test.esEncuestaValidaTEST.validaTrimestreEnRango" />
-        <item itemvalue="Google Test.esEncuestaValidaTEST.validaMenosOIgualA20MiembrosEnElHogar" />
-        <item itemvalue="Google Test.esEncuestaValidaTEST.invalidaIndividuosSinHogares" />
-        <item itemvalue="Google Test.esEncuestaValidaTEST.validaAnioNegativo" />
-        <item itemvalue="Google Test.esEncuestaValidaTEST.invalidaTrimestreNegativo" />
+        <item itemvalue="Google Test.muestraHomogeneaTEST.unaSolucionDe4" />
+        <item itemvalue="Google Test.muestraHomogeneaTEST.dosSolucionesDe3" />
+        <item itemvalue="Google Test.ordenarRegionYCODUSUTEST.regionesDistintas" />
+        <item itemvalue="Google Test.generarJoinTEST.casoFacil" />
+        <item itemvalue="Google Test.costoSubsidioMejoraTEST.casoFacil" />
       </list>
     </recent_temporary>
   </component>
@@ -203,6 +196,7 @@
       <workItem from="1638042377474" duration="7698000" />
       <workItem from="1638129978220" duration="6915000" />
       <workItem from="1638225266928" duration="2327000" />
+      <workItem from="1638237774692" duration="10087000" />
     </task>
     <servers />
   </component>
