@@ -116,18 +116,6 @@ vector < hogar > muestraHomogenea( eph_h & th, eph_i & ti ) {
     diferencias = filtrarDiferencias(diferencias,th,ti);
     res = listaHogaresConMismaDiferencia(th,ti,diferencias);
 
-//    vector<vector<hogar>> listasDeParesConMismasDiferencias = paresConMismasDiferencias(th,ti,diferencias);
-//    vector<vector<hogar>> listasDeHogaresConMismasDiferencias = hogaresConMismasDiferencias(listasDeParesConMismasDiferencias,th,ti);
-//    //res = hallarListaMasLarga(listasDeHogaresConMismasDiferencias);
-//    if(listasDeHogaresConMismasDiferencias.size() > 0){
-//        res = listasDeHogaresConMismasDiferencias[0];
-//        for(int i = 0; i < listasDeHogaresConMismasDiferencias.size(); i++){
-//            if(res.size() < listasDeHogaresConMismasDiferencias[i].size()){
-//                res = listasDeHogaresConMismasDiferencias[i];
-//            }
-//        }
-//    }
-
     if(res.size() < 3){
         res = {};
     }
@@ -168,19 +156,40 @@ vector < int > histogramaDeAnillosConcentricos( eph_h th, eph_i ti, pair < int, 
 
 // Implementacion Problema 11
 pair < eph_h, eph_i > quitarIndividuos(eph_i & ti, eph_h & th, vector < pair < int, dato > >  busqueda ){
-    eph_h rth = {{-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1}};
-    eph_i rti = {{-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1}};
-    pair < eph_h, eph_i > resp = make_pair(rth, rti);
-    pair < eph_h, eph_i > temp;
-    for(int k=0; k<th.size(); k++){
-        for(int j=0; j<ti.size(); j++){
-            if(cumpleCondicion(busqueda, ti[j]) && th[k][HOGCODUSU]==ti[j][INDCODUSU]){
-                temp.first.push_back(th[k]);
-                temp.second.push_back(ti[j]);
-                make_pair(temp.first, temp.second);
+    eph_h th_out;
+    eph_i ti_out;
+    eph_h th_res;
+    eph_i ti_res;
+
+    for(int ind=0; ind<ti.size(); ind++){
+        if(cumpleCondicion(ti[ind], busqueda)){
+            ti_res.push_back(ti[ind]);
+        } else {
+            ti_out.push_back(ti[ind]);
+        }
+    }
+
+    int codusu_aux = 0;
+    for(int i=0; i<ti_res.size(); i++){
+        for(int j=0; j<th.size(); j++){
+            if(ti_res[i][INDCODUSU] == th[j][HOGCODUSU] && th[j][HOGCODUSU] != codusu_aux){
+                codusu_aux = th[j][HOGCODUSU];
+                th_res.push_back(th[j]);
             }
         }
     }
-    resp = temp;
-    return resp;
+
+    vector<int> hogar_aux= {};
+    for(int i=0; i<ti_out.size(); i++){
+        for(int j=0; j<th.size(); j++){
+            if(ti_out[i][INDCODUSU] == th[j][HOGCODUSU] && th[j] !=  hogar_aux ){
+                    hogar_aux = th[j];
+                    th_out.push_back(th[j]);
+                }
+        }
+    }
+
+    th = th_out;
+    ti = ti_out;
+    return make_pair(th_res, ti_res);
 }

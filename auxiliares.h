@@ -84,6 +84,6 @@ int cantidadHogaresEnAnillo(int distDesde, int distHasta, pair <int ,int> centro
 
 // Auxiliares Problema 11
 
-bool cumpleCondicion(vector < pair < int, dato > >  busqueda, individuo);
+bool cumpleCondicion(individuo &ind, vector<pair<int, dato>> &busqueda);
 
 #endif //SOLUCION_AUXILIARES_H

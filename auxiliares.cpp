@@ -501,14 +501,14 @@ bool sinRepetidos(vector < par_hi > pair){
     return sinRepetidos;
 }
 
-bool cumpleCondicion(vector < pair < int, dato > >  busqueda, individuo i){
-    bool cumple = false;
-    int k =0;
-    while(k<busqueda.size() && i[busqueda[k].first] == busqueda[k].second){
-        cumple = true;
-        k++;
+bool cumpleCondicion(individuo &ind, vector<pair<int, dato>> &busqueda) {
+    bool res = true;
+    for (int i = 0; i < busqueda.size() && res; i++) {
+        if (ind[busqueda[i].first] != busqueda[i].second) {
+            res = false;
+        }
     }
-    return cumple;
+    return res;
 }
 
 int findMinPosition(vector<int> &s, int d, int h){
