@@ -102,22 +102,31 @@ void ordenarRegionYCODUSU (eph_h & th, eph_i & ti) {
 vector < hogar > muestraHomogenea( eph_h & th, eph_i & ti ) {
     vector<hogar> res;
     ordenarPorIngresos(th,ti);
+    th = sacarRepetidos(th,ti);
 
     vector<int> diferencias;
-    for(int i = 0; i < th.size() - 1; i++) {
-        if(ingresos(th[i+1],ti) - ingresos(th[i],ti) > 0){
-            diferencias.push_back(ingresos(th[i+1],ti) - ingresos(th[i],ti));
+    for(int i = 0; i < th.size(); i++) {
+        for(int j = i+1; j < th.size(); j++) {
+            if (diferenciaDeIngresos(th[i], th[j], ti) > 0) {
+                diferencias.push_back(diferenciaDeIngresos(th[i], th[j], ti));
+            }
         }
     }
 
-    int diferenciaConMasApariciones = masApariciones(diferencias);
+    diferencias = filtrarDiferencias(diferencias,th,ti);
+    res = listaHogaresConMismaDiferencia(th,ti,diferencias);
 
-    for(int i = 0; i < th.size() - 1; i++) {
-        if(ingresos(th[i+1],ti) - ingresos(th[i],ti) == diferenciaConMasApariciones){
-            res.push_back(th[i]);
-            res.push_back(th[i+1]);
-        }
-    }
+//    vector<vector<hogar>> listasDeParesConMismasDiferencias = paresConMismasDiferencias(th,ti,diferencias);
+//    vector<vector<hogar>> listasDeHogaresConMismasDiferencias = hogaresConMismasDiferencias(listasDeParesConMismasDiferencias,th,ti);
+//    //res = hallarListaMasLarga(listasDeHogaresConMismasDiferencias);
+//    if(listasDeHogaresConMismasDiferencias.size() > 0){
+//        res = listasDeHogaresConMismasDiferencias[0];
+//        for(int i = 0; i < listasDeHogaresConMismasDiferencias.size(); i++){
+//            if(res.size() < listasDeHogaresConMismasDiferencias[i].size()){
+//                res = listasDeHogaresConMismasDiferencias[i];
+//            }
+//        }
+//    }
 
     if(res.size() < 3){
         res = {};

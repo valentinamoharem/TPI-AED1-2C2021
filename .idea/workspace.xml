@@ -96,15 +96,10 @@
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="CPPToolchains" />
   </component>
-  <component name="RunManager" selected="Google Test.muestraHomogeneaTEST.unaSolucionDe4">
-    <configuration name="costoSubsidioMejoraTEST.casoFacil" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tpi" TARGET_NAME="tpi" RUN_TARGET_PROJECT_NAME="tpi" RUN_TARGET_NAME="tpi" TEST_CLASS="costoSubsidioMejoraTEST" TEST_METHOD="casoFacil" TEST_MODE="SUITE_TEST">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-        <option name="BeforeTestRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="generarJoinTEST.casoFacil" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tpi" TARGET_NAME="tpi" RUN_TARGET_PROJECT_NAME="tpi" RUN_TARGET_NAME="tpi" TEST_CLASS="generarJoinTEST" TEST_METHOD="casoFacil" TEST_MODE="SUITE_TEST">
+  <component name="RunManager" selected="Google Test.muestraHomogeneaTEST.dosSolucionesDe3">
+    <configuration name="All in muestraHomogeneaTEST.cpp" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tpi" TARGET_NAME="tpi" RUN_TARGET_PROJECT_NAME="tpi" RUN_TARGET_NAME="tpi" TEST_PATTERN="all-tests(file://$PROJECT_DIR$/test/muestraHomogeneaTEST.cpp)" TEST_MODE="PATTERN">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
         <option name="BeforeTestRunTask" enabled="true" />
@@ -122,7 +117,13 @@
         <option name="BeforeTestRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ordenarRegionYCODUSUTEST.regionesDistintas" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tpi" TARGET_NAME="tpi" RUN_TARGET_PROJECT_NAME="tpi" RUN_TARGET_NAME="tpi" TEST_CLASS="ordenarRegionYCODUSUTEST" TEST_METHOD="regionesDistintas" TEST_MODE="SUITE_TEST">
+    <configuration name="quitarIndividuosTEST.SacaTodosIndividuosYHogarVacio" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tpi" TARGET_NAME="tpi" RUN_TARGET_PROJECT_NAME="tpi" RUN_TARGET_NAME="tpi" TEST_CLASS="quitarIndividuosTEST" TEST_METHOD="SacaTodosIndividuosYHogarVacio" TEST_MODE="SUITE_TEST">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="BeforeTestRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="quitarIndividuosTEST.SacaUnIndividuoHogaresSinModificacion" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tpi" TARGET_NAME="tpi" RUN_TARGET_PROJECT_NAME="tpi" RUN_TARGET_NAME="tpi" TEST_CLASS="quitarIndividuosTEST" TEST_METHOD="SacaUnIndividuoHogaresSinModificacion" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
         <option name="BeforeTestRunTask" enabled="true" />
@@ -132,11 +133,6 @@
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
         <option name="BeforeTestRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <configuration name="gmock" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tpi" TARGET_NAME="gmock" CONFIG_NAME="Debug">
@@ -159,25 +155,30 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="CMake Application.gmock" />
       <item itemvalue="CMake Application.gmock_main" />
       <item itemvalue="CMake Application.gtest" />
       <item itemvalue="CMake Application.gtest_main" />
       <item itemvalue="Google Test.tpi" />
-      <item itemvalue="Google Test.costoSubsidioMejoraTEST.casoFacil" />
-      <item itemvalue="Google Test.generarJoinTEST.casoFacil" />
-      <item itemvalue="Google Test.ordenarRegionYCODUSUTEST.regionesDistintas" />
       <item itemvalue="Google Test.muestraHomogeneaTEST.unaSolucionDe4" />
       <item itemvalue="Google Test.muestraHomogeneaTEST.dosSolucionesDe3" />
+      <item itemvalue="Google Test.quitarIndividuosTEST.SacaUnIndividuoHogaresSinModificacion" />
+      <item itemvalue="Google Test.quitarIndividuosTEST.SacaTodosIndividuosYHogarVacio" />
+      <item itemvalue="Google Test.All in muestraHomogeneaTEST.cpp" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Google Test.muestraHomogeneaTEST.unaSolucionDe4" />
         <item itemvalue="Google Test.muestraHomogeneaTEST.dosSolucionesDe3" />
-        <item itemvalue="Google Test.ordenarRegionYCODUSUTEST.regionesDistintas" />
-        <item itemvalue="Google Test.generarJoinTEST.casoFacil" />
-        <item itemvalue="Google Test.costoSubsidioMejoraTEST.casoFacil" />
+        <item itemvalue="Google Test.All in muestraHomogeneaTEST.cpp" />
+        <item itemvalue="Google Test.muestraHomogeneaTEST.unaSolucionDe4" />
+        <item itemvalue="Google Test.quitarIndividuosTEST.SacaTodosIndividuosYHogarVacio" />
+        <item itemvalue="Google Test.quitarIndividuosTEST.SacaUnIndividuoHogaresSinModificacion" />
       </list>
     </recent_temporary>
   </component>
@@ -197,6 +198,7 @@
       <workItem from="1638129978220" duration="6915000" />
       <workItem from="1638225266928" duration="2327000" />
       <workItem from="1638237774692" duration="10087000" />
+      <workItem from="1638391567838" duration="8788000" />
     </task>
     <servers />
   </component>

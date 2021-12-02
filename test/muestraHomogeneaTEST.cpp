@@ -119,4 +119,5 @@ TEST(muestraHomogeneaTEST, dosSolucionesDe3) {
 
     bool esperado = res1 == propuesto || res2 == propuesto;
     EXPECT_TRUE(esperado);
+    EXPECT_EQ(res1,propuesto);
 }

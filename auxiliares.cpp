@@ -263,6 +263,110 @@ int masApariciones(vector<int> v){
     return res;
 }
 
+int diferenciaDeIngresos(hogar h1, hogar h2, eph_i ti){
+    return ingresos(h2,ti) - ingresos(h1,ti);
+}
+
+vector<hogar> paresDeHogaresQueCumplen(int dif, eph_h th, eph_i ti){
+    vector<hogar> res;
+    for(int i = 0; i < th.size() - 1; i++) {
+        if(diferenciaDeIngresos(th[i],th[i+1],ti) == dif){
+            res.push_back(th[i]);
+            res.push_back(th[i+1]);
+        }
+    }
+    return res;
+}
+
+vector<hogar> listaHogaresConMismaDiferencia(eph_h th, eph_i ti,vector<int> diferencias){
+    vector<hogar> res;
+    int max = 0;
+    for(int i = 0; i < diferencias.size(); i++){
+        vector<hogar> aux;
+        for(int j = 0; j < th.size(); j++){
+            aux.push_back(th[j]);
+            for(int k = j+1; k < th.size(); k++){ // 1 10 11 21 22
+                if(diferenciaDeIngresos(aux[aux.size()-1],th[k],ti) == diferencias[i]){
+                    aux.push_back(th[k]);
+                }
+            }
+        }
+        if(aux.size() > max){
+            max = aux.size();
+            res = aux;
+        }
+    }
+    return res;
+};
+
+bool todosConMismaDiferencia(vector<hogar> lista, eph_i ti){
+    bool res = true;
+    if(lista.size() >= 2){
+        int dif = diferenciaDeIngresos(lista[0],lista[1],ti);
+        for(int i = 0; i < lista.size()-1; i++){
+            if(diferenciaDeIngresos(lista[i],lista[i+1],ti) != dif){
+                res = false;
+            }
+        }
+    }
+    return res;
+}
+
+vector<vector<hogar>> hogaresConMismasDiferencias(vector<vector<hogar>> listasDeParesConMismasDiferencias,eph_h th,eph_i ti){
+    vector<vector<hogar>> res;
+
+    for(int i = 0; i < listasDeParesConMismasDiferencias.size(); i++){
+        if(todosConMismaDiferencia(listasDeParesConMismasDiferencias[i],ti)){
+            res.push_back(listasDeParesConMismasDiferencias[i]);
+        }
+    }
+
+    return res;
+}
+
+vector<hogar> hallarListaMasLarga(vector<vector<hogar>> lista){
+    vector<hogar> res;
+    vector<hogar> masLarga = lista[0];
+
+    if(lista.size() < 2){
+        return lista[0];
+    }
+
+    for(int i = 0; i < lista.size(); i++){
+        if(lista[i].size() > masLarga.size()){
+            masLarga = lista[i];
+        }
+    }
+
+    if(masLarga.size() < 3){
+        res = {};
+    } else {
+        res = masLarga;
+    }
+
+    return res;
+}
+
+vector<int> filtrarDiferencias(vector<int> diferencias, eph_h th, eph_i ti){
+    vector<int> res;
+    for(int i = 0; i < diferencias.size(); i++) {
+        if(apariciones(diferencias, diferencias[i]) > 1){
+            res.push_back(diferencias[i]);
+        }
+    }
+    return res;
+}
+
+vector<hogar> sacarRepetidos(eph_h th,eph_i ti){
+    vector<hogar> res = {th[0]};
+    for(int i = 1; i < th.size(); i++){
+        if(diferenciaDeIngresos(th[i-1],th[i],ti) != 0){
+            res.push_back(th[i]);
+        }
+    }
+    return res;
+}
+
 int cantHogaresCasaConNHabitaciones (eph_h th, int region, int habitaciones){
     int i=0;
     int cantidad = 0;

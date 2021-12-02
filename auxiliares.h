@@ -66,9 +66,15 @@ void ordenarIndividuosPorComponente(eph_i &ti);
 // Auxiliares Problema 8
 int ingresos(hogar h, eph_i ti);
 
-int masApariciones(vector<int> v);
+vector<hogar> sacarRepetidos(eph_h th,eph_i ti);
 
 void ordenarPorIngresos(eph_h &th, eph_i ti);
+
+int diferenciaDeIngresos(hogar h1, hogar h2, eph_i ti);
+
+vector<int> filtrarDiferencias(vector<int> diferencias, eph_h th, eph_i ti);
+
+vector<hogar> listaHogaresConMismaDiferencia(eph_h th, eph_i ti,vector<int> diferencias);
 
 // Auxiliares Problema 9
 
