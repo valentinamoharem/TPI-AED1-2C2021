@@ -103,23 +103,8 @@ vector < hogar > muestraHomogenea( eph_h & th, eph_i & ti ) {
     vector<hogar> res;
     ordenarPorIngresos(th,ti);
     th = sacarRepetidos(th,ti);
-
-    vector<int> diferencias;
-    for(int i = 0; i < th.size(); i++) {
-        for(int j = i+1; j < th.size(); j++) {
-            if (diferenciaDeIngresos(th[i], th[j], ti) > 0) {
-                diferencias.push_back(diferenciaDeIngresos(th[i], th[j], ti));
-            }
-        }
-    }
-
-    diferencias = filtrarDiferencias(diferencias,th,ti);
-    res = listaHogaresConMismaDiferencia(th,ti,diferencias);
-
-    if(res.size() < 3){
-        res = {};
-    }
-
+    vector<int> diferencias = buscarDiferencias(th,ti);
+    res = listaHogaresConMismaDiferenciaALT(th,ti,diferencias);
     return res;
 }
 

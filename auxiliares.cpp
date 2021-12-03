@@ -285,7 +285,7 @@ vector<hogar> listaHogaresConMismaDiferencia(eph_h th, eph_i ti,vector<int> dife
         vector<hogar> aux;
         for(int j = 0; j < th.size(); j++){
             aux.push_back(th[j]);
-            for(int k = j+1; k < th.size(); k++){ // 1 10 11 21 22
+            for(int k = j+1; k < th.size(); k++){
                 if(diferenciaDeIngresos(aux[aux.size()-1],th[k],ti) == diferencias[i]){
                     aux.push_back(th[k]);
                 }
@@ -294,6 +294,44 @@ vector<hogar> listaHogaresConMismaDiferencia(eph_h th, eph_i ti,vector<int> dife
         if(aux.size() > max){
             max = aux.size();
             res = aux;
+        }
+    }
+    return res;
+};
+
+vector<int> buscarDiferencias(eph_h th, eph_i ti){
+    vector<int> diferencias;
+    for(int i = 0; i < th.size(); i++) {
+        for(int j = i+1; j < th.size(); j++) {
+            if (diferenciaDeIngresos(th[i], th[j], ti) > 0 && apariciones(diferencias,diferenciaDeIngresos(th[i], th[j], ti)) == 0) {
+                diferencias.push_back(diferenciaDeIngresos(th[i], th[j], ti));
+            }
+        }
+    }
+    return diferencias;
+}
+
+vector<hogar> hogaresQueCumplenDiferencia(hogar h, int pos, eph_h th, eph_i ti, int dif){
+    vector<hogar> res = {h};
+    for(int k = pos+1; k < th.size(); k++){
+        if(diferenciaDeIngresos(res[res.size()-1],th[k],ti) == dif){
+            res.push_back(th[k]);
+        }
+    }
+    return res;
+}
+
+vector<hogar> listaHogaresConMismaDiferenciaALT(eph_h th, eph_i ti, vector<int> diferencias){
+    vector<hogar> res;
+    int max = 2;
+    for(int i = 0; i < diferencias.size(); i++){
+        vector<hogar> aux;
+        for(int j = 0; j < th.size(); j++){
+            aux = hogaresQueCumplenDiferencia(th[j],j,th,ti,diferencias[i]);
+            if(aux.size() > max){
+                max = aux.size();
+                res = aux;
+            }
         }
     }
     return res;

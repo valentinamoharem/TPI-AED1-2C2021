@@ -76,6 +76,12 @@ vector<int> filtrarDiferencias(vector<int> diferencias, eph_h th, eph_i ti);
 
 vector<hogar> listaHogaresConMismaDiferencia(eph_h th, eph_i ti,vector<int> diferencias);
 
+vector<hogar> listaHogaresConMismaDiferenciaALT(eph_h th, eph_i ti, vector<int> diferencias);
+
+vector<int> buscarDiferencias(eph_h th, eph_i ti);
+
+int apariciones(vector<int> v, int x);
+
 // Auxiliares Problema 9
 
 // Auxiliares Problema 10

@@ -22,7 +22,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auxiliares.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/auxiliares.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auxiliares.h" beforeDir="false" afterPath="$PROJECT_DIR$/auxiliares.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/CXX.includecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/Funciones_TPI.gcda" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/Funciones_TPI.gcda" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/auxiliares.gcda" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/auxiliares.gcda" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/auxiliares.gcno" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/auxiliares.gcno" afterDir="false" />
@@ -97,7 +96,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="CPPToolchains" />
   </component>
-  <component name="RunManager" selected="Google Test.All in quitarIndividuosTEST.cpp">
+  <component name="RunManager" selected="Google Test.All in muestraHomogeneaTEST.cpp">
     <configuration name="All in muestraHomogeneaTEST.cpp" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tpi" TARGET_NAME="tpi" RUN_TARGET_PROJECT_NAME="tpi" RUN_TARGET_NAME="tpi" TEST_PATTERN="all-tests(file://$PROJECT_DIR$/test/muestraHomogeneaTEST.cpp)" TEST_MODE="PATTERN">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -173,10 +172,10 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Google Test.All in quitarIndividuosTEST.cpp" />
-        <item itemvalue="Google Test.muestraHomogeneaTEST.dosSolucionesDe3" />
         <item itemvalue="Google Test.All in muestraHomogeneaTEST.cpp" />
+        <item itemvalue="Google Test.muestraHomogeneaTEST.dosSolucionesDe3" />
         <item itemvalue="Google Test.muestraHomogeneaTEST.unaSolucionDe4" />
+        <item itemvalue="Google Test.All in quitarIndividuosTEST.cpp" />
         <item itemvalue="Google Test.quitarIndividuosTEST.SacaTodosIndividuosYHogarVacio" />
       </list>
     </recent_temporary>
@@ -198,7 +197,7 @@
       <workItem from="1638225266928" duration="2327000" />
       <workItem from="1638237774692" duration="10087000" />
       <workItem from="1638391567838" duration="8788000" />
-      <workItem from="1638488890613" duration="116000" />
+      <workItem from="1638488890613" duration="3828000" />
     </task>
     <servers />
   </component>
