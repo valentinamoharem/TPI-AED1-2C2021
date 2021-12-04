@@ -1,0 +1,689 @@
+        -:    0:Source:C:/Users/valum/Documents/GitHub/TPI-AED1-2C2021/lib/googletest-master/googletest/include/gtest/gtest-message.h
+        -:    0:Graph:C:\Users\valum\Documents\GitHub\TPI-AED1-2C2021\cmake-build-debug-coverage\lib\googletest-master\googlemock\gtest\CMakeFiles\gtest.dir\src\gtest-all.cc.gcno
+        -:    0:Data:C:\Users\valum\Documents\GitHub\TPI-AED1-2C2021\cmake-build-debug-coverage\lib\googletest-master\googlemock\gtest\CMakeFiles\gtest.dir\src\gtest-all.cc.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:// Copyright 2005, Google Inc.
+        -:    2:// All rights reserved.
+        -:    3://
+        -:    4:// Redistribution and use in source and binary forms, with or without
+        -:    5:// modification, are permitted provided that the following conditions are
+        -:    6:// met:
+        -:    7://
+        -:    8://     * Redistributions of source code must retain the above copyright
+        -:    9:// notice, this list of conditions and the following disclaimer.
+        -:   10://     * Redistributions in binary form must reproduce the above
+        -:   11:// copyright notice, this list of conditions and the following disclaimer
+        -:   12:// in the documentation and/or other materials provided with the
+        -:   13:// distribution.
+        -:   14://     * Neither the name of Google Inc. nor the names of its
+        -:   15:// contributors may be used to endorse or promote products derived from
+        -:   16:// this software without specific prior written permission.
+        -:   17://
+        -:   18:// THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+        -:   19:// "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+        -:   20:// LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+        -:   21:// A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+        -:   22:// OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+        -:   23:// SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+        -:   24:// LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+        -:   25:// DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+        -:   26:// THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+        -:   27:// (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+        -:   28:// OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+        -:   29://
+        -:   30:// Author: wan@google.com (Zhanyong Wan)
+        -:   31://
+        -:   32:// The Google C++ Testing Framework (Google Test)
+        -:   33://
+        -:   34:// This header file defines the Message class.
+        -:   35://
+        -:   36:// IMPORTANT NOTE: Due to limitation of the C++ language, we have to
+        -:   37:// leave some internal implementation details in this header file.
+        -:   38:// They are clearly marked by comments like this:
+        -:   39://
+        -:   40://   // INTERNAL IMPLEMENTATION - DO NOT USE IN A USER PROGRAM.
+        -:   41://
+        -:   42:// Such code is NOT meant to be used by a user directly, and is subject
+        -:   43:// to CHANGE WITHOUT NOTICE.  Therefore DO NOT DEPEND ON IT in a user
+        -:   44:// program!
+        -:   45:
+        -:   46:#ifndef GTEST_INCLUDE_GTEST_GTEST_MESSAGE_H_
+        -:   47:#define GTEST_INCLUDE_GTEST_GTEST_MESSAGE_H_
+        -:   48:
+        -:   49:#include <limits>
+        -:   50:
+        -:   51:#include "gtest/internal/gtest-port.h"
+        -:   52:
+        -:   53:// Ensures that there is at least one operator<< in the global namespace.
+        -:   54:// See Message& operator<<(...) below for why.
+        -:   55:void operator<<(const testing::internal::Secret&, int);
+        -:   56:
+        -:   57:namespace testing {
+        -:   58:
+        -:   59:// The Message class works like an ostream repeater.
+        -:   60://
+        -:   61:// Typical usage:
+        -:   62://
+        -:   63://   1. You stream a bunch of values to a Message object.
+        -:   64://      It will remember the text in a stringstream.
+        -:   65://   2. Then you stream the Message object to an ostream.
+        -:   66://      This causes the text in the Message to be streamed
+        -:   67://      to the ostream.
+        -:   68://
+        -:   69:// For example;
+        -:   70://
+        -:   71://   testing::Message foo;
+        -:   72://   foo << 1 << " != " << 2;
+        -:   73://   std::cout << foo;
+        -:   74://
+        -:   75:// will print "1 != 2".
+        -:   76://
+        -:   77:// Message is not intended to be inherited from.  In particular, its
+        -:   78:// destructor is not virtual.
+        -:   79://
+        -:   80:// Note that stringstream behaves differently in gcc and in MSVC.  You
+        -:   81:// can stream a NULL char pointer to it in the former, but not in the
+        -:   82:// latter (it causes an access violation if you do).  The Message
+        -:   83:// class hides this difference by treating a NULL char pointer as
+        -:   84:// "(null)".
+function _ZN7testing7MessageD1Ev called 0 returned 0% blocks executed 0%
+    #####:   85:class GTEST_API_ Message {
+    $$$$$:   85-block  0
+    $$$$$:   85-block  1
+call    0 never executed
+        -:   86: private:
+        -:   87:  // The type of basic IO manipulators (endl, ends, and flush) for
+        -:   88:  // narrow streams.
+        -:   89:  typedef std::ostream& (*BasicNarrowIoManip)(std::ostream&);
+        -:   90:
+        -:   91: public:
+        -:   92:  // Constructs an empty Message.
+        -:   93:  Message();
+        -:   94:
+        -:   95:  // Copy constructor.
+function _ZN7testing7MessageC1ERKS0_ called 0 returned 0% blocks executed 0%
+    #####:   96:  Message(const Message& msg) : ss_(new ::std::stringstream) {  // NOLINT
+    $$$$$:   96-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    $$$$$:   96-block  1
+call    4 never executed
+    %%%%%:   96-block  2
+call    5 never executed
+call    6 never executed
+    %%%%%:   96-block  3
+call    7 never executed
+    #####:   97:    *ss_ << msg.GetString();
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    $$$$$:   97-block  0
+call    3 never executed
+call    4 never executed
+branch  5 never executed
+branch  6 never executed
+    $$$$$:   97-block  1
+call    7 never executed
+    %%%%%:   97-block  2
+call    8 never executed
+    #####:   98:  }
+        -:   99:
+        -:  100:  // Constructs a Message from a C-string.
+        -:  101:  explicit Message(const char* str) : ss_(new ::std::stringstream) {
+        -:  102:    *ss_ << str;
+        -:  103:  }
+        -:  104:
+        -:  105:#if GTEST_OS_SYMBIAN
+        -:  106:  // Streams a value (either a pointer or not) to this object.
+        -:  107:  template <typename T>
+        -:  108:  inline Message& operator <<(const T& value) {
+        -:  109:    StreamHelper(typename internal::is_pointer<T>::type(), value);
+        -:  110:    return *this;
+        -:  111:  }
+        -:  112:#else
+        -:  113:  // Streams a non-pointer value to this object.
+        -:  114:  template <typename T>
+function _ZN7testing7MessagelsIjEERS0_RKT_ called 0 returned 0% blocks executed 0%
+function _ZN7testing7MessagelsIxEERS0_RKT_ called 48 returned 100% blocks executed 100%
+function _ZN7testing7MessagelsIA4096_cEERS0_RKT_ called 0 returned 0% blocks executed 0%
+function _ZN7testing7MessagelsIA29_cEERS0_RKT_ called 0 returned 0% blocks executed 0%
+function _ZN7testing7MessagelsIdEERS0_RKT_ called 0 returned 0% blocks executed 0%
+function _ZN7testing7MessagelsIA14_cEERS0_RKT_ called 0 returned 0% blocks executed 0%
+function _ZN7testing7MessagelsIA34_cEERS0_RKT_ called 0 returned 0% blocks executed 0%
+function _ZN7testing7MessagelsIA20_cEERS0_RKT_ called 0 returned 0% blocks executed 0%
+function _ZN7testing7MessagelsIA50_cEERS0_RKT_ called 0 returned 0% blocks executed 0%
+function _ZN7testing7MessagelsIS0_EERS0_RKT_ called 0 returned 0% blocks executed 0%
+function _ZN7testing7MessagelsIA38_cEERS0_RKT_ called 0 returned 0% blocks executed 0%
+function _ZN7testing7MessagelsIA27_cEERS0_RKT_ called 0 returned 0% blocks executed 0%
+function _ZN7testing7MessagelsIA32_cEERS0_RKT_ called 0 returned 0% blocks executed 0%
+function _ZN7testing7MessagelsIA23_cEERS0_RKT_ called 0 returned 0% blocks executed 0%
+function _ZN7testing7MessagelsIA51_cEERS0_RKT_ called 0 returned 0% blocks executed 0%
+function _ZN7testing7MessagelsIA47_cEERS0_RKT_ called 0 returned 0% blocks executed 0%
+function _ZN7testing7MessagelsIA28_cEERS0_RKT_ called 0 returned 0% blocks executed 0%
+function _ZN7testing7MessagelsIA256_cEERS0_RKT_ called 0 returned 0% blocks executed 0%
+function _ZN7testing7MessagelsIA25_cEERS0_RKT_ called 0 returned 0% blocks executed 0%
+function _ZN7testing7MessagelsIA21_cEERS0_RKT_ called 0 returned 0% blocks executed 0%
+function _ZN7testing7MessagelsIA48_cEERS0_RKT_ called 0 returned 0% blocks executed 0%
+function _ZN7testing7MessagelsIA9_cEERS0_RKT_ called 0 returned 0% blocks executed 0%
+function _ZN7testing7MessagelsIA19_cEERS0_RKT_ called 0 returned 0% blocks executed 0%
+function _ZN7testing7MessagelsIA17_cEERS0_RKT_ called 0 returned 0% blocks executed 0%
+function _ZN7testing7MessagelsIA41_cEERS0_RKT_ called 0 returned 0% blocks executed 0%
+function _ZN7testing7MessagelsIA8_cEERS0_RKT_ called 0 returned 0% blocks executed 0%
+function _ZN7testing7MessagelsIA7_cEERS0_RKT_ called 17 returned 100% blocks executed 100%
+function _ZN7testing7MessagelsIA68_cEERS0_RKT_ called 0 returned 0% blocks executed 0%
+function _ZN7testing7MessagelsIA37_cEERS0_RKT_ called 0 returned 0% blocks executed 0%
+function _ZN7testing7MessagelsIA22_cEERS0_RKT_ called 0 returned 0% blocks executed 0%
+function _ZN7testing7MessagelsIA33_cEERS0_RKT_ called 0 returned 0% blocks executed 0%
+function _ZN7testing7MessagelsIA63_cEERS0_RKT_ called 0 returned 0% blocks executed 0%
+function _ZN7testing7MessagelsIA31_cEERS0_RKT_ called 0 returned 0% blocks executed 0%
+function _ZN7testing7MessagelsIA62_cEERS0_RKT_ called 0 returned 0% blocks executed 0%
+function _ZN7testing7MessagelsIA39_cEERS0_RKT_ called 0 returned 0% blocks executed 0%
+function _ZN7testing7MessagelsIA30_cEERS0_RKT_ called 0 returned 0% blocks executed 0%
+function _ZN7testing7MessagelsIA6_cEERS0_RKT_ called 0 returned 0% blocks executed 0%
+function _ZN7testing7MessagelsIA24_cEERS0_RKT_ called 0 returned 0% blocks executed 0%
+function _ZN7testing7MessagelsIA59_cEERS0_RKT_ called 0 returned 0% blocks executed 0%
+function _ZN7testing7MessagelsIA64_cEERS0_RKT_ called 0 returned 0% blocks executed 0%
+function _ZN7testing7MessagelsIA18_cEERS0_RKT_ called 0 returned 0% blocks executed 0%
+function _ZN7testing7MessagelsIA40_cEERS0_RKT_ called 0 returned 0% blocks executed 0%
+function _ZN7testing7MessagelsIA5_cEERS0_RKT_ called 0 returned 0% blocks executed 0%
+function _ZN7testing7MessagelsIA3_cEERS0_RKT_ called 0 returned 0% blocks executed 0%
+function _ZN7testing7MessagelsIA12_cEERS0_RKT_ called 2 returned 100% blocks executed 100%
+function _ZN7testing7MessagelsIA13_cEERS0_RKT_ called 0 returned 0% blocks executed 0%
+function _ZN7testing7MessagelsIA15_cEERS0_RKT_ called 0 returned 0% blocks executed 0%
+function _ZN7testing7MessagelsIA16_cEERS0_RKT_ called 0 returned 0% blocks executed 0%
+function _ZN7testing7MessagelsIA4_cEERS0_RKT_ called 0 returned 0% blocks executed 0%
+function _ZN7testing7MessagelsIA35_cEERS0_RKT_ called 0 returned 0% blocks executed 0%
+function _ZN7testing7MessagelsIcEERS0_RKT_ called 310 returned 100% blocks executed 100%
+function _ZN7testing7MessagelsINS_14TestPartResultEEERS0_RKT_ called 0 returned 0% blocks executed 0%
+function _ZN7testing7MessagelsIA10_cEERS0_RKT_ called 0 returned 0% blocks executed 0%
+function _ZN7testing7MessagelsIiEERS0_RKT_ called 29 returned 100% blocks executed 100%
+function _ZN7testing7MessagelsIA2_cEERS0_RKT_ called 1 returned 100% blocks executed 100%
+function _ZN7testing7MessagelsINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEERS0_RKT_ called 2 returned 100% blocks executed 100%
+function _ZN7testing7MessagelsIA11_cEERS0_RKT_ called 1 returned 100% blocks executed 100%
+      410:  115:  inline Message& operator <<(const T& val) {
+    $$$$$:  115-block  0
+       48:  115-block  1
+    $$$$$:  115-block  2
+    $$$$$:  115-block  3
+    $$$$$:  115-block  4
+    $$$$$:  115-block  5
+    $$$$$:  115-block  6
+    $$$$$:  115-block  7
+    $$$$$:  115-block  8
+    $$$$$:  115-block  9
+    $$$$$:  115-block 10
+    $$$$$:  115-block 11
+    $$$$$:  115-block 12
+    $$$$$:  115-block 13
+    $$$$$:  115-block 14
+    $$$$$:  115-block 15
+    $$$$$:  115-block 16
+    $$$$$:  115-block 17
+    $$$$$:  115-block 18
+    $$$$$:  115-block 19
+    $$$$$:  115-block 20
+    $$$$$:  115-block 21
+    $$$$$:  115-block 22
+    $$$$$:  115-block 23
+    $$$$$:  115-block 24
+    $$$$$:  115-block 25
+       17:  115-block 26
+    $$$$$:  115-block 27
+    $$$$$:  115-block 28
+    $$$$$:  115-block 29
+    $$$$$:  115-block 30
+    $$$$$:  115-block 31
+    $$$$$:  115-block 32
+    $$$$$:  115-block 33
+    $$$$$:  115-block 34
+    $$$$$:  115-block 35
+    $$$$$:  115-block 36
+    $$$$$:  115-block 37
+    $$$$$:  115-block 38
+    $$$$$:  115-block 39
+    $$$$$:  115-block 40
+    $$$$$:  115-block 41
+    $$$$$:  115-block 42
+    $$$$$:  115-block 43
+        2:  115-block 44
+    $$$$$:  115-block 45
+    $$$$$:  115-block 46
+    $$$$$:  115-block 47
+    $$$$$:  115-block 48
+    $$$$$:  115-block 49
+      310:  115-block 50
+    $$$$$:  115-block 51
+    $$$$$:  115-block 52
+       29:  115-block 53
+        1:  115-block 54
+        2:  115-block 55
+        1:  115-block 56
+        -:  116:    // Some libraries overload << for STL containers.  These
+        -:  117:    // overloads are defined in the global namespace instead of ::std.
+        -:  118:    //
+        -:  119:    // C++'s symbol lookup rule (i.e. Koenig lookup) says that these
+        -:  120:    // overloads are visible in either the std namespace or the global
+        -:  121:    // namespace, but not other namespaces, including the testing
+        -:  122:    // namespace which Google Test's Message class is in.
+        -:  123:    //
+        -:  124:    // To allow STL containers (and other types that has a << operator
+        -:  125:    // defined in the global namespace) to be used in Google Test
+        -:  126:    // assertions, testing::Message must access the custom << operator
+        -:  127:    // from the global namespace.  With this using declaration,
+        -:  128:    // overloads of << defined in the global namespace and those
+        -:  129:    // visible via Koenig lookup are both exposed in this function.
+        -:  130:    using ::operator <<;
+      410:  131:    *ss_ << val;
+    $$$$$:  131-block  0
+call    0 never executed
+call    1 never executed
+       48:  131-block  1
+call    2 returned 48
+call    3 returned 48
+    $$$$$:  131-block  2
+call    4 never executed
+call    5 never executed
+    $$$$$:  131-block  3
+call    6 never executed
+call    7 never executed
+    $$$$$:  131-block  4
+call    8 never executed
+call    9 never executed
+    $$$$$:  131-block  5
+call   10 never executed
+call   11 never executed
+    $$$$$:  131-block  6
+call   12 never executed
+call   13 never executed
+    $$$$$:  131-block  7
+call   14 never executed
+call   15 never executed
+    $$$$$:  131-block  8
+call   16 never executed
+call   17 never executed
+    $$$$$:  131-block  9
+call   18 never executed
+call   19 never executed
+    $$$$$:  131-block 10
+call   20 never executed
+call   21 never executed
+    $$$$$:  131-block 11
+call   22 never executed
+call   23 never executed
+    $$$$$:  131-block 12
+call   24 never executed
+call   25 never executed
+    $$$$$:  131-block 13
+call   26 never executed
+call   27 never executed
+    $$$$$:  131-block 14
+call   28 never executed
+call   29 never executed
+    $$$$$:  131-block 15
+call   30 never executed
+call   31 never executed
+    $$$$$:  131-block 16
+call   32 never executed
+call   33 never executed
+    $$$$$:  131-block 17
+call   34 never executed
+call   35 never executed
+    $$$$$:  131-block 18
+call   36 never executed
+call   37 never executed
+    $$$$$:  131-block 19
+call   38 never executed
+call   39 never executed
+    $$$$$:  131-block 20
+call   40 never executed
+call   41 never executed
+    $$$$$:  131-block 21
+call   42 never executed
+call   43 never executed
+    $$$$$:  131-block 22
+call   44 never executed
+call   45 never executed
+    $$$$$:  131-block 23
+call   46 never executed
+call   47 never executed
+    $$$$$:  131-block 24
+call   48 never executed
+call   49 never executed
+    $$$$$:  131-block 25
+call   50 never executed
+call   51 never executed
+       17:  131-block 26
+call   52 returned 17
+call   53 returned 17
+    $$$$$:  131-block 27
+call   54 never executed
+call   55 never executed
+    $$$$$:  131-block 28
+call   56 never executed
+call   57 never executed
+    $$$$$:  131-block 29
+call   58 never executed
+call   59 never executed
+    $$$$$:  131-block 30
+call   60 never executed
+call   61 never executed
+    $$$$$:  131-block 31
+call   62 never executed
+call   63 never executed
+    $$$$$:  131-block 32
+call   64 never executed
+call   65 never executed
+    $$$$$:  131-block 33
+call   66 never executed
+call   67 never executed
+    $$$$$:  131-block 34
+call   68 never executed
+call   69 never executed
+    $$$$$:  131-block 35
+call   70 never executed
+call   71 never executed
+    $$$$$:  131-block 36
+call   72 never executed
+call   73 never executed
+    $$$$$:  131-block 37
+call   74 never executed
+call   75 never executed
+    $$$$$:  131-block 38
+call   76 never executed
+call   77 never executed
+    $$$$$:  131-block 39
+call   78 never executed
+call   79 never executed
+    $$$$$:  131-block 40
+call   80 never executed
+call   81 never executed
+    $$$$$:  131-block 41
+call   82 never executed
+call   83 never executed
+    $$$$$:  131-block 42
+call   84 never executed
+call   85 never executed
+    $$$$$:  131-block 43
+call   86 never executed
+call   87 never executed
+        2:  131-block 44
+call   88 returned 2
+call   89 returned 2
+    $$$$$:  131-block 45
+call   90 never executed
+call   91 never executed
+    $$$$$:  131-block 46
+call   92 never executed
+call   93 never executed
+    $$$$$:  131-block 47
+call   94 never executed
+call   95 never executed
+    $$$$$:  131-block 48
+call   96 never executed
+call   97 never executed
+    $$$$$:  131-block 49
+call   98 never executed
+call   99 never executed
+      310:  131-block 50
+call   100 returned 310
+call   101 returned 310
+    $$$$$:  131-block 51
+call   102 never executed
+call   103 never executed
+    $$$$$:  131-block 52
+call   104 never executed
+call   105 never executed
+       29:  131-block 53
+call   106 returned 29
+call   107 returned 29
+        1:  131-block 54
+call   108 returned 1
+call   109 returned 1
+        2:  131-block 55
+call   110 returned 2
+call   111 returned 2
+        1:  131-block 56
+call   112 returned 1
+call   113 returned 1
+      410:  132:    return *this;
+        -:  133:  }
+        -:  134:
+        -:  135:  // Streams a pointer value to this object.
+        -:  136:  //
+        -:  137:  // This function is an overload of the previous one.  When you
+        -:  138:  // stream a pointer to a Message, this definition will be used as it
+        -:  139:  // is more specialized.  (The C++ Standard, section
+        -:  140:  // [temp.func.order].)  If you stream a non-pointer, then the
+        -:  141:  // previous definition will be used.
+        -:  142:  //
+        -:  143:  // The reason for this overload is that streaming a NULL pointer to
+        -:  144:  // ostream is undefined behavior.  Depending on the compiler, you
+        -:  145:  // may get "0", "(nil)", "(null)", or an access violation.  To
+        -:  146:  // ensure consistent result across compilers, we always treat NULL
+        -:  147:  // as "(null)".
+        -:  148:  template <typename T>
+function _ZN7testing7MessagelsIcEERS0_RKPT_ called 3 returned 100% blocks executed 71%
+function _ZN7testing7MessagelsIKcEERS0_RKPT_ called 22 returned 100% blocks executed 71%
+       25:  149:  inline Message& operator <<(T* const& pointer) {  // NOLINT
+        3:  149-block  0
+       22:  149-block  1
+       25:  150:    if (pointer == NULL) {
+        3:  150-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 3
+       22:  150-block  1
+branch  2 taken 0 (fallthrough)
+branch  3 taken 22
+    #####:  151:      *ss_ << "(null)";
+    $$$$$:  151-block  0
+call    0 never executed
+call    1 never executed
+    $$$$$:  151-block  1
+call    2 never executed
+call    3 never executed
+        -:  152:    } else {
+       25:  153:      *ss_ << pointer;
+        3:  153-block  0
+call    0 returned 3
+call    1 returned 3
+       22:  153-block  1
+call    2 returned 22
+call    3 returned 22
+        -:  154:    }
+       25:  155:    return *this;
+        3:  155-block  0
+       22:  155-block  1
+        -:  156:  }
+        -:  157:#endif  // GTEST_OS_SYMBIAN
+        -:  158:
+        -:  159:  // Since the basic IO manipulators are overloaded for both narrow
+        -:  160:  // and wide streams, we have to provide this specialized definition
+        -:  161:  // of operator <<, even though its body is the same as the
+        -:  162:  // templatized version above.  Without this definition, streaming
+        -:  163:  // endl or other basic IO manipulators to Message will confuse the
+        -:  164:  // compiler.
+        -:  165:  Message& operator <<(BasicNarrowIoManip val) {
+        -:  166:    *ss_ << val;
+        -:  167:    return *this;
+        -:  168:  }
+        -:  169:
+        -:  170:  // Instead of 1/0, we want to see true/false for bool values.
+        -:  171:  Message& operator <<(bool b) {
+        -:  172:    return *this << (b ? "true" : "false");
+        -:  173:  }
+        -:  174:
+        -:  175:  // These two overloads allow streaming a wide C string to a Message
+        -:  176:  // using the UTF-8 encoding.
+        -:  177:  Message& operator <<(const wchar_t* wide_c_str);
+        -:  178:  Message& operator <<(wchar_t* wide_c_str);
+        -:  179:
+        -:  180:#if GTEST_HAS_STD_WSTRING
+        -:  181:  // Converts the given wide string to a narrow string using the UTF-8
+        -:  182:  // encoding, and streams the result to this Message object.
+        -:  183:  Message& operator <<(const ::std::wstring& wstr);
+        -:  184:#endif  // GTEST_HAS_STD_WSTRING
+        -:  185:
+        -:  186:#if GTEST_HAS_GLOBAL_WSTRING
+        -:  187:  // Converts the given wide string to a narrow string using the UTF-8
+        -:  188:  // encoding, and streams the result to this Message object.
+        -:  189:  Message& operator <<(const ::wstring& wstr);
+        -:  190:#endif  // GTEST_HAS_GLOBAL_WSTRING
+        -:  191:
+        -:  192:  // Gets the text streamed to this object so far as an std::string.
+        -:  193:  // Each '\0' character in the buffer is replaced with "\\0".
+        -:  194:  //
+        -:  195:  // INTERNAL IMPLEMENTATION - DO NOT USE IN A USER PROGRAM.
+        -:  196:  std::string GetString() const;
+        -:  197:
+        -:  198: private:
+        -:  199:#if GTEST_OS_SYMBIAN
+        -:  200:  // These are needed as the Nokia Symbian Compiler cannot decide between
+        -:  201:  // const T& and const T* in a function template. The Nokia compiler _can_
+        -:  202:  // decide between class template specializations for T and T*, so a
+        -:  203:  // tr1::type_traits-like is_pointer works, and we can overload on that.
+        -:  204:  template <typename T>
+        -:  205:  inline void StreamHelper(internal::true_type /*is_pointer*/, T* pointer) {
+        -:  206:    if (pointer == NULL) {
+        -:  207:      *ss_ << "(null)";
+        -:  208:    } else {
+        -:  209:      *ss_ << pointer;
+        -:  210:    }
+        -:  211:  }
+        -:  212:  template <typename T>
+        -:  213:  inline void StreamHelper(internal::false_type /*is_pointer*/,
+        -:  214:                           const T& value) {
+        -:  215:    // See the comments in Message& operator <<(const T&) above for why
+        -:  216:    // we need this using statement.
+        -:  217:    using ::operator <<;
+        -:  218:    *ss_ << value;
+        -:  219:  }
+        -:  220:#endif  // GTEST_OS_SYMBIAN
+        -:  221:
+        -:  222:  // We'll hold the text streamed to this object here.
+        -:  223:  const internal::scoped_ptr< ::std::stringstream> ss_;
+        -:  224:
+        -:  225:  // We declare (but don't implement) this to prevent the compiler
+        -:  226:  // from implementing the assignment operator.
+        -:  227:  void operator=(const Message&);
+        -:  228:};
+        -:  229:
+        -:  230:// Streams a Message to an ostream.
+function _ZN7testinglsERSoRKNS_7MessageE called 0 returned 0% blocks executed 0%
+    #####:  231:inline std::ostream& operator <<(std::ostream& os, const Message& sb) {
+    $$$$$:  231-block  0
+    #####:  232:  return os << sb.GetString();
+    $$$$$:  232-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    $$$$$:  232-block  1
+call    4 never executed
+    $$$$$:  232-block  2
+    %%%%%:  232-block  3
+call    5 never executed
+        -:  233:}
+        -:  234:
+        -:  235:namespace internal {
+        -:  236:
+        -:  237:// Converts a streamable value to an std::string.  A NULL pointer is
+        -:  238:// converted to "(null)".  When the input value is a ::string,
+        -:  239:// ::std::string, ::wstring, or ::std::wstring object, each NUL
+        -:  240:// character in it is replaced with "\\0".
+        -:  241:template <typename T>
+function _ZN7testing8internal18StreamableToStringIPwEENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKT_ called 0 returned 0% blocks executed 0%
+function _ZN7testing8internal18StreamableToStringIPcEENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKT_ called 3 returned 100% blocks executed 89%
+function _ZN7testing8internal18StreamableToStringIjEENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKT_ called 0 returned 0% blocks executed 0%
+function _ZN7testing8internal18StreamableToStringIxEENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKT_ called 48 returned 100% blocks executed 89%
+function _ZN7testing8internal18StreamableToStringIiEENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKT_ called 29 returned 100% blocks executed 89%
+       80:  242:std::string StreamableToString(const T& streamable) {
+    $$$$$:  242-block  0
+        3:  242-block  1
+    $$$$$:  242-block  2
+       48:  242-block  3
+       29:  242-block  4
+       80:  243:  return (Message() << streamable).GetString();
+    $$$$$:  243-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    $$$$$:  243-block  1
+call    4 never executed
+branch  5 never executed
+branch  6 never executed
+    $$$$$:  243-block  2
+    $$$$$:  243-block  3
+call    7 never executed
+    $$$$$:  243-block  4
+    %%%%%:  243-block  5
+call    8 never executed
+        3:  243-block  6
+call    9 returned 3
+call   10 returned 3
+branch 11 taken 3 (fallthrough)
+branch 12 taken 0 (throw)
+        3:  243-block  7
+call   13 returned 3
+branch 14 taken 3 (fallthrough)
+branch 15 taken 0 (throw)
+        3:  243-block  8
+        3:  243-block  9
+call   16 returned 3
+        3:  243-block 10
+    %%%%%:  243-block 11
+call   17 never executed
+    $$$$$:  243-block 12
+call   18 never executed
+call   19 never executed
+branch 20 never executed
+branch 21 never executed
+    $$$$$:  243-block 13
+call   22 never executed
+branch 23 never executed
+branch 24 never executed
+    $$$$$:  243-block 14
+    $$$$$:  243-block 15
+call   25 never executed
+    $$$$$:  243-block 16
+    %%%%%:  243-block 17
+call   26 never executed
+       48:  243-block 18
+call   27 returned 48
+call   28 returned 48
+branch 29 taken 48 (fallthrough)
+branch 30 taken 0 (throw)
+       48:  243-block 19
+call   31 returned 48
+branch 32 taken 48 (fallthrough)
+branch 33 taken 0 (throw)
+       48:  243-block 20
+       48:  243-block 21
+call   34 returned 48
+       48:  243-block 22
+    %%%%%:  243-block 23
+call   35 never executed
+       29:  243-block 24
+call   36 returned 29
+call   37 returned 29
+branch 38 taken 29 (fallthrough)
+branch 39 taken 0 (throw)
+       29:  243-block 25
+call   40 returned 29
+branch 41 taken 29 (fallthrough)
+branch 42 taken 0 (throw)
+       29:  243-block 26
+       29:  243-block 27
+call   43 returned 29
+       29:  243-block 28
+    %%%%%:  243-block 29
+call   44 never executed
+        -:  244:}
+        -:  245:
+        -:  246:}  // namespace internal
+        -:  247:}  // namespace testing
+        -:  248:
+        -:  249:#endif  // GTEST_INCLUDE_GTEST_GTEST_MESSAGE_H_

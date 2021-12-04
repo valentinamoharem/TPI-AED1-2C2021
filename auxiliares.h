@@ -57,13 +57,14 @@ int cantidadHabitantes (int codusu, eph_i ti);
 
 void ordenarPorRegion(eph_h &th);
 
-void ordenarPorCODUSU(eph_h &th);
+void ordenarPorCODUSUYRegion(eph_h &th);
 
 void ordenarIndividuosPorCODUSUDeHogar(eph_h &th, eph_i &ti);
 
 void ordenarIndividuosPorComponente(eph_i &ti);
 
 // Auxiliares Problema 8
+
 int ingresos(hogar h, eph_i ti);
 
 vector<hogar> sacarRepetidos(eph_h th,eph_i ti);
@@ -72,11 +73,7 @@ void ordenarPorIngresos(eph_h &th, eph_i ti);
 
 int diferenciaDeIngresos(hogar h1, hogar h2, eph_i ti);
 
-vector<int> filtrarDiferencias(vector<int> diferencias, eph_h th, eph_i ti);
-
 vector<hogar> listaHogaresConMismaDiferencia(eph_h th, eph_i ti,vector<int> diferencias);
-
-vector<hogar> listaHogaresConMismaDiferenciaALT(eph_h th, eph_i ti, vector<int> diferencias);
 
 vector<int> buscarDiferencias(eph_h th, eph_i ti);
 

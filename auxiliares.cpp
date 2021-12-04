@@ -3,22 +3,10 @@
 #include "gtest/gtest.h"
 #include "ejercicios.h"
 
-bool trabaja(individuo i) {
-    return i[ESTADO] == OCUPADO;
-}
+// Auxiliares Problema 1
 
 bool esSuHogar(hogar h, individuo i){
     return h[HOGCODUSU]==i[INDCODUSU];
-}
-
-int cantidadHabitantes (int codusu, eph_i ti) {
-    int habitantes = 0;
-    for(int i = 0; i < ti.size(); i++){
-        if (codusu == ti[i][INDCODUSU]){
-            habitantes++;
-        }
-    }
-    return habitantes;
 }
 
 bool esCasa (hogar h){
@@ -94,7 +82,7 @@ bool hayIndividuoConCodigo (eph_i ti, int c){
 bool hayHogarConCodigo (eph_h th, int c){
     bool tieneCodigo = false;
     for(int i = 0; i<th.size(); i++){
-        if(hogarEnTabla(th[i], th) && th[i][HOGCODUSU]==c){
+        if(hogarEnTabla(th[i], th) && th[i][HOGCODUSU] == c){
             tieneCodigo = true;
         };
     }
@@ -104,9 +92,9 @@ bool hayHogarConCodigo (eph_h th, int c){
 bool hayIndividuosSinHogares (eph_i ti, eph_h th){
     bool res = false;
     for(int i = 0; i<ti.size() && individuoEnTabla(ti[i], ti); i++){
-        if(!(hayHogarConCodigo(ti, ti[i][INDCODUSU]))){
+        if(!hayHogarConCodigo(th, ti[i][INDCODUSU])){
             res = true;
-        };
+        }
     }
     return res;
 }
@@ -233,189 +221,9 @@ bool valoresEnRangoH(eph_h th){
     return valoresEnRango;
 }
 
-int ingresos (hogar h, eph_i ti) {
-    int cantidad = 0;
-    for (int i = 0; i < ti.size(); i++) {
-        if(ti[i][INDCODUSU] == h[HOGCODUSU] && ti[i][p47T] > -1){
-            cantidad += ti[i][p47T];
-        }
-    }
-    return cantidad;
-}
+// Auxiliares Problema 2
 
-int apariciones(vector<int> v, int x) {
-    int res = 0;
-    for(int i = 0; i < v.size(); i++){
-        if(v[i] == x){
-            res++;
-        }
-    }
-    return res;
-}
-
-int masApariciones(vector<int> v){
-    int res = 0;
-    for(int i = 0; i < v.size(); i++){
-        if(apariciones(v, v[i]) > res){
-            res = v[i];
-        }
-    }
-    return res;
-}
-
-int diferenciaDeIngresos(hogar h1, hogar h2, eph_i ti){
-    return ingresos(h2,ti) - ingresos(h1,ti);
-}
-
-vector<hogar> paresDeHogaresQueCumplen(int dif, eph_h th, eph_i ti){
-    vector<hogar> res;
-    for(int i = 0; i < th.size() - 1; i++) {
-        if(diferenciaDeIngresos(th[i],th[i+1],ti) == dif){
-            res.push_back(th[i]);
-            res.push_back(th[i+1]);
-        }
-    }
-    return res;
-}
-
-vector<hogar> listaHogaresConMismaDiferencia(eph_h th, eph_i ti,vector<int> diferencias){
-    vector<hogar> res;
-    int max = 0;
-    for(int i = 0; i < diferencias.size(); i++){
-        vector<hogar> aux;
-        for(int j = 0; j < th.size(); j++){
-            aux.push_back(th[j]);
-            for(int k = j+1; k < th.size(); k++){
-                if(diferenciaDeIngresos(aux[aux.size()-1],th[k],ti) == diferencias[i]){
-                    aux.push_back(th[k]);
-                }
-            }
-        }
-        if(aux.size() > max){
-            max = aux.size();
-            res = aux;
-        }
-    }
-    return res;
-};
-
-vector<int> buscarDiferencias(eph_h th, eph_i ti){
-    vector<int> diferencias;
-    for(int i = 0; i < th.size(); i++) {
-        for(int j = i+1; j < th.size(); j++) {
-            if (diferenciaDeIngresos(th[i], th[j], ti) > 0 && apariciones(diferencias,diferenciaDeIngresos(th[i], th[j], ti)) == 0) {
-                diferencias.push_back(diferenciaDeIngresos(th[i], th[j], ti));
-            }
-        }
-    }
-    return diferencias;
-}
-
-vector<hogar> hogaresQueCumplenDiferencia(hogar h, int pos, eph_h th, eph_i ti, int dif){
-    vector<hogar> res = {h};
-    for(int k = pos+1; k < th.size(); k++){
-        if(diferenciaDeIngresos(res[res.size()-1],th[k],ti) == dif){
-            res.push_back(th[k]);
-        }
-    }
-    return res;
-}
-
-vector<hogar> listaHogaresConMismaDiferenciaALT(eph_h th, eph_i ti, vector<int> diferencias){
-    vector<hogar> res;
-    int max = 2;
-    for(int i = 0; i < diferencias.size(); i++){
-        vector<hogar> aux;
-        for(int j = 0; j < th.size(); j++){
-            aux = hogaresQueCumplenDiferencia(th[j],j,th,ti,diferencias[i]);
-            if(aux.size() > max){
-                max = aux.size();
-                res = aux;
-            }
-        }
-    }
-    return res;
-};
-
-bool todosConMismaDiferencia(vector<hogar> lista, eph_i ti){
-    bool res = true;
-    if(lista.size() >= 2){
-        int dif = diferenciaDeIngresos(lista[0],lista[1],ti);
-        for(int i = 0; i < lista.size()-1; i++){
-            if(diferenciaDeIngresos(lista[i],lista[i+1],ti) != dif){
-                res = false;
-            }
-        }
-    }
-    return res;
-}
-
-vector<vector<hogar>> hogaresConMismasDiferencias(vector<vector<hogar>> listasDeParesConMismasDiferencias,eph_h th,eph_i ti){
-    vector<vector<hogar>> res;
-
-    for(int i = 0; i < listasDeParesConMismasDiferencias.size(); i++){
-        if(todosConMismaDiferencia(listasDeParesConMismasDiferencias[i],ti)){
-            res.push_back(listasDeParesConMismasDiferencias[i]);
-        }
-    }
-
-    return res;
-}
-
-vector<hogar> hallarListaMasLarga(vector<vector<hogar>> lista){
-    vector<hogar> res;
-    vector<hogar> masLarga = lista[0];
-
-    if(lista.size() < 2){
-        return lista[0];
-    }
-
-    for(int i = 0; i < lista.size(); i++){
-        if(lista[i].size() > masLarga.size()){
-            masLarga = lista[i];
-        }
-    }
-
-    if(masLarga.size() < 3){
-        res = {};
-    } else {
-        res = masLarga;
-    }
-
-    return res;
-}
-
-vector<int> filtrarDiferencias(vector<int> diferencias, eph_h th, eph_i ti){
-    vector<int> res;
-    for(int i = 0; i < diferencias.size(); i++) {
-        if(apariciones(diferencias, diferencias[i]) > 1){
-            res.push_back(diferencias[i]);
-        }
-    }
-    return res;
-}
-
-vector<hogar> sacarRepetidos(eph_h th,eph_i ti){
-    vector<hogar> res = {th[0]};
-    for(int i = 1; i < th.size(); i++){
-        if(diferenciaDeIngresos(th[i-1],th[i],ti) != 0){
-            res.push_back(th[i]);
-        }
-    }
-    return res;
-}
-
-int cantHogaresCasaConNHabitaciones (eph_h th, int region, int habitaciones){
-    int i=0;
-    int cantidad = 0;
-    while(i<th.size()){
-        if(esCasa(th[i]) && th[i][IV2]==habitaciones && th[i][REGION]==region){
-            cantidad++;
-        }
-        i++;
-    }
-    return cantidad;
-}
+// Auxiliares Problema 3
 
 bool esHogarValido(hogar h, int region) {
     return (h[IV1] == 1 && h[REGION] == region && h[MAS_500] == 0);
@@ -451,6 +259,12 @@ float proporcionCasasConHC(eph_h th, eph_i ti, int region) {
         res = cantidadHogaresValidosConHC(th, ti, region)/cantidadHogaresValidos(th, ti, region);
     }
     return res;
+}
+
+// Auxiliares Problema 4
+
+bool trabaja(individuo i) {
+    return i[ESTADO] == OCUPADO;
 }
 
 hogar suHogar(individuo i, eph_h th){
@@ -497,6 +311,219 @@ float proporcionTeleworking(eph_h th, eph_i ti) {
     return individuosQueTrabajan(th, ti) > 0 ? individuosTeleworking(th, ti)/individuosQueTrabajan(th, ti) : 0;
 }
 
+// Auxiliares Problema 5
+
+int cantidadHabitantes (int codusu, eph_i ti) {
+    int habitantes = 0;
+    for(int i = 0; i < ti.size(); i++){
+        if (codusu == ti[i][INDCODUSU]){
+            habitantes++;
+        }
+    }
+    return habitantes;
+}
+
+// Auxiliares Problema 6
+
+// Auxiliares Problema 7
+
+int hallarMinRegion(eph_h &th, int d, int h){
+    int min = d;
+    for (int i = d + 1; i < h; i++){
+        if (th[i][REGION] <= th[min][REGION]){
+            min = i;
+        }
+    }
+    return min;
+}
+
+void swap(eph_h &th, int i, int j){
+    hogar aux = th[i];
+    th[i] = th[j];
+    th[j] = aux;
+}
+
+void swapInd(eph_i &ti, int i, int j){
+    individuo aux = ti[i];
+    ti[i] = ti[j];
+    ti[j] = aux;
+}
+
+void ordenarPorRegion(eph_h &th) {
+    for (int i = 0; i < th.size() - 1; i++){
+        int minRegion = hallarMinRegion(th, i, th.size());
+        swap(th, i, minRegion);
+    }
+}
+
+int findMinCODUSU(vector<hogar> &s, int d, int h){
+    int min = d;
+    for(int i = d + 1; i < h; i++){
+        if(s[i][HOGCODUSU] < s[min][HOGCODUSU] && s[i][REGION] == s[min][REGION]){
+            min = i;
+        }
+    }
+    return min;
+}
+
+void swapHog(vector<hogar> &s, int i, int j){
+    hogar aux = s[i];
+    s[i] = s[j];
+    s[j] = aux;
+}
+
+void ordenarPorCODUSUYRegion(eph_h &th) {
+    if(th.size() > 0){
+        for(int i = 0; i < th.size(); i++){
+            int minPos = findMinCODUSU(th, i, th.size());
+            swapHog(th, i, minPos);
+        }
+    }
+}
+
+int posicionDeHogar(eph_h th, int codusu){
+    int res;
+    for(int i = 0; i < th.size(); i++){
+        if(codusu == th[i][HOGCODUSU]){
+            res = i;
+        }
+    }
+    return res;
+}
+
+int findMinPosicionHogar(vector<individuo> &s, vector<hogar> th, int d, int h){
+    int min = d;
+    for(int i = d + 1; i < h; i++){
+        if(posicionDeHogar(th, s[i][INDCODUSU]) <= posicionDeHogar(th, s[min][INDCODUSU])){
+            min = i;
+        }
+    }
+    return min;
+}
+
+void ordenarIndividuosPorCODUSUDeHogar(eph_h &th, eph_i &ti) {
+    if(th.size() > 0 && ti.size() > 0){
+        for(int i = 0; i < ti.size(); i++){
+            int minPos = findMinPosicionHogar(ti,th,i,ti.size());
+            swapInd(ti,i,minPos);
+        }
+    }
+}
+
+int findMinComponente(vector<individuo> &s, int d, int h){
+    int min = d;
+    for(int i = d + 1; i < h; i++){
+        if(s[i][INDCODUSU] == s[min][INDCODUSU] && s[i][COMPONENTE] <= s[min][COMPONENTE]){
+            min = i;
+        }
+    }
+    return min;
+}
+
+void ordenarIndividuosPorComponente(eph_i &ti) {
+    if(ti.size() > 0){
+        for(int i = 0; i < ti.size(); i++){
+            int minPos = findMinComponente(ti,i,ti.size());
+            swapInd(ti, i, minPos);
+        }
+    }
+}
+
+// Auxiliares Problema 8
+
+vector<hogar> sacarRepetidos(eph_h th,eph_i ti){
+    vector<hogar> res = {th[0]};
+    for(int i = 1; i < th.size(); i++){
+        if(diferenciaDeIngresos(th[i-1],th[i],ti) != 0){
+            res.push_back(th[i]);
+        }
+    }
+    return res;
+}
+
+int apariciones(vector<int> v, int x) {
+    int res = 0;
+    for(int i = 0; i < v.size(); i++){
+        if(v[i] == x){
+            res++;
+        }
+    }
+    return res;
+}
+
+int ingresos (hogar h, eph_i ti) {
+    int cantidad = 0;
+    for (int i = 0; i < ti.size(); i++) {
+        if(ti[i][INDCODUSU] == h[HOGCODUSU] && ti[i][p47T] > -1){
+            cantidad += ti[i][p47T];
+        }
+    }
+    return cantidad;
+}
+
+int hallarMinIngresos(eph_h &th, int d, int h, eph_i ti){
+    int min = d;
+    for (int i = d + 1; i < h; i++){
+        if (ingresos(th[i], ti) <= ingresos(th[min], ti)){
+            min = i;
+        }
+    }
+    return min;
+}
+
+void ordenarPorIngresos(eph_h &th, eph_i ti) {
+    for (int i = 0; i < th.size() - 1; i++){
+        int minIngresos = hallarMinIngresos(th, i, th.size(), ti);
+        swap(th, i, minIngresos);
+    }
+}
+
+int diferenciaDeIngresos(hogar h1, hogar h2, eph_i ti){
+    return ingresos(h2,ti) - ingresos(h1,ti);
+}
+
+vector<int> buscarDiferencias(eph_h th, eph_i ti){
+    vector<int> diferencias;
+    for(int i = 0; i < th.size(); i++) {
+        for(int j = i+1; j < th.size(); j++) {
+            if (diferenciaDeIngresos(th[i], th[j], ti) > 0 && apariciones(diferencias,diferenciaDeIngresos(th[i], th[j], ti)) == 0) {
+                diferencias.push_back(diferenciaDeIngresos(th[i], th[j], ti));
+            }
+        }
+    }
+    return diferencias;
+}
+
+vector<hogar> hogaresQueCumplenDiferencia(hogar h, int pos, eph_h th, eph_i ti, int dif){
+    vector<hogar> res = {h};
+    for(int k = pos+1; k < th.size(); k++){
+        if(diferenciaDeIngresos(res[res.size()-1],th[k],ti) == dif){
+            res.push_back(th[k]);
+        }
+    }
+    return res;
+}
+
+vector<hogar> listaHogaresConMismaDiferencia(eph_h th, eph_i ti, vector<int> diferencias){
+    vector<hogar> res;
+    int max = 2;
+    for(int i = 0; i < diferencias.size(); i++){
+        vector<hogar> aux;
+        for(int j = 0; j < th.size(); j++){
+            aux = hogaresQueCumplenDiferencia(th[j],j,th,ti,diferencias[i]);
+            if(aux.size() > max){
+                max = aux.size();
+                res = aux;
+            }
+        }
+    }
+    return res;
+};
+
+// Auxiliares Problema 9
+
+// Auxiliares Problema 10
+
 double distanciaEuclideana(pair <int ,int> centro, int latitud, int longitud) {
     return sqrt(pow(centro.first - latitud, 2) + pow(centro.second - longitud, 2));
 }
@@ -516,28 +543,7 @@ int cantidadHogaresEnAnillo(int distDesde, int distHasta, pair <int ,int> centro
     return cantidad;
 }
 
-int maximaCantidadHabitaciones (eph_h th, int region){
-    int i =0;
-    int max = th[0][IV2];
-    for (i = 1; i < th.size(); i++){
-        if (th[i][REGION]==region && max<th[i][IV2]){
-            max = th[i][IV2];
-        }
-    }
-    return max;
-}
-
-bool sinRepetidos(vector < par_hi > pair){
-    bool sinRepetidos = false;
-    for(int i=0; i<pair.size()-1; i++){
-        if(pair[i]!=pair[i+1]){
-            sinRepetidos= true;
-        } else {
-            sinRepetidos=false;
-        }
-    }
-    return sinRepetidos;
-}
+// Auxiliares Problema 11
 
 bool cumpleCondicion(individuo &ind, vector<pair<int, dato>> &busqueda) {
     bool res = true;
@@ -547,189 +553,4 @@ bool cumpleCondicion(individuo &ind, vector<pair<int, dato>> &busqueda) {
         }
     }
     return res;
-}
-
-int findMinPosition(vector<int> &s, int d, int h){
-    int min = d;
-    for(int i = d + 1; i < h; i++){
-        if(s[i] <= s[min]){
-            min = i;
-        }
-    }
-    return min;
-}
-
-void swap(vector<int> &s, int i, int j){
-    int aux = s[i];
-    s[i] = s[j];
-    s[j] = aux;
-}
-
-// selection sort
-void ordenar(vector<int> &s){
-    if(s.size() != 0){
-        for(int i = 0; i < s.size() - 1; i++){
-            int minPos = findMinPosition(s, i, s.size());
-            swap(s, i, minPos);
-        }
-    }
-}
-
-bool pertenece(vector<int> v, int n) {
-    bool res = false;
-    for (int i = 0; i < v.size(); i++) {
-        if (v[i] == n) {
-            res = true;
-        }
-    }
-    return res;
-}
-
-int hallarMinRegion(eph_h &th, int d, int h){
-    int min = d;
-    for (int i = d + 1; i < h; i++){
-        if (th[i][REGION] <= th[min][REGION]){
-            min = i;
-        }
-    }
-    return min;
-}
-
-int hallarMinIngresos(eph_h &th, int d, int h, eph_i ti){
-    int min = d;
-    for (int i = d + 1; i < h; i++){
-        if (ingresos(th[i], ti) <= ingresos(th[min], ti)){
-            min = i;
-        }
-    }
-    return min;
-}
-
-int hallarMinHOGCODUSU(eph_h &th, int d, int h){
-    int min = d;
-    for (int i = d + 1; i < h; i++){
-        if(th[i][COMPONENTE] <= th[min][COMPONENTE]){
-            min = i;
-        }
-    }
-    return min;
-}
-
-int hallarMinComponente(eph_i &ti, int d, int h){
-    int min = d;
-    for (int i = d + 1; i < h; i++){
-        if(ti[i][HOGCODUSU] <= ti[min][HOGCODUSU]){
-            min = i;
-        }
-    }
-    return min;
-}
-
-void swap(eph_h &th, int i, int j){
-    hogar aux = th[i];
-    th[i] = th[j];
-    th[j] = aux;
-}
-
-void swapInd(eph_i &ti, int i, int j){
-    individuo aux = ti[i];
-    ti[i] = ti[j];
-    ti[j] = aux;
-}
-
-void ordenarPorIngresos(eph_h &th, eph_i ti) {
-    for (int i = 0; i < th.size() - 1; i++){
-        int minIngresos = hallarMinIngresos(th, i, th.size(), ti);
-        swap(th, i, minIngresos);
-    }
-}
-
-void ordenarPorRegion(eph_h &th) {
-    for (int i = 0; i < th.size() - 1; i++){
-        int minRegion = hallarMinRegion(th, i, th.size());
-        swap(th, i, minRegion);
-    }
-}
-
-void ordenarPorCODUSUPorRegion(eph_h &th) {
-    for (int i = 0; i < th.size() - 1; i++){
-        int minCODUSU = hallarMinHOGCODUSU(th, i, th.size());
-        swap(th, i, minCODUSU);
-    }
-}
-
-void ordenarPorCODUSUPorComponente(eph_i &ti) {
-    for (int i = 0; i < ti.size() - 1; i++){
-        int minComponente = hallarMinComponente(ti, i, ti.size());
-        swapInd(ti, i, minComponente);
-    }
-}
-
-eph_h subVectorPorRegion(eph_h th, int region) {
-    eph_h res;
-    for (int i = 0; i < th.size(); i++) {
-        if (th[i][REGION] == region) {
-            res.push_back(th[i]);
-        }
-    }
-    return res;
-}
-
-eph_i subVectorPorINDCODUSU(eph_i ti, int INDCODUSU) {
-    eph_i res;
-    for (int i = 0; i < ti.size(); i++) {
-        if (ti[i][INDCODUSU] == INDCODUSU) {
-            res.push_back(ti[i]);
-        }
-    }
-    return res;
-}
-
-void ordenarPorCODUSU(eph_h &th) {
-    vector<int> regiones;
-    eph_h thOrdenado;
-    for (int i = 0; i < th.size(); i++) {
-        if (!pertenece(regiones, th[i][REGION])) {
-            regiones.push_back(th[i][REGION]);
-        }
-    }
-    ordenar(regiones);
-    for (int i = 0; i < regiones.size(); i++) {
-        eph_h thPorRegion = subVectorPorRegion(th, regiones[i]);
-        ordenarPorCODUSUPorRegion(thPorRegion);
-        for (int j = 0; j < thPorRegion.size(); j++) {
-            thOrdenado.push_back(thPorRegion[j]);
-        }
-    }
-    th = thOrdenado;
-}
-
-void ordenarIndividuosPorCODUSUDeHogar(eph_h &th, eph_i &ti) {
-    eph_i tiOrdenado;
-    for (int i = 0; i < th.size(); i++) {
-        for (int j = 0; j < ti.size(); j++) {
-            if (th[i][HOGCODUSU] == ti[i][INDCODUSU]) {
-                tiOrdenado.push_back(ti[i]);
-            }
-        }
-    }
-    ti = tiOrdenado;
-}
-
-void ordenarIndividuosPorComponente(eph_i &ti) {
-    vector<int> INDCODUSUS;
-    eph_i tiOrdenado;
-    for (int i = 0; i < ti.size(); i++) {
-        if (!pertenece(INDCODUSUS, ti[i][INDCODUSU])) {
-            INDCODUSUS.push_back(ti[i][INDCODUSU]);
-        }
-    }
-    for (int i = 0; i < INDCODUSUS.size(); i++) {
-        eph_i tiPorINDCODUSU = subVectorPorINDCODUSU(ti, INDCODUSUS[i]);
-        ordenarPorCODUSUPorComponente(tiPorINDCODUSU);
-        for (int j = 0; j < tiPorINDCODUSU.size(); j++) {
-            tiOrdenado.push_back(tiPorINDCODUSU[j]);
-        }
-    }
-    ti = tiOrdenado;
 }

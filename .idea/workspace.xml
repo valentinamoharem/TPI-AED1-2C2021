@@ -15,50 +15,347 @@
   <component name="CMakeSettings">
     <configurations>
       <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
+      <configuration PROFILE_NAME="Debug-Coverage" ENABLED="true" CONFIG_NAME="Debug" GENERATION_OPTIONS="-DCMAKE_CXX_FLAGS=--coverage -DCMAKE_C_FLAGS=--coverage" />
     </configurations>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6f7ff648-0396-444e-a5ba-f71cbf49a1b5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auxiliares.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/auxiliares.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auxiliares.h" beforeDir="false" afterPath="$PROJECT_DIR$/auxiliares.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/Funciones_TPI.gcda" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/Funciones_TPI.gcda" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/auxiliares.gcda" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/auxiliares.gcda" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/auxiliares.gcno" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/auxiliares.gcno" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/auxiliares.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/auxiliares.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/ejercicios.gcda" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/ejercicios.gcda" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/ejercicios.gcno" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/ejercicios.gcno" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/ejercicios.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/ejercicios.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/main.gcda" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/main.gcda" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/objects.a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/test/corregirRegionTEST.gcda" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/test/corregirRegionTEST.gcda" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/test/corregirRegionTEST.gcno" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/test/corregirRegionTEST.gcno" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/test/corregirRegionTEST.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/test/corregirRegionTEST.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/test/costoSubsidioMejoraTEST.gcda" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/test/costoSubsidioMejoraTEST.gcda" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/test/costoSubsidioMejoraTEST.gcno" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/test/costoSubsidioMejoraTEST.gcno" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/test/costoSubsidioMejoraTEST.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/test/costoSubsidioMejoraTEST.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/test/creceElTeleworkingEnCiudadesGrandesTEST.gcda" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/test/creceElTeleworkingEnCiudadesGrandesTEST.gcda" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/test/esEncuestaValidaTEST.gcda" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/test/esEncuestaValidaTEST.gcda" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/test/esEncuestaValidaTEST.gcno" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/test/esEncuestaValidaTEST.gcno" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/test/esEncuestaValidaTEST.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/test/esEncuestaValidaTEST.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/test/generarJoinTEST.gcda" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/test/generarJoinTEST.gcda" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/test/generarJoinTEST.gcno" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/test/generarJoinTEST.gcno" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/test/generarJoinTEST.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/test/generarJoinTEST.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/test/histHabitacionalTEST.gcda" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/test/histHabitacionalTEST.gcda" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/test/histogramaDeAnillosConcentricosTEST.gcda" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/test/histogramaDeAnillosConcentricosTEST.gcda" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/test/histogramaDeAnillosConcentricosTEST.gcno" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/test/histogramaDeAnillosConcentricosTEST.gcno" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/test/histogramaDeAnillosConcentricosTEST.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/test/histogramaDeAnillosConcentricosTEST.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/test/laCasaEstaQuedandoChicaTEST.gcda" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/test/laCasaEstaQuedandoChicaTEST.gcda" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/test/muestraHomogeneaTEST.gcda" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/test/muestraHomogeneaTEST.gcda" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/test/muestraHomogeneaTEST.gcno" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/test/muestraHomogeneaTEST.gcno" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/test/muestraHomogeneaTEST.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/test/muestraHomogeneaTEST.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/test/ordenarRegionYCODUSUTEST.gcda" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/test/ordenarRegionYCODUSUTEST.gcda" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/test/ordenarRegionYCODUSUTEST.gcno" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/test/ordenarRegionYCODUSUTEST.gcno" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/test/ordenarRegionYCODUSUTEST.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/test/ordenarRegionYCODUSUTEST.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/test/quitarIndividuosTEST.gcda" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/test/quitarIndividuosTEST.gcda" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/test/quitarIndividuosTEST.gcno" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/test/quitarIndividuosTEST.gcno" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/test/quitarIndividuosTEST.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/tpi.dir/test/quitarIndividuosTEST.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/Funciones_TPI.gcda##Funciones_TPI.cpp.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/Funciones_TPI.gcda##alloc_traits.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/Funciones_TPI.gcda##allocator.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/Funciones_TPI.gcda##basic_string.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/Funciones_TPI.gcda##cmath.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/Funciones_TPI.gcda##cpp_type_traits.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/Funciones_TPI.gcda##ios_base.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/Funciones_TPI.gcda##iostream.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/Funciones_TPI.gcda##move.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/Funciones_TPI.gcda##new.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/Funciones_TPI.gcda##new_allocator.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/Funciones_TPI.gcda##stl_algobase.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/Funciones_TPI.gcda##stl_construct.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/Funciones_TPI.gcda##stl_iterator.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/Funciones_TPI.gcda##stl_uninitialized.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/Funciones_TPI.gcda##stl_vector.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/Funciones_TPI.gcda##string_conversions.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/Funciones_TPI.gcda##vector.tcc.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/auxiliares.gcda##alloc_traits.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/auxiliares.gcda##allocator.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/auxiliares.gcda##auxiliares.cpp.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/auxiliares.gcda##cmath.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/auxiliares.gcda##cpp_type_traits.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/auxiliares.gcda##iostream.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/auxiliares.gcda##move.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/auxiliares.gcda##new.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/auxiliares.gcda##new_allocator.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/auxiliares.gcda##stl_algobase.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/auxiliares.gcda##stl_construct.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/auxiliares.gcda##stl_iterator.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/auxiliares.gcda##stl_uninitialized.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/auxiliares.gcda##stl_vector.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/corregirRegionTEST.gcda##alloc_traits.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/corregirRegionTEST.gcda##allocator.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/corregirRegionTEST.gcda##corregirRegionTEST.cpp.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/corregirRegionTEST.gcda##cpp_type_traits.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/corregirRegionTEST.gcda##gtest-internal.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/corregirRegionTEST.gcda##gtest-message.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/corregirRegionTEST.gcda##gtest-port.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/corregirRegionTEST.gcda##gtest-printers.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/corregirRegionTEST.gcda##gtest.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/corregirRegionTEST.gcda##initializer_list.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/corregirRegionTEST.gcda##ios_base.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/corregirRegionTEST.gcda##iostream.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/corregirRegionTEST.gcda##move.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/corregirRegionTEST.gcda##new.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/corregirRegionTEST.gcda##new_allocator.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/corregirRegionTEST.gcda##predefined_ops.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/corregirRegionTEST.gcda##stl_algo.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/corregirRegionTEST.gcda##stl_algobase.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/corregirRegionTEST.gcda##stl_construct.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/corregirRegionTEST.gcda##stl_heap.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/corregirRegionTEST.gcda##stl_iterator.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/corregirRegionTEST.gcda##stl_iterator_base_funcs.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/corregirRegionTEST.gcda##stl_iterator_base_types.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/corregirRegionTEST.gcda##stl_uninitialized.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/corregirRegionTEST.gcda##stl_vector.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/costoSubsidioMejoraTEST.gcda##alloc_traits.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/costoSubsidioMejoraTEST.gcda##allocator.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/costoSubsidioMejoraTEST.gcda##costoSubsidioMejoraTEST.cpp.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/costoSubsidioMejoraTEST.gcda##cpp_type_traits.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/costoSubsidioMejoraTEST.gcda##gtest-internal.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/costoSubsidioMejoraTEST.gcda##gtest-message.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/costoSubsidioMejoraTEST.gcda##gtest-port.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/costoSubsidioMejoraTEST.gcda##gtest-printers.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/costoSubsidioMejoraTEST.gcda##gtest.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/costoSubsidioMejoraTEST.gcda##initializer_list.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/costoSubsidioMejoraTEST.gcda##ios_base.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/costoSubsidioMejoraTEST.gcda##iostream.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/costoSubsidioMejoraTEST.gcda##move.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/costoSubsidioMejoraTEST.gcda##new.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/costoSubsidioMejoraTEST.gcda##new_allocator.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/costoSubsidioMejoraTEST.gcda##stl_algobase.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/costoSubsidioMejoraTEST.gcda##stl_construct.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/costoSubsidioMejoraTEST.gcda##stl_iterator.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/costoSubsidioMejoraTEST.gcda##stl_iterator_base_funcs.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/costoSubsidioMejoraTEST.gcda##stl_iterator_base_types.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/costoSubsidioMejoraTEST.gcda##stl_uninitialized.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/costoSubsidioMejoraTEST.gcda##stl_vector.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/creceElTeleworkingEnCiudadesGrandesTEST.gcda##alloc_traits.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/creceElTeleworkingEnCiudadesGrandesTEST.gcda##allocator.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/creceElTeleworkingEnCiudadesGrandesTEST.gcda##cpp_type_traits.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/creceElTeleworkingEnCiudadesGrandesTEST.gcda##creceElTeleworkingEnCiudadesGrandesTEST.cpp.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/creceElTeleworkingEnCiudadesGrandesTEST.gcda##gtest-internal.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/creceElTeleworkingEnCiudadesGrandesTEST.gcda##gtest-message.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/creceElTeleworkingEnCiudadesGrandesTEST.gcda##gtest-port.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/creceElTeleworkingEnCiudadesGrandesTEST.gcda##gtest-printers.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/creceElTeleworkingEnCiudadesGrandesTEST.gcda##gtest.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/creceElTeleworkingEnCiudadesGrandesTEST.gcda##initializer_list.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/creceElTeleworkingEnCiudadesGrandesTEST.gcda##ios_base.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/creceElTeleworkingEnCiudadesGrandesTEST.gcda##iostream.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/creceElTeleworkingEnCiudadesGrandesTEST.gcda##move.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/creceElTeleworkingEnCiudadesGrandesTEST.gcda##new.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/creceElTeleworkingEnCiudadesGrandesTEST.gcda##new_allocator.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/creceElTeleworkingEnCiudadesGrandesTEST.gcda##stl_algobase.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/creceElTeleworkingEnCiudadesGrandesTEST.gcda##stl_construct.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/creceElTeleworkingEnCiudadesGrandesTEST.gcda##stl_iterator.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/creceElTeleworkingEnCiudadesGrandesTEST.gcda##stl_iterator_base_funcs.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/creceElTeleworkingEnCiudadesGrandesTEST.gcda##stl_iterator_base_types.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/creceElTeleworkingEnCiudadesGrandesTEST.gcda##stl_uninitialized.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/creceElTeleworkingEnCiudadesGrandesTEST.gcda##stl_vector.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/ejercicios.gcda##alloc_traits.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/ejercicios.gcda##allocator.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/ejercicios.gcda##cpp_type_traits.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/ejercicios.gcda##ejercicios.cpp.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/ejercicios.gcda##initializer_list.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/ejercicios.gcda##iostream.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/ejercicios.gcda##move.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/ejercicios.gcda##new.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/ejercicios.gcda##new_allocator.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/ejercicios.gcda##stl_algobase.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/ejercicios.gcda##stl_construct.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/ejercicios.gcda##stl_iterator.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/ejercicios.gcda##stl_iterator_base_funcs.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/ejercicios.gcda##stl_iterator_base_types.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/ejercicios.gcda##stl_pair.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/ejercicios.gcda##stl_uninitialized.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/ejercicios.gcda##stl_vector.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/ejercicios.gcda##vector.tcc.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/esEncuestaValidaTEST.gcda##alloc_traits.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/esEncuestaValidaTEST.gcda##allocator.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/esEncuestaValidaTEST.gcda##cpp_type_traits.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/esEncuestaValidaTEST.gcda##esEncuestaValidaTEST.cpp.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/esEncuestaValidaTEST.gcda##gtest-internal.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/esEncuestaValidaTEST.gcda##gtest-message.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/esEncuestaValidaTEST.gcda##gtest-port.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/esEncuestaValidaTEST.gcda##gtest.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/esEncuestaValidaTEST.gcda##initializer_list.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/esEncuestaValidaTEST.gcda##iostream.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/esEncuestaValidaTEST.gcda##move.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/esEncuestaValidaTEST.gcda##new.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/esEncuestaValidaTEST.gcda##new_allocator.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/esEncuestaValidaTEST.gcda##stl_algobase.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/esEncuestaValidaTEST.gcda##stl_construct.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/esEncuestaValidaTEST.gcda##stl_iterator.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/esEncuestaValidaTEST.gcda##stl_iterator_base_funcs.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/esEncuestaValidaTEST.gcda##stl_iterator_base_types.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/esEncuestaValidaTEST.gcda##stl_uninitialized.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/esEncuestaValidaTEST.gcda##stl_vector.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/esEncuestaValidaTEST.gcda##vector.tcc.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/generarJoinTEST.gcda##alloc_traits.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/generarJoinTEST.gcda##allocator.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/generarJoinTEST.gcda##cpp_type_traits.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/generarJoinTEST.gcda##generarJoinTEST.cpp.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/generarJoinTEST.gcda##gtest-internal.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/generarJoinTEST.gcda##gtest-message.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/generarJoinTEST.gcda##gtest-port.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/generarJoinTEST.gcda##gtest-printers.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/generarJoinTEST.gcda##gtest.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/generarJoinTEST.gcda##initializer_list.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/generarJoinTEST.gcda##ios_base.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/generarJoinTEST.gcda##iostream.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/generarJoinTEST.gcda##move.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/generarJoinTEST.gcda##new.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/generarJoinTEST.gcda##new_allocator.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/generarJoinTEST.gcda##predefined_ops.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/generarJoinTEST.gcda##stl_algo.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/generarJoinTEST.gcda##stl_algobase.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/generarJoinTEST.gcda##stl_construct.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/generarJoinTEST.gcda##stl_heap.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/generarJoinTEST.gcda##stl_iterator.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/generarJoinTEST.gcda##stl_iterator_base_funcs.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/generarJoinTEST.gcda##stl_iterator_base_types.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/generarJoinTEST.gcda##stl_pair.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/generarJoinTEST.gcda##stl_uninitialized.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/generarJoinTEST.gcda##stl_vector.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/histHabitacionalTEST.gcda##alloc_traits.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/histHabitacionalTEST.gcda##allocator.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/histHabitacionalTEST.gcda##cpp_type_traits.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/histHabitacionalTEST.gcda##gtest-internal.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/histHabitacionalTEST.gcda##gtest-message.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/histHabitacionalTEST.gcda##gtest-port.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/histHabitacionalTEST.gcda##gtest-printers.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/histHabitacionalTEST.gcda##gtest.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/histHabitacionalTEST.gcda##histHabitacionalTEST.cpp.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/histHabitacionalTEST.gcda##initializer_list.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/histHabitacionalTEST.gcda##ios_base.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/histHabitacionalTEST.gcda##iostream.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/histHabitacionalTEST.gcda##move.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/histHabitacionalTEST.gcda##new.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/histHabitacionalTEST.gcda##new_allocator.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/histHabitacionalTEST.gcda##stl_algobase.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/histHabitacionalTEST.gcda##stl_construct.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/histHabitacionalTEST.gcda##stl_iterator.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/histHabitacionalTEST.gcda##stl_iterator_base_funcs.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/histHabitacionalTEST.gcda##stl_iterator_base_types.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/histHabitacionalTEST.gcda##stl_uninitialized.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/histHabitacionalTEST.gcda##stl_vector.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/histogramaDeAnillosConcentricosTEST.gcda##alloc_traits.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/histogramaDeAnillosConcentricosTEST.gcda##allocator.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/histogramaDeAnillosConcentricosTEST.gcda##cpp_type_traits.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/histogramaDeAnillosConcentricosTEST.gcda##gtest-internal.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/histogramaDeAnillosConcentricosTEST.gcda##gtest-message.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/histogramaDeAnillosConcentricosTEST.gcda##gtest-port.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/histogramaDeAnillosConcentricosTEST.gcda##gtest-printers.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/histogramaDeAnillosConcentricosTEST.gcda##gtest.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/histogramaDeAnillosConcentricosTEST.gcda##histogramaDeAnillosConcentricosTEST.cpp.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/histogramaDeAnillosConcentricosTEST.gcda##initializer_list.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/histogramaDeAnillosConcentricosTEST.gcda##ios_base.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/histogramaDeAnillosConcentricosTEST.gcda##iostream.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/histogramaDeAnillosConcentricosTEST.gcda##move.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/histogramaDeAnillosConcentricosTEST.gcda##new.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/histogramaDeAnillosConcentricosTEST.gcda##new_allocator.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/histogramaDeAnillosConcentricosTEST.gcda##stl_algobase.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/histogramaDeAnillosConcentricosTEST.gcda##stl_construct.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/histogramaDeAnillosConcentricosTEST.gcda##stl_iterator.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/histogramaDeAnillosConcentricosTEST.gcda##stl_iterator_base_funcs.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/histogramaDeAnillosConcentricosTEST.gcda##stl_iterator_base_types.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/histogramaDeAnillosConcentricosTEST.gcda##stl_pair.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/histogramaDeAnillosConcentricosTEST.gcda##stl_uninitialized.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/histogramaDeAnillosConcentricosTEST.gcda##stl_vector.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/laCasaEstaQuedandoChicaTEST.gcda##alloc_traits.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/laCasaEstaQuedandoChicaTEST.gcda##allocator.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/laCasaEstaQuedandoChicaTEST.gcda##cpp_type_traits.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/laCasaEstaQuedandoChicaTEST.gcda##gtest-internal.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/laCasaEstaQuedandoChicaTEST.gcda##gtest-message.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/laCasaEstaQuedandoChicaTEST.gcda##gtest-port.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/laCasaEstaQuedandoChicaTEST.gcda##gtest-printers.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/laCasaEstaQuedandoChicaTEST.gcda##gtest.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/laCasaEstaQuedandoChicaTEST.gcda##initializer_list.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/laCasaEstaQuedandoChicaTEST.gcda##ios_base.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/laCasaEstaQuedandoChicaTEST.gcda##iostream.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/laCasaEstaQuedandoChicaTEST.gcda##laCasaEstaQuedandoChicaTEST.cpp.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/laCasaEstaQuedandoChicaTEST.gcda##move.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/laCasaEstaQuedandoChicaTEST.gcda##new.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/laCasaEstaQuedandoChicaTEST.gcda##new_allocator.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/laCasaEstaQuedandoChicaTEST.gcda##stl_algobase.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/laCasaEstaQuedandoChicaTEST.gcda##stl_construct.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/laCasaEstaQuedandoChicaTEST.gcda##stl_iterator.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/laCasaEstaQuedandoChicaTEST.gcda##stl_iterator_base_funcs.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/laCasaEstaQuedandoChicaTEST.gcda##stl_iterator_base_types.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/laCasaEstaQuedandoChicaTEST.gcda##stl_uninitialized.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/laCasaEstaQuedandoChicaTEST.gcda##stl_vector.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/main.gcda##gtest.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/main.gcda##iostream.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/main.gcda##main.cpp.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/muestraHomogeneaTEST.gcda##alloc_traits.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/muestraHomogeneaTEST.gcda##allocator.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/muestraHomogeneaTEST.gcda##cpp_type_traits.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/muestraHomogeneaTEST.gcda##gtest-internal.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/muestraHomogeneaTEST.gcda##gtest-message.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/muestraHomogeneaTEST.gcda##gtest-port.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/muestraHomogeneaTEST.gcda##gtest-printers.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/muestraHomogeneaTEST.gcda##gtest.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/muestraHomogeneaTEST.gcda##initializer_list.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/muestraHomogeneaTEST.gcda##ios_base.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/muestraHomogeneaTEST.gcda##iostream.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/muestraHomogeneaTEST.gcda##move.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/muestraHomogeneaTEST.gcda##muestraHomogeneaTEST.cpp.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/muestraHomogeneaTEST.gcda##new.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/muestraHomogeneaTEST.gcda##new_allocator.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/muestraHomogeneaTEST.gcda##predefined_ops.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/muestraHomogeneaTEST.gcda##stl_algo.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/muestraHomogeneaTEST.gcda##stl_algobase.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/muestraHomogeneaTEST.gcda##stl_construct.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/muestraHomogeneaTEST.gcda##stl_heap.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/muestraHomogeneaTEST.gcda##stl_iterator.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/muestraHomogeneaTEST.gcda##stl_iterator_base_funcs.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/muestraHomogeneaTEST.gcda##stl_iterator_base_types.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/muestraHomogeneaTEST.gcda##stl_uninitialized.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/muestraHomogeneaTEST.gcda##stl_vector.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/ordenarRegionYCODUSUTEST.gcda##alloc_traits.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/ordenarRegionYCODUSUTEST.gcda##allocator.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/ordenarRegionYCODUSUTEST.gcda##cpp_type_traits.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/ordenarRegionYCODUSUTEST.gcda##gtest-internal.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/ordenarRegionYCODUSUTEST.gcda##gtest-message.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/ordenarRegionYCODUSUTEST.gcda##gtest-port.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/ordenarRegionYCODUSUTEST.gcda##gtest-printers.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/ordenarRegionYCODUSUTEST.gcda##gtest.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/ordenarRegionYCODUSUTEST.gcda##initializer_list.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/ordenarRegionYCODUSUTEST.gcda##ios_base.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/ordenarRegionYCODUSUTEST.gcda##iostream.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/ordenarRegionYCODUSUTEST.gcda##move.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/ordenarRegionYCODUSUTEST.gcda##new.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/ordenarRegionYCODUSUTEST.gcda##new_allocator.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/ordenarRegionYCODUSUTEST.gcda##ordenarRegionYCODUSUTEST.cpp.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/ordenarRegionYCODUSUTEST.gcda##stl_algobase.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/ordenarRegionYCODUSUTEST.gcda##stl_construct.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/ordenarRegionYCODUSUTEST.gcda##stl_iterator.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/ordenarRegionYCODUSUTEST.gcda##stl_iterator_base_funcs.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/ordenarRegionYCODUSUTEST.gcda##stl_iterator_base_types.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/ordenarRegionYCODUSUTEST.gcda##stl_uninitialized.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/ordenarRegionYCODUSUTEST.gcda##stl_vector.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/quitarIndividuosTEST.gcda##alloc_traits.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/quitarIndividuosTEST.gcda##allocator.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/quitarIndividuosTEST.gcda##cpp_type_traits.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/quitarIndividuosTEST.gcda##gtest-internal.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/quitarIndividuosTEST.gcda##gtest-message.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/quitarIndividuosTEST.gcda##gtest-port.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/quitarIndividuosTEST.gcda##gtest-printers.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/quitarIndividuosTEST.gcda##gtest.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/quitarIndividuosTEST.gcda##initializer_list.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/quitarIndividuosTEST.gcda##ios_base.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/quitarIndividuosTEST.gcda##iostream.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/quitarIndividuosTEST.gcda##move.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/quitarIndividuosTEST.gcda##new.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/quitarIndividuosTEST.gcda##new_allocator.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/quitarIndividuosTEST.gcda##predefined_ops.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/quitarIndividuosTEST.gcda##quitarIndividuosTEST.cpp.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/quitarIndividuosTEST.gcda##stl_algo.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/quitarIndividuosTEST.gcda##stl_algobase.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/quitarIndividuosTEST.gcda##stl_construct.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/quitarIndividuosTEST.gcda##stl_heap.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/quitarIndividuosTEST.gcda##stl_iterator.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/quitarIndividuosTEST.gcda##stl_iterator_base_funcs.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/quitarIndividuosTEST.gcda##stl_iterator_base_types.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/quitarIndividuosTEST.gcda##stl_pair.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/quitarIndividuosTEST.gcda##stl_uninitialized.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/quitarIndividuosTEST.gcda##stl_vector.h.gcov" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/coverage/quitarIndividuosTEST.gcda##vector.tcc.gcov" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ejercicios.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/ejercicios.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tpi.exe" beforeDir="false" afterPath="$PROJECT_DIR$/tpi.exe" afterDir="false" />
     </list>
@@ -70,7 +367,7 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug-Coverage" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -96,32 +393,32 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="CPPToolchains" />
   </component>
-  <component name="RunManager" selected="Google Test.All in muestraHomogeneaTEST.cpp">
+  <component name="RunManager" selected="Google Test.tpi">
+    <configuration name="All in histHabitacionalTEST.cpp" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tpi" TARGET_NAME="tpi" RUN_TARGET_PROJECT_NAME="tpi" RUN_TARGET_NAME="tpi" TEST_PATTERN="all-tests(file://$PROJECT_DIR$/test/histHabitacionalTEST.cpp)" TEST_MODE="PATTERN">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="BeforeTestRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in histogramaDeAnillosConcentricosTEST.cpp" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tpi" TARGET_NAME="tpi" RUN_TARGET_PROJECT_NAME="tpi" RUN_TARGET_NAME="tpi" TEST_PATTERN="all-tests(file://$PROJECT_DIR$/test/histogramaDeAnillosConcentricosTEST.cpp)" TEST_MODE="PATTERN">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="BeforeTestRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in laCasaEstaQuedandoChicaTEST.cpp" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tpi" TARGET_NAME="tpi" RUN_TARGET_PROJECT_NAME="tpi" RUN_TARGET_NAME="tpi" TEST_PATTERN="all-tests(file://$PROJECT_DIR$/test/laCasaEstaQuedandoChicaTEST.cpp)" TEST_MODE="PATTERN">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="BeforeTestRunTask" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="All in muestraHomogeneaTEST.cpp" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tpi" TARGET_NAME="tpi" RUN_TARGET_PROJECT_NAME="tpi" RUN_TARGET_NAME="tpi" TEST_PATTERN="all-tests(file://$PROJECT_DIR$/test/muestraHomogeneaTEST.cpp)" TEST_MODE="PATTERN">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
         <option name="BeforeTestRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="All in quitarIndividuosTEST.cpp" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tpi" TARGET_NAME="tpi" RUN_TARGET_PROJECT_NAME="tpi" RUN_TARGET_NAME="tpi" TEST_PATTERN="all-tests(file://$PROJECT_DIR$/test/quitarIndividuosTEST.cpp)" TEST_MODE="PATTERN">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-        <option name="BeforeTestRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="muestraHomogeneaTEST.dosSolucionesDe3" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tpi" TARGET_NAME="tpi" RUN_TARGET_PROJECT_NAME="tpi" RUN_TARGET_NAME="tpi" TEST_CLASS="muestraHomogeneaTEST" TEST_METHOD="dosSolucionesDe3" TEST_MODE="SUITE_TEST">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-        <option name="BeforeTestRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="muestraHomogeneaTEST.unaSolucionDe4" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tpi" TARGET_NAME="tpi" RUN_TARGET_PROJECT_NAME="tpi" RUN_TARGET_NAME="tpi" TEST_CLASS="muestraHomogeneaTEST" TEST_METHOD="unaSolucionDe4" TEST_MODE="SUITE_TEST">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-        <option name="BeforeTestRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="quitarIndividuosTEST.SacaTodosIndividuosYHogarVacio" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tpi" TARGET_NAME="tpi" RUN_TARGET_PROJECT_NAME="tpi" RUN_TARGET_NAME="tpi" TEST_CLASS="quitarIndividuosTEST" TEST_METHOD="SacaTodosIndividuosYHogarVacio" TEST_MODE="SUITE_TEST">
+    <configuration name="esEncuestaValidaTEST.invalidaIndividuosSinHogares" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tpi" TARGET_NAME="tpi" RUN_TARGET_PROJECT_NAME="tpi" RUN_TARGET_NAME="tpi" TEST_CLASS="esEncuestaValidaTEST" TEST_METHOD="invalidaIndividuosSinHogares" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
         <option name="BeforeTestRunTask" enabled="true" />
@@ -158,25 +455,30 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="CMake Application.gmock" />
       <item itemvalue="CMake Application.gmock_main" />
       <item itemvalue="CMake Application.gtest" />
       <item itemvalue="CMake Application.gtest_main" />
       <item itemvalue="Google Test.tpi" />
-      <item itemvalue="Google Test.muestraHomogeneaTEST.unaSolucionDe4" />
-      <item itemvalue="Google Test.muestraHomogeneaTEST.dosSolucionesDe3" />
-      <item itemvalue="Google Test.quitarIndividuosTEST.SacaTodosIndividuosYHogarVacio" />
+      <item itemvalue="Google Test.All in histHabitacionalTEST.cpp" />
+      <item itemvalue="Google Test.All in histogramaDeAnillosConcentricosTEST.cpp" />
+      <item itemvalue="Google Test.All in laCasaEstaQuedandoChicaTEST.cpp" />
       <item itemvalue="Google Test.All in muestraHomogeneaTEST.cpp" />
-      <item itemvalue="Google Test.All in quitarIndividuosTEST.cpp" />
+      <item itemvalue="Google Test.esEncuestaValidaTEST.invalidaIndividuosSinHogares" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Google Test.esEncuestaValidaTEST.invalidaIndividuosSinHogares" />
         <item itemvalue="Google Test.All in muestraHomogeneaTEST.cpp" />
-        <item itemvalue="Google Test.muestraHomogeneaTEST.dosSolucionesDe3" />
-        <item itemvalue="Google Test.muestraHomogeneaTEST.unaSolucionDe4" />
-        <item itemvalue="Google Test.All in quitarIndividuosTEST.cpp" />
-        <item itemvalue="Google Test.quitarIndividuosTEST.SacaTodosIndividuosYHogarVacio" />
+        <item itemvalue="Google Test.All in laCasaEstaQuedandoChicaTEST.cpp" />
+        <item itemvalue="Google Test.All in histogramaDeAnillosConcentricosTEST.cpp" />
+        <item itemvalue="Google Test.All in histHabitacionalTEST.cpp" />
       </list>
     </recent_temporary>
   </component>
@@ -197,7 +499,8 @@
       <workItem from="1638225266928" duration="2327000" />
       <workItem from="1638237774692" duration="10087000" />
       <workItem from="1638391567838" duration="8788000" />
-      <workItem from="1638488890613" duration="3828000" />
+      <workItem from="1638488890613" duration="6625000" />
+      <workItem from="1638572339526" duration="7669000" />
     </task>
     <servers />
   </component>
@@ -217,6 +520,8 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="../../../../Documents/GitHub/TPI-AED1-2C2021/cmake-build-debug" NAME="tpi Coverage Results" MODIFIED="1636669883430" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="gcov/llvm" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="../../../../Documents/GitHub/TPI-AED1-2C2021/cmake-build-debug-coverage" NAME="tpi Coverage Results" MODIFIED="1638578428089" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="gcov/llvm" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="../../../../Documents/GitHub/TPI-AED1-2C2021/cmake-build-debug-coverage" NAME="tpi Coverage Results" MODIFIED="1638495717057" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="gcov/llvm" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="../../../../Documents/GitHub/TPI-AED1-2C2021/cmake-build-debug" NAME="All in muestraHomogeneaTEST.cpp Coverage Results" MODIFIED="1638493542916" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="gcov/llvm" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

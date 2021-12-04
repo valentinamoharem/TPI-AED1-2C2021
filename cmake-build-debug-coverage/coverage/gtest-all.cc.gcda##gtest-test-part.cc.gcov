@@ -1,0 +1,240 @@
+        -:    0:Source:C:/Users/valum/Documents/GitHub/TPI-AED1-2C2021/lib/googletest-master/googletest/src/gtest-test-part.cc
+        -:    0:Graph:C:\Users\valum\Documents\GitHub\TPI-AED1-2C2021\cmake-build-debug-coverage\lib\googletest-master\googlemock\gtest\CMakeFiles\gtest.dir\src\gtest-all.cc.gcno
+        -:    0:Data:C:\Users\valum\Documents\GitHub\TPI-AED1-2C2021\cmake-build-debug-coverage\lib\googletest-master\googlemock\gtest\CMakeFiles\gtest.dir\src\gtest-all.cc.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:// Copyright 2008, Google Inc.
+        -:    2:// All rights reserved.
+        -:    3://
+        -:    4:// Redistribution and use in source and binary forms, with or without
+        -:    5:// modification, are permitted provided that the following conditions are
+        -:    6:// met:
+        -:    7://
+        -:    8://     * Redistributions of source code must retain the above copyright
+        -:    9:// notice, this list of conditions and the following disclaimer.
+        -:   10://     * Redistributions in binary form must reproduce the above
+        -:   11:// copyright notice, this list of conditions and the following disclaimer
+        -:   12:// in the documentation and/or other materials provided with the
+        -:   13:// distribution.
+        -:   14://     * Neither the name of Google Inc. nor the names of its
+        -:   15:// contributors may be used to endorse or promote products derived from
+        -:   16:// this software without specific prior written permission.
+        -:   17://
+        -:   18:// THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+        -:   19:// "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+        -:   20:// LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+        -:   21:// A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+        -:   22:// OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+        -:   23:// SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+        -:   24:// LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+        -:   25:// DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+        -:   26:// THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+        -:   27:// (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+        -:   28:// OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+        -:   29://
+        -:   30:// Author: mheule@google.com (Markus Heule)
+        -:   31://
+        -:   32:// The Google C++ Testing Framework (Google Test)
+        -:   33:
+        -:   34:#include "gtest/gtest-test-part.h"
+        -:   35:#include "src/gtest-internal-inl.h"
+        -:   36:
+        -:   37:namespace testing {
+        -:   38:
+        -:   39:using internal::GetUnitTestImpl;
+        -:   40:
+        -:   41:// Gets the summary of the failure message by omitting the stack trace
+        -:   42:// in it.
+function _ZN7testing14TestPartResult14ExtractSummaryB5cxx11EPKc called 1 returned 100% blocks executed 50%
+        1:   43:std::string TestPartResult::ExtractSummary(const char* message) {
+        1:   43-block  0
+        1:   44:  const char* const stack_trace = strstr(message, internal::kStackTraceMarker);
+        -:   45:  return stack_trace == NULL ? message :
+        1:   46:      std::string(message, stack_trace);
+        1:   46-block  0
+branch  0 taken 1 (fallthrough)
+branch  1 taken 0
+        1:   46-block  1
+call    2 returned 1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   46-block  2
+    $$$$$:   46-block  3
+call    6 never executed
+call    7 never executed
+branch  8 never executed
+branch  9 never executed
+        1:   46-block  4
+branch 10 taken 0 (fallthrough)
+branch 11 taken 1
+    $$$$$:   46-block  5
+call   12 never executed
+        1:   46-block  6
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0
+        1:   46-block  7
+call   15 returned 1
+        1:   46-block  8
+        1:   46-block  9
+    %%%%%:   46-block 10
+branch 16 never executed
+branch 17 never executed
+    %%%%%:   46-block 11
+call   18 never executed
+    %%%%%:   46-block 12
+    %%%%%:   46-block 13
+branch 19 never executed
+branch 20 never executed
+    %%%%%:   46-block 14
+call   21 never executed
+        -:   47:}
+        -:   48:
+        -:   49:// Prints a TestPartResult object.
+function _ZN7testinglsERSoRKNS_14TestPartResultE called 0 returned 0% blocks executed 0%
+    #####:   50:std::ostream& operator<<(std::ostream& os, const TestPartResult& result) {
+    $$$$$:   50-block  0
+        -:   51:  return os
+    #####:   52:      << result.file_name() << ":" << result.line_number() << ": "
+call    0 never executed
+call    1 never executed
+call    2 never executed
+    #####:   53:      << (result.type() == TestPartResult::kSuccess ? "Success" :
+call    0 never executed
+    #####:   54:          result.type() == TestPartResult::kFatalFailure ? "Fatal failure" :
+    $$$$$:   54-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    $$$$$:   54-block  1
+    $$$$$:   54-block  2
+        -:   55:          "Non-fatal failure") << ":\n"
+    #####:   56:      << result.message() << std::endl;
+    $$$$$:   56-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    $$$$$:   56-block  1
+    $$$$$:   56-block  2
+    $$$$$:   56-block  3
+call    3 never executed
+call    4 never executed
+call    5 never executed
+call    6 never executed
+call    7 never executed
+call    8 never executed
+call    9 never executed
+        -:   57:}
+        -:   58:
+        -:   59:// Appends a TestPartResult to the array.
+function _ZN7testing19TestPartResultArray6AppendERKNS_14TestPartResultE called 0 returned 0% blocks executed 0%
+    #####:   60:void TestPartResultArray::Append(const TestPartResult& result) {
+    $$$$$:   60-block  0
+    #####:   61:  array_.push_back(result);
+    $$$$$:   61-block  0
+call    0 never executed
+    #####:   62:}
+        -:   63:
+        -:   64:// Returns the TestPartResult at the given index (0-based).
+function _ZNK7testing19TestPartResultArray17GetTestPartResultEi called 0 returned 0% blocks executed 0%
+    #####:   65:const TestPartResult& TestPartResultArray::GetTestPartResult(int index) const {
+    $$$$$:   65-block  0
+    #####:   66:  if (index < 0 || index >= size()) {
+    $$$$$:   66-block  0
+branch  0 never executed
+branch  1 never executed
+    $$$$$:   66-block  1
+call    2 never executed
+branch  3 never executed
+branch  4 never executed
+    $$$$$:   66-block  2
+    $$$$$:   66-block  3
+    $$$$$:   66-block  4
+branch  5 never executed
+branch  6 never executed
+    #####:   67:    printf("\nInvalid index (%d) into TestPartResultArray.\n", index);
+    #####:   68:    internal::posix::Abort();
+    $$$$$:   68-block  0
+call    0 never executed
+        -:   69:  }
+        -:   70:
+    #####:   71:  return array_[index];
+    $$$$$:   71-block  0
+call    0 never executed
+        -:   72:}
+        -:   73:
+        -:   74:// Returns the number of TestPartResult objects in the array.
+function _ZNK7testing19TestPartResultArray4sizeEv called 0 returned 0% blocks executed 0%
+    #####:   75:int TestPartResultArray::size() const {
+    $$$$$:   75-block  0
+    #####:   76:  return static_cast<int>(array_.size());
+    $$$$$:   76-block  0
+call    0 never executed
+        -:   77:}
+        -:   78:
+        -:   79:namespace internal {
+        -:   80:
+function _ZN7testing8internal24HasNewFatalFailureHelperC2Ev called 0 returned 0% blocks executed 0%
+    #####:   81:HasNewFatalFailureHelper::HasNewFatalFailureHelper()
+    $$$$$:   81-block  0
+        -:   82:    : has_new_fatal_failure_(false),
+        -:   83:      original_reporter_(GetUnitTestImpl()->
+    #####:   84:                         GetTestPartResultReporterForCurrentThread()) {
+    $$$$$:   84-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    $$$$$:   84-block  1
+call    4 never executed
+branch  5 never executed
+branch  6 never executed
+    %%%%%:   84-block  2
+call    7 never executed
+    #####:   85:  GetUnitTestImpl()->SetTestPartResultReporterForCurrentThread(this);
+    $$$$$:   85-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    $$$$$:   85-block  1
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    #####:   86:}
+    $$$$$:   86-block  0
+        -:   87:
+function _ZN7testing8internal24HasNewFatalFailureHelperD0Ev called 0 returned 0% blocks executed 0%
+function _ZN7testing8internal24HasNewFatalFailureHelperD2Ev called 0 returned 0% blocks executed 0%
+    #####:   88:HasNewFatalFailureHelper::~HasNewFatalFailureHelper() {
+    $$$$$:   88-block  0
+    $$$$$:   88-block  1
+call    0 never executed
+    #####:   89:  GetUnitTestImpl()->SetTestPartResultReporterForCurrentThread(
+    $$$$$:   89-block  0
+call    0 never executed
+    #####:   90:      original_reporter_);
+call    0 never executed
+    #####:   91:}
+    $$$$$:   91-block  0
+call    0 never executed
+call    1 never executed
+        -:   92:
+function _ZN7testing8internal24HasNewFatalFailureHelper20ReportTestPartResultERKNS_14TestPartResultE called 0 returned 0% blocks executed 0%
+    #####:   93:void HasNewFatalFailureHelper::ReportTestPartResult(
+    $$$$$:   93-block  0
+        -:   94:    const TestPartResult& result) {
+    #####:   95:  if (result.fatally_failed())
+    $$$$$:   95-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   96:    has_new_fatal_failure_ = true;
+    $$$$$:   96-block  0
+    #####:   97:  original_reporter_->ReportTestPartResult(result);
+    $$$$$:   97-block  0
+call    0 never executed
+    #####:   98:}
+        -:   99:
+        -:  100:}  // namespace internal
+        -:  101:
+        -:  102:}  // namespace testing

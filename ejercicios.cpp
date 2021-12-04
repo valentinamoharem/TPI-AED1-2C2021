@@ -92,7 +92,7 @@ join_hi generarJoin( eph_h th, eph_i ti ){
 // Implementacion Problema 7
 void ordenarRegionYCODUSU (eph_h & th, eph_i & ti) {
     ordenarPorRegion(th);
-    ordenarPorCODUSU(th);
+    ordenarPorCODUSUYRegion(th);
     ordenarIndividuosPorCODUSUDeHogar(th,ti);
     ordenarIndividuosPorComponente(ti);
     return;
@@ -104,7 +104,7 @@ vector < hogar > muestraHomogenea( eph_h & th, eph_i & ti ) {
     ordenarPorIngresos(th,ti);
     th = sacarRepetidos(th,ti);
     vector<int> diferencias = buscarDiferencias(th,ti);
-    res = listaHogaresConMismaDiferenciaALT(th,ti,diferencias);
+    res = listaHogaresConMismaDiferencia(th,ti,diferencias);
     return res;
 }
 

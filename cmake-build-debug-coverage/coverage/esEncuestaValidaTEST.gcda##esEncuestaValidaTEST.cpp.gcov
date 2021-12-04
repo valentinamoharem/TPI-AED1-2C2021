@@ -1,0 +1,3457 @@
+        -:    0:Source:C:/Users/valum/Documents/GitHub/TPI-AED1-2C2021/test/esEncuestaValidaTEST.cpp
+        -:    0:Graph:C:\Users\valum\Documents\GitHub\TPI-AED1-2C2021\cmake-build-debug-coverage\CMakeFiles\tpi.dir\test\esEncuestaValidaTEST.gcno
+        -:    0:Data:C:\Users\valum\Documents\GitHub\TPI-AED1-2C2021\cmake-build-debug-coverage\CMakeFiles\tpi.dir\test\esEncuestaValidaTEST.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:#include "../definiciones.h"
+        -:    2:#include "../Funciones_TPI.h"
+        -:    3:#include "../ejercicios.h"
+        -:    4:#include "gtest/gtest.h"
+        -:    5:#include <iostream>
+        -:    6:#include <string>
+        -:    7:#include "../auxiliares.h"
+        -:    8:
+        -:    9:using namespace std;
+        -:   10:
+function _ZN32esEncuestaValidaTEST_valida_TestD0Ev called 1 returned 100% blocks executed 100%
+function _ZN32esEncuestaValidaTEST_valida_TestD1Ev called 1 returned 100% blocks executed 100%
+function _ZN32esEncuestaValidaTEST_valida_Test8TestBodyEv called 1 returned 100% blocks executed 51%
+function _ZN32esEncuestaValidaTEST_valida_TestC1Ev called 1 returned 100% blocks executed 100%
+        8:   11:TEST(esEncuestaValidaTEST, valida) {
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   11-block  0
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:   11-block  1
+call   10 returned 1
+branch 11 taken 1 (fallthrough)
+branch 12 taken 0 (throw)
+        1:   11-block  2
+call   13 returned 1
+call   14 returned 1
+call   15 returned 1
+    %%%%%:   11-block  3
+call   16 never executed
+    %%%%%:   11-block  4
+call   17 never executed
+    %%%%%:   11-block  5
+call   18 never executed
+call   19 never executed
+        1:   11-block  6
+        1:   11-block  7
+call   20 returned 1
+call   21 returned 1
+        1:   11-block  8
+        1:   11-block  9
+call   22 returned 1
+        1:   11-block 10
+        1:   11-block 11
+        1:   11-block 12
+call   23 returned 1
+        -:   12:
+        -:   13:    eph_h th = {{22114, 2020,   3,  319611, 629088, 3,  41, 0,  1,  3,  1,  2},
+        -:   14:                {31117, 2020,   3,  332870, 642475, 3,  40, 0,  1,  6,  6,  2},
+        -:   15:                {22866, 2020,   3,  317157, 627217, 2,  42, 1,  1,  2,  2,  2},
+        6:   16:                {20957, 2020,   3,  313965, 623297, 1,  43, 0,  1,  3,  1,  2}};
+        1:   16-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   16-block  1
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   16-block  2
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   16-block  3
+call   12 returned 1
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:   16-block  4
+call   16 returned 1
+call   17 returned 1
+branch 18 taken 1 (fallthrough)
+branch 19 taken 0 (throw)
+        1:   16-block  5
+call   20 returned 1
+        5:   16-block  6
+branch 21 taken 4 (fallthrough)
+branch 22 taken 1
+        4:   16-block  7
+call   23 returned 4
+        1:   16-block  8
+call   24 returned 1
+call   25 returned 1
+call   26 returned 1
+call   27 returned 1
+call   28 returned 1
+    %%%%%:   16-block  9
+    %%%%%:   16-block 10
+branch 29 never executed
+branch 30 never executed
+    %%%%%:   16-block 11
+call   31 never executed
+    %%%%%:   16-block 12
+    %%%%%:   16-block 13
+call   32 never executed
+    %%%%%:   16-block 14
+call   33 never executed
+    %%%%%:   16-block 15
+call   34 never executed
+    %%%%%:   16-block 16
+call   35 never executed
+    %%%%%:   16-block 17
+call   36 never executed
+    %%%%%:   16-block 18
+call   37 never executed
+        -:   17:
+        -:   18:    eph_i ti = {{20957, 2020,   1,  1,  3,  1,  88, 0,  0,  90000,  10},
+        -:   19:                {20957, 2020,   2,  1,  3,  2,  82, 0,  0,  25000,  10},
+        -:   20:                {31117, 2020,   1,  0,  3,  1,  58, 1,  3,  22000,  1},
+        -:   21:                {31117, 2020,   2,  0,  3,  2,  54, 1,  1,  -1,     1},
+        -:   22:                {31117, 2020,   3,  0,  3,  2,  46, 1,  3,  17000,  1},
+        -:   23:                {31117, 2020,   4,  0,  3,  1,  20, 1,  3,  5000,   1},
+        -:   24:                {31117, 2020,   5,  0,  3,  2,  15, 0,  0,  5000,   10},
+        -:   25:                {31117, 2020,   6,  0,  3,  1,  7,  0,  0,  0,      10},
+        -:   26:                {31117, 2020,   8,  0,  3,  2,  11, 0,  0,  0,      10},
+        -:   27:                {31117, 2020,   9,  0,  3,  1,  50, 0,  2,  0,      10},
+        -:   28:                {31117, 2020,   10, 0,  3,  1,  28, 1,  3,  5000,   1},
+        -:   29:                {22866, 2020,   1,  0,  3,  1,  31, 1,  3,  59000,  10},
+        -:   30:                {22866, 2020,   2,  1,  3,  2,  28, 1,  3,  0,      6},
+       16:   31:                {22114, 2020,   1,  0,  3,  1,  18, 0,  0,  20000,  10}};
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   31-block  0
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   31-block  1
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   31-block  2
+call   12 returned 1
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:   31-block  3
+call   16 returned 1
+call   17 returned 1
+branch 18 taken 1 (fallthrough)
+branch 19 taken 0 (throw)
+        1:   31-block  4
+call   20 returned 1
+call   21 returned 1
+branch 22 taken 1 (fallthrough)
+branch 23 taken 0 (throw)
+        1:   31-block  5
+call   24 returned 1
+call   25 returned 1
+branch 26 taken 1 (fallthrough)
+branch 27 taken 0 (throw)
+        1:   31-block  6
+call   28 returned 1
+call   29 returned 1
+branch 30 taken 1 (fallthrough)
+branch 31 taken 0 (throw)
+        1:   31-block  7
+call   32 returned 1
+call   33 returned 1
+branch 34 taken 1 (fallthrough)
+branch 35 taken 0 (throw)
+        1:   31-block  8
+call   36 returned 1
+call   37 returned 1
+branch 38 taken 1 (fallthrough)
+branch 39 taken 0 (throw)
+        1:   31-block  9
+call   40 returned 1
+call   41 returned 1
+branch 42 taken 1 (fallthrough)
+branch 43 taken 0 (throw)
+        1:   31-block 10
+call   44 returned 1
+call   45 returned 1
+branch 46 taken 1 (fallthrough)
+branch 47 taken 0 (throw)
+        1:   31-block 11
+call   48 returned 1
+call   49 returned 1
+branch 50 taken 1 (fallthrough)
+branch 51 taken 0 (throw)
+        1:   31-block 12
+call   52 returned 1
+call   53 returned 1
+branch 54 taken 1 (fallthrough)
+branch 55 taken 0 (throw)
+        1:   31-block 13
+call   56 returned 1
+call   57 returned 1
+branch 58 taken 1 (fallthrough)
+branch 59 taken 0 (throw)
+        1:   31-block 14
+call   60 returned 1
+       15:   31-block 15
+branch 61 taken 14 (fallthrough)
+branch 62 taken 1
+       14:   31-block 16
+call   63 returned 14
+        1:   31-block 17
+call   64 returned 1
+call   65 returned 1
+call   66 returned 1
+call   67 returned 1
+call   68 returned 1
+call   69 returned 1
+call   70 returned 1
+call   71 returned 1
+call   72 returned 1
+call   73 returned 1
+call   74 returned 1
+call   75 returned 1
+call   76 returned 1
+call   77 returned 1
+call   78 returned 1
+    %%%%%:   31-block 18
+    %%%%%:   31-block 19
+branch 79 never executed
+branch 80 never executed
+    %%%%%:   31-block 20
+call   81 never executed
+    %%%%%:   31-block 21
+    %%%%%:   31-block 22
+call   82 never executed
+    %%%%%:   31-block 23
+call   83 never executed
+    %%%%%:   31-block 24
+call   84 never executed
+    %%%%%:   31-block 25
+call   85 never executed
+    %%%%%:   31-block 26
+call   86 never executed
+    %%%%%:   31-block 27
+call   87 never executed
+    %%%%%:   31-block 28
+call   88 never executed
+    %%%%%:   31-block 29
+call   89 never executed
+    %%%%%:   31-block 30
+call   90 never executed
+    %%%%%:   31-block 31
+call   91 never executed
+    %%%%%:   31-block 32
+call   92 never executed
+    %%%%%:   31-block 33
+call   93 never executed
+    %%%%%:   31-block 34
+call   94 never executed
+    %%%%%:   31-block 35
+call   95 never executed
+    %%%%%:   31-block 36
+call   96 never executed
+        -:   32:
+        1:   33:    EXPECT_TRUE(esEncuestaValida(th, ti));
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   33-block  0
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   33-block  1
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   33-block  2
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   33-block  3
+call   12 returned 1
+call   13 returned 1
+call   14 returned 1
+branch 15 taken 0 (fallthrough)
+branch 16 taken 1
+    $$$$$:   33-block  4
+call   17 never executed
+branch 18 never executed
+branch 19 never executed
+    $$$$$:   33-block  5
+call   20 never executed
+branch 21 never executed
+branch 22 never executed
+    $$$$$:   33-block  6
+call   23 never executed
+call   24 never executed
+branch 25 never executed
+branch 26 never executed
+    $$$$$:   33-block  7
+call   27 never executed
+branch 28 never executed
+branch 29 never executed
+    $$$$$:   33-block  8
+call   30 never executed
+call   31 never executed
+call   32 never executed
+        1:   33-block  9
+call   33 returned 1
+    %%%%%:   33-block 10
+    %%%%%:   33-block 11
+call   34 never executed
+    %%%%%:   33-block 12
+call   35 never executed
+    %%%%%:   33-block 13
+call   36 never executed
+    %%%%%:   33-block 14
+call   37 never executed
+    %%%%%:   33-block 15
+call   38 never executed
+    %%%%%:   33-block 16
+call   39 never executed
+    %%%%%:   33-block 17
+        1:   34:}
+    %%%%%:   34-block  0
+call    0 never executed
+        -:   35:
+function _ZN44esEncuestaValidaTEST_invalidaSinHogares_TestD0Ev called 1 returned 100% blocks executed 100%
+function _ZN44esEncuestaValidaTEST_invalidaSinHogares_TestD1Ev called 1 returned 100% blocks executed 100%
+function _ZN44esEncuestaValidaTEST_invalidaSinHogares_Test8TestBodyEv called 1 returned 100% blocks executed 45%
+function _ZN44esEncuestaValidaTEST_invalidaSinHogares_TestC1Ev called 1 returned 100% blocks executed 100%
+        8:   36:TEST(esEncuestaValidaTEST, invalidaSinHogares) {
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   36-block  0
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:   36-block  1
+call   10 returned 1
+branch 11 taken 1 (fallthrough)
+branch 12 taken 0 (throw)
+        1:   36-block  2
+call   13 returned 1
+call   14 returned 1
+call   15 returned 1
+    %%%%%:   36-block  3
+call   16 never executed
+    %%%%%:   36-block  4
+call   17 never executed
+    %%%%%:   36-block  5
+call   18 never executed
+call   19 never executed
+        1:   36-block  6
+        1:   36-block  7
+call   20 returned 1
+call   21 returned 1
+        1:   36-block  8
+        1:   36-block  9
+call   22 returned 1
+        1:   36-block 10
+        1:   36-block 11
+        1:   36-block 12
+call   23 returned 1
+        -:   37:
+        2:   38:    eph_h th = {};
+        1:   38-block  0
+call    0 returned 1
+call    1 returned 1
+    %%%%%:   38-block  1
+call    2 never executed
+        -:   39:
+        -:   40:    eph_i ti = {{20957, 2020,   1,  1,  3,  1,  88, 0,  0,  90000,  10},
+        -:   41:                {20957, 2020,   2,  1,  3,  2,  82, 0,  0,  25000,  10},
+        -:   42:                {22866, 2020,   1,  0,  3,  1,  31, 1,  3,  59000,  10},
+        -:   43:                {22866, 2020,   2,  1,  3,  2,  28, 1,  3,  0,      6},
+        7:   44:                {22114, 2020,   1,  0,  3,  1,  18, 0,  0,  20000,  10}};
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   44-block  0
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   44-block  1
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   44-block  2
+call   12 returned 1
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:   44-block  3
+call   16 returned 1
+call   17 returned 1
+branch 18 taken 1 (fallthrough)
+branch 19 taken 0 (throw)
+        1:   44-block  4
+call   20 returned 1
+call   21 returned 1
+branch 22 taken 1 (fallthrough)
+branch 23 taken 0 (throw)
+        1:   44-block  5
+call   24 returned 1
+        6:   44-block  6
+branch 25 taken 5 (fallthrough)
+branch 26 taken 1
+        5:   44-block  7
+call   27 returned 5
+        1:   44-block  8
+call   28 returned 1
+call   29 returned 1
+call   30 returned 1
+call   31 returned 1
+call   32 returned 1
+call   33 returned 1
+    %%%%%:   44-block  9
+    %%%%%:   44-block 10
+branch 34 never executed
+branch 35 never executed
+    %%%%%:   44-block 11
+call   36 never executed
+    %%%%%:   44-block 12
+    %%%%%:   44-block 13
+call   37 never executed
+    %%%%%:   44-block 14
+call   38 never executed
+    %%%%%:   44-block 15
+call   39 never executed
+    %%%%%:   44-block 16
+call   40 never executed
+    %%%%%:   44-block 17
+call   41 never executed
+    %%%%%:   44-block 18
+call   42 never executed
+        -:   45:
+        1:   46:    EXPECT_FALSE(esEncuestaValida(th, ti));
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   46-block  0
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   46-block  1
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   46-block  2
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   46-block  3
+call   12 returned 1
+call   13 returned 1
+call   14 returned 1
+branch 15 taken 0 (fallthrough)
+branch 16 taken 1
+    $$$$$:   46-block  4
+call   17 never executed
+branch 18 never executed
+branch 19 never executed
+    $$$$$:   46-block  5
+call   20 never executed
+branch 21 never executed
+branch 22 never executed
+    $$$$$:   46-block  6
+call   23 never executed
+call   24 never executed
+branch 25 never executed
+branch 26 never executed
+    $$$$$:   46-block  7
+call   27 never executed
+branch 28 never executed
+branch 29 never executed
+    $$$$$:   46-block  8
+call   30 never executed
+call   31 never executed
+call   32 never executed
+        1:   46-block  9
+call   33 returned 1
+    %%%%%:   46-block 10
+    %%%%%:   46-block 11
+call   34 never executed
+    %%%%%:   46-block 12
+call   35 never executed
+    %%%%%:   46-block 13
+call   36 never executed
+    %%%%%:   46-block 14
+call   37 never executed
+    %%%%%:   46-block 15
+call   38 never executed
+    %%%%%:   46-block 16
+call   39 never executed
+    %%%%%:   46-block 17
+        1:   47:}
+    %%%%%:   47-block  0
+call    0 never executed
+        -:   48:
+function _ZN64esEncuestaValidaTEST_invalidaSinTodosLosAtributosIndividuos_TestD0Ev called 1 returned 100% blocks executed 100%
+function _ZN64esEncuestaValidaTEST_invalidaSinTodosLosAtributosIndividuos_TestD1Ev called 1 returned 100% blocks executed 100%
+function _ZN64esEncuestaValidaTEST_invalidaSinTodosLosAtributosIndividuos_Test8TestBodyEv called 1 returned 100% blocks executed 43%
+function _ZN64esEncuestaValidaTEST_invalidaSinTodosLosAtributosIndividuos_TestC1Ev called 1 returned 100% blocks executed 100%
+        8:   49:TEST(esEncuestaValidaTEST, invalidaSinTodosLosAtributosIndividuos) {
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   49-block  0
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:   49-block  1
+call   10 returned 1
+branch 11 taken 1 (fallthrough)
+branch 12 taken 0 (throw)
+        1:   49-block  2
+call   13 returned 1
+call   14 returned 1
+call   15 returned 1
+    %%%%%:   49-block  3
+call   16 never executed
+    %%%%%:   49-block  4
+call   17 never executed
+    %%%%%:   49-block  5
+call   18 never executed
+call   19 never executed
+        1:   49-block  6
+        1:   49-block  7
+call   20 returned 1
+call   21 returned 1
+        1:   49-block  8
+        1:   49-block  9
+call   22 returned 1
+        1:   49-block 10
+        1:   49-block 11
+        1:   49-block 12
+call   23 returned 1
+        3:   50:    eph_h th = {{22114, 2020,   3,  319611, 629088, 3,  41, 0,  1,  3,  1,  2}};
+        1:   50-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   50-block  1
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   50-block  2
+call    8 returned 1
+        2:   50-block  3
+branch  9 taken 1 (fallthrough)
+branch 10 taken 1
+        1:   50-block  4
+call   11 returned 1
+        1:   50-block  5
+call   12 returned 1
+call   13 returned 1
+    %%%%%:   50-block  6
+    %%%%%:   50-block  7
+branch 14 never executed
+branch 15 never executed
+    %%%%%:   50-block  8
+call   16 never executed
+    %%%%%:   50-block  9
+    %%%%%:   50-block 10
+call   17 never executed
+    %%%%%:   50-block 11
+call   18 never executed
+    %%%%%:   50-block 12
+call   19 never executed
+        -:   51:    eph_i ti = {{22114},
+        4:   52:                {22114, 2020}};
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   52-block  0
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   52-block  1
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   52-block  2
+call   12 returned 1
+        3:   52-block  3
+branch 13 taken 2 (fallthrough)
+branch 14 taken 1
+        2:   52-block  4
+call   15 returned 2
+        1:   52-block  5
+call   16 returned 1
+call   17 returned 1
+call   18 returned 1
+    %%%%%:   52-block  6
+    %%%%%:   52-block  7
+branch 19 never executed
+branch 20 never executed
+    %%%%%:   52-block  8
+call   21 never executed
+    %%%%%:   52-block  9
+    %%%%%:   52-block 10
+call   22 never executed
+    %%%%%:   52-block 11
+call   23 never executed
+    %%%%%:   52-block 12
+call   24 never executed
+        -:   53:
+        1:   54:    EXPECT_FALSE(esEncuestaValida(th, ti));
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   54-block  0
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   54-block  1
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   54-block  2
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   54-block  3
+call   12 returned 1
+call   13 returned 1
+call   14 returned 1
+branch 15 taken 0 (fallthrough)
+branch 16 taken 1
+    $$$$$:   54-block  4
+call   17 never executed
+branch 18 never executed
+branch 19 never executed
+    $$$$$:   54-block  5
+call   20 never executed
+branch 21 never executed
+branch 22 never executed
+    $$$$$:   54-block  6
+call   23 never executed
+call   24 never executed
+branch 25 never executed
+branch 26 never executed
+    $$$$$:   54-block  7
+call   27 never executed
+branch 28 never executed
+branch 29 never executed
+    $$$$$:   54-block  8
+call   30 never executed
+call   31 never executed
+call   32 never executed
+        1:   54-block  9
+call   33 returned 1
+    %%%%%:   54-block 10
+    %%%%%:   54-block 11
+call   34 never executed
+    %%%%%:   54-block 12
+call   35 never executed
+    %%%%%:   54-block 13
+call   36 never executed
+    %%%%%:   54-block 14
+call   37 never executed
+    %%%%%:   54-block 15
+call   38 never executed
+    %%%%%:   54-block 16
+call   39 never executed
+    %%%%%:   54-block 17
+        1:   55:}
+    %%%%%:   55-block  0
+call    0 never executed
+        -:   56:
+function _ZN61esEncuestaValidaTEST_invalidaSinTodosLosAtributosHogares_TestD0Ev called 1 returned 100% blocks executed 100%
+function _ZN61esEncuestaValidaTEST_invalidaSinTodosLosAtributosHogares_TestD1Ev called 1 returned 100% blocks executed 100%
+function _ZN61esEncuestaValidaTEST_invalidaSinTodosLosAtributosHogares_Test8TestBodyEv called 1 returned 100% blocks executed 41%
+function _ZN61esEncuestaValidaTEST_invalidaSinTodosLosAtributosHogares_TestC1Ev called 1 returned 100% blocks executed 100%
+        8:   57:TEST(esEncuestaValidaTEST, invalidaSinTodosLosAtributosHogares) {
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   57-block  0
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:   57-block  1
+call   10 returned 1
+branch 11 taken 1 (fallthrough)
+branch 12 taken 0 (throw)
+        1:   57-block  2
+call   13 returned 1
+call   14 returned 1
+call   15 returned 1
+    %%%%%:   57-block  3
+call   16 never executed
+    %%%%%:   57-block  4
+call   17 never executed
+    %%%%%:   57-block  5
+call   18 never executed
+call   19 never executed
+        1:   57-block  6
+        1:   57-block  7
+call   20 returned 1
+call   21 returned 1
+        1:   57-block  8
+        1:   57-block  9
+call   22 returned 1
+        1:   57-block 10
+        1:   57-block 11
+        1:   57-block 12
+call   23 returned 1
+        3:   58:    eph_h th = {{}};
+        1:   58-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+branch  3 taken 1 (fallthrough)
+branch  4 taken 0 (throw)
+        1:   58-block  1
+call    5 returned 1
+        2:   58-block  2
+branch  6 taken 1 (fallthrough)
+branch  7 taken 1
+        1:   58-block  3
+call    8 returned 1
+call    9 returned 1
+    %%%%%:   58-block  4
+    %%%%%:   58-block  5
+branch 10 never executed
+branch 11 never executed
+    %%%%%:   58-block  6
+call   12 never executed
+    %%%%%:   58-block  7
+    %%%%%:   58-block  8
+call   13 never executed
+    %%%%%:   58-block  9
+call   14 never executed
+        3:   59:    eph_i ti = {{22114, 2020,   1,  0,  3,  1,  18, 0,  0,  20000,  10}};
+        1:   59-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   59-block  1
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   59-block  2
+call    8 returned 1
+        2:   59-block  3
+branch  9 taken 1 (fallthrough)
+branch 10 taken 1
+        1:   59-block  4
+call   11 returned 1
+        1:   59-block  5
+call   12 returned 1
+call   13 returned 1
+    %%%%%:   59-block  6
+    %%%%%:   59-block  7
+branch 14 never executed
+branch 15 never executed
+    %%%%%:   59-block  8
+call   16 never executed
+    %%%%%:   59-block  9
+    %%%%%:   59-block 10
+call   17 never executed
+    %%%%%:   59-block 11
+call   18 never executed
+        -:   60:
+        1:   61:    EXPECT_FALSE(esEncuestaValida(th, ti));
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   61-block  0
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   61-block  1
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   61-block  2
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   61-block  3
+call   12 returned 1
+call   13 returned 1
+call   14 returned 1
+branch 15 taken 0 (fallthrough)
+branch 16 taken 1
+    $$$$$:   61-block  4
+call   17 never executed
+branch 18 never executed
+branch 19 never executed
+    $$$$$:   61-block  5
+call   20 never executed
+branch 21 never executed
+branch 22 never executed
+    $$$$$:   61-block  6
+call   23 never executed
+call   24 never executed
+branch 25 never executed
+branch 26 never executed
+    $$$$$:   61-block  7
+call   27 never executed
+branch 28 never executed
+branch 29 never executed
+    $$$$$:   61-block  8
+call   30 never executed
+call   31 never executed
+call   32 never executed
+        1:   61-block  9
+call   33 returned 1
+    %%%%%:   61-block 10
+    %%%%%:   61-block 11
+call   34 never executed
+    %%%%%:   61-block 12
+call   35 never executed
+    %%%%%:   61-block 13
+call   36 never executed
+    %%%%%:   61-block 14
+call   37 never executed
+    %%%%%:   61-block 15
+call   38 never executed
+    %%%%%:   61-block 16
+call   39 never executed
+    %%%%%:   61-block 17
+        1:   62:}
+    %%%%%:   62-block  0
+call    0 never executed
+        -:   63:
+function _ZN54esEncuestaValidaTEST_invalidaIndividuosSinHogares_TestD0Ev called 1 returned 100% blocks executed 100%
+function _ZN54esEncuestaValidaTEST_invalidaIndividuosSinHogares_TestD1Ev called 1 returned 100% blocks executed 100%
+function _ZN54esEncuestaValidaTEST_invalidaIndividuosSinHogares_Test8TestBodyEv called 1 returned 100% blocks executed 56%
+function _ZN54esEncuestaValidaTEST_invalidaIndividuosSinHogares_TestC1Ev called 1 returned 100% blocks executed 100%
+        8:   64:TEST(esEncuestaValidaTEST, invalidaIndividuosSinHogares) {
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   64-block  0
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:   64-block  1
+call   10 returned 1
+branch 11 taken 1 (fallthrough)
+branch 12 taken 0 (throw)
+        1:   64-block  2
+call   13 returned 1
+call   14 returned 1
+call   15 returned 1
+    %%%%%:   64-block  3
+call   16 never executed
+    %%%%%:   64-block  4
+call   17 never executed
+    %%%%%:   64-block  5
+call   18 never executed
+call   19 never executed
+        1:   64-block  6
+        1:   64-block  7
+call   20 returned 1
+call   21 returned 1
+        1:   64-block  8
+        1:   64-block  9
+call   22 returned 1
+        1:   64-block 10
+        1:   64-block 11
+        1:   64-block 12
+call   23 returned 1
+        -:   65:    eph_h th = {{22114, 2020,   3,  319611, 629088, 3,  41, 0,  1,  3,  1,  2},
+        4:   66:                {20957, 2020,   3,  313965, 623297, 1,  43, 0,  1,  3,  1,  2}};
+        1:   66-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   66-block  1
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   66-block  2
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   66-block  3
+call   12 returned 1
+        3:   66-block  4
+branch 13 taken 2 (fallthrough)
+branch 14 taken 1
+        2:   66-block  5
+call   15 returned 2
+        1:   66-block  6
+call   16 returned 1
+call   17 returned 1
+call   18 returned 1
+    %%%%%:   66-block  7
+    %%%%%:   66-block  8
+branch 19 never executed
+branch 20 never executed
+    %%%%%:   66-block  9
+call   21 never executed
+    %%%%%:   66-block 10
+    %%%%%:   66-block 11
+call   22 never executed
+    %%%%%:   66-block 12
+call   23 never executed
+    %%%%%:   66-block 13
+call   24 never executed
+    %%%%%:   66-block 14
+call   25 never executed
+        -:   67:    eph_i ti = {{20957, 2020,   1,  1,  3,  1,  88, 0,  0,  90000,  10},
+        -:   68:                {20957, 2020,   2,  1,  3,  2,  82, 0,  0,  25000,  10},
+        -:   69:                {22866, 2020,   1,  0,  3,  1,  31, 1,  3,  59000,  10},
+        -:   70:                {22866, 2020,   2,  1,  3,  2,  28, 1,  3,  0,      6},
+        7:   71:                {22114, 2020,   1,  0,  3,  1,  18, 0,  0,  20000,  10}};
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   71-block  0
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   71-block  1
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   71-block  2
+call   12 returned 1
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:   71-block  3
+call   16 returned 1
+call   17 returned 1
+branch 18 taken 1 (fallthrough)
+branch 19 taken 0 (throw)
+        1:   71-block  4
+call   20 returned 1
+call   21 returned 1
+branch 22 taken 1 (fallthrough)
+branch 23 taken 0 (throw)
+        1:   71-block  5
+call   24 returned 1
+        6:   71-block  6
+branch 25 taken 5 (fallthrough)
+branch 26 taken 1
+        5:   71-block  7
+call   27 returned 5
+        1:   71-block  8
+call   28 returned 1
+call   29 returned 1
+call   30 returned 1
+call   31 returned 1
+call   32 returned 1
+call   33 returned 1
+    %%%%%:   71-block  9
+    %%%%%:   71-block 10
+branch 34 never executed
+branch 35 never executed
+    %%%%%:   71-block 11
+call   36 never executed
+    %%%%%:   71-block 12
+    %%%%%:   71-block 13
+call   37 never executed
+    %%%%%:   71-block 14
+call   38 never executed
+    %%%%%:   71-block 15
+call   39 never executed
+    %%%%%:   71-block 16
+call   40 never executed
+    %%%%%:   71-block 17
+call   41 never executed
+    %%%%%:   71-block 18
+call   42 never executed
+        -:   72:
+        1:   73:    EXPECT_FALSE(esEncuestaValida(th, ti));
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   73-block  0
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   73-block  1
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   73-block  2
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   73-block  3
+call   12 returned 1
+call   13 returned 1
+call   14 returned 1
+branch 15 taken 1 (fallthrough)
+branch 16 taken 0
+        1:   73-block  4
+call   17 returned 1
+branch 18 taken 1 (fallthrough)
+branch 19 taken 0 (throw)
+        1:   73-block  5
+call   20 returned 1
+branch 21 taken 1 (fallthrough)
+branch 22 taken 0 (throw)
+        1:   73-block  6
+call   23 returned 1
+call   24 returned 1
+branch 25 taken 1 (fallthrough)
+branch 26 taken 0 (throw)
+        1:   73-block  7
+call   27 returned 1
+branch 28 taken 1 (fallthrough)
+branch 29 taken 0 (throw)
+        1:   73-block  8
+call   30 returned 1
+call   31 returned 1
+call   32 returned 1
+        1:   73-block  9
+call   33 returned 1
+    %%%%%:   73-block 10
+    %%%%%:   73-block 11
+call   34 never executed
+    %%%%%:   73-block 12
+call   35 never executed
+    %%%%%:   73-block 13
+call   36 never executed
+    %%%%%:   73-block 14
+call   37 never executed
+    %%%%%:   73-block 15
+call   38 never executed
+    %%%%%:   73-block 16
+call   39 never executed
+    %%%%%:   73-block 17
+        1:   74:}
+    %%%%%:   74-block  0
+call    0 never executed
+        -:   75:
+function _ZN56esEncuestaValidaTEST_invalidaHogaresCodusuRepetidos_TestD0Ev called 1 returned 100% blocks executed 100%
+function _ZN56esEncuestaValidaTEST_invalidaHogaresCodusuRepetidos_TestD1Ev called 1 returned 100% blocks executed 100%
+function _ZN56esEncuestaValidaTEST_invalidaHogaresCodusuRepetidos_Test8TestBodyEv called 1 returned 100% blocks executed 48%
+function _ZN56esEncuestaValidaTEST_invalidaHogaresCodusuRepetidos_TestC1Ev called 1 returned 100% blocks executed 100%
+        8:   76:TEST(esEncuestaValidaTEST, invalidaHogaresCodusuRepetidos) {
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   76-block  0
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:   76-block  1
+call   10 returned 1
+branch 11 taken 1 (fallthrough)
+branch 12 taken 0 (throw)
+        1:   76-block  2
+call   13 returned 1
+call   14 returned 1
+call   15 returned 1
+    %%%%%:   76-block  3
+call   16 never executed
+    %%%%%:   76-block  4
+call   17 never executed
+    %%%%%:   76-block  5
+call   18 never executed
+call   19 never executed
+        1:   76-block  6
+        1:   76-block  7
+call   20 returned 1
+call   21 returned 1
+        1:   76-block  8
+        1:   76-block  9
+call   22 returned 1
+        1:   76-block 10
+        1:   76-block 11
+        1:   76-block 12
+call   23 returned 1
+        -:   77:    eph_h th = {{22114, 2020,   3,  319611, 629088, 3,  41, 0,  1,  3,  1,  2},
+        -:   78:                {22114, 2020,   3,  332870, 642475, 3,  40, 0,  1,  6,  6,  2},
+        -:   79:                {22866, 2020,   3,  317157, 627217, 2,  42, 1,  1,  2,  2,  2},
+        6:   80:                {20957, 2020,   3,  313965, 623297, 1,  43, 0,  1,  3,  1,  2}};
+        1:   80-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   80-block  1
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   80-block  2
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   80-block  3
+call   12 returned 1
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:   80-block  4
+call   16 returned 1
+call   17 returned 1
+branch 18 taken 1 (fallthrough)
+branch 19 taken 0 (throw)
+        1:   80-block  5
+call   20 returned 1
+        5:   80-block  6
+branch 21 taken 4 (fallthrough)
+branch 22 taken 1
+        4:   80-block  7
+call   23 returned 4
+        1:   80-block  8
+call   24 returned 1
+call   25 returned 1
+call   26 returned 1
+call   27 returned 1
+call   28 returned 1
+    %%%%%:   80-block  9
+    %%%%%:   80-block 10
+branch 29 never executed
+branch 30 never executed
+    %%%%%:   80-block 11
+call   31 never executed
+    %%%%%:   80-block 12
+    %%%%%:   80-block 13
+call   32 never executed
+    %%%%%:   80-block 14
+call   33 never executed
+    %%%%%:   80-block 15
+call   34 never executed
+    %%%%%:   80-block 16
+call   35 never executed
+    %%%%%:   80-block 17
+call   36 never executed
+    %%%%%:   80-block 18
+call   37 never executed
+        -:   81:    eph_i ti = {{20957, 2020,   1,  1,  3,  1,  88, 0,  0,  90000,  10},
+        -:   82:                {20957, 2020,   2,  1,  3,  2,  82, 0,  0,  25000,  10},
+        -:   83:                {22866, 2020,   1,  0,  3,  1,  31, 1,  3,  59000,  10},
+        -:   84:                {22866, 2020,   2,  1,  3,  2,  28, 1,  3,  0,      6},
+        7:   85:                {22114, 2020,   1,  0,  3,  1,  18, 0,  0,  20000,  10}};
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   85-block  0
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   85-block  1
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   85-block  2
+call   12 returned 1
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:   85-block  3
+call   16 returned 1
+call   17 returned 1
+branch 18 taken 1 (fallthrough)
+branch 19 taken 0 (throw)
+        1:   85-block  4
+call   20 returned 1
+call   21 returned 1
+branch 22 taken 1 (fallthrough)
+branch 23 taken 0 (throw)
+        1:   85-block  5
+call   24 returned 1
+        6:   85-block  6
+branch 25 taken 5 (fallthrough)
+branch 26 taken 1
+        5:   85-block  7
+call   27 returned 5
+        1:   85-block  8
+call   28 returned 1
+call   29 returned 1
+call   30 returned 1
+call   31 returned 1
+call   32 returned 1
+call   33 returned 1
+    %%%%%:   85-block  9
+    %%%%%:   85-block 10
+branch 34 never executed
+branch 35 never executed
+    %%%%%:   85-block 11
+call   36 never executed
+    %%%%%:   85-block 12
+    %%%%%:   85-block 13
+call   37 never executed
+    %%%%%:   85-block 14
+call   38 never executed
+    %%%%%:   85-block 15
+call   39 never executed
+    %%%%%:   85-block 16
+call   40 never executed
+    %%%%%:   85-block 17
+call   41 never executed
+    %%%%%:   85-block 18
+call   42 never executed
+        -:   86:
+        1:   87:    EXPECT_FALSE(esEncuestaValida(th, ti));
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   87-block  0
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   87-block  1
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   87-block  2
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   87-block  3
+call   12 returned 1
+call   13 returned 1
+call   14 returned 1
+branch 15 taken 0 (fallthrough)
+branch 16 taken 1
+    $$$$$:   87-block  4
+call   17 never executed
+branch 18 never executed
+branch 19 never executed
+    $$$$$:   87-block  5
+call   20 never executed
+branch 21 never executed
+branch 22 never executed
+    $$$$$:   87-block  6
+call   23 never executed
+call   24 never executed
+branch 25 never executed
+branch 26 never executed
+    $$$$$:   87-block  7
+call   27 never executed
+branch 28 never executed
+branch 29 never executed
+    $$$$$:   87-block  8
+call   30 never executed
+call   31 never executed
+call   32 never executed
+        1:   87-block  9
+call   33 returned 1
+    %%%%%:   87-block 10
+    %%%%%:   87-block 11
+call   34 never executed
+    %%%%%:   87-block 12
+call   35 never executed
+    %%%%%:   87-block 13
+call   36 never executed
+    %%%%%:   87-block 14
+call   37 never executed
+    %%%%%:   87-block 15
+call   38 never executed
+    %%%%%:   87-block 16
+call   39 never executed
+    %%%%%:   87-block 17
+        1:   88:}
+    %%%%%:   88-block  0
+call    0 never executed
+        -:   89:
+function _ZN70esEncuestaValidaTEST_invalidaIndividuosCodusuYComponenteRepetidos_TestD0Ev called 1 returned 100% blocks executed 100%
+function _ZN70esEncuestaValidaTEST_invalidaIndividuosCodusuYComponenteRepetidos_TestD1Ev called 1 returned 100% blocks executed 100%
+function _ZN70esEncuestaValidaTEST_invalidaIndividuosCodusuYComponenteRepetidos_Test8TestBodyEv called 1 returned 100% blocks executed 47%
+function _ZN70esEncuestaValidaTEST_invalidaIndividuosCodusuYComponenteRepetidos_TestC1Ev called 1 returned 100% blocks executed 100%
+        8:   90:TEST(esEncuestaValidaTEST, invalidaIndividuosCodusuYComponenteRepetidos) {
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   90-block  0
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:   90-block  1
+call   10 returned 1
+branch 11 taken 1 (fallthrough)
+branch 12 taken 0 (throw)
+        1:   90-block  2
+call   13 returned 1
+call   14 returned 1
+call   15 returned 1
+    %%%%%:   90-block  3
+call   16 never executed
+    %%%%%:   90-block  4
+call   17 never executed
+    %%%%%:   90-block  5
+call   18 never executed
+call   19 never executed
+        1:   90-block  6
+        1:   90-block  7
+call   20 returned 1
+call   21 returned 1
+        1:   90-block  8
+        1:   90-block  9
+call   22 returned 1
+        1:   90-block 10
+        1:   90-block 11
+        1:   90-block 12
+call   23 returned 1
+        -:   91:    eph_h th = {{22114, 2020,   3,  319611, 629088, 3,  41, 0,  1,  3,  1,  2},
+        -:   92:                {22866, 2020,   3,  317157, 627217, 2,  42, 1,  1,  2,  2,  2},
+        5:   93:                {20957, 2020,   3,  313965, 623297, 1,  43, 0,  1,  3,  1,  2}};
+        1:   93-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   93-block  1
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   93-block  2
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   93-block  3
+call   12 returned 1
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:   93-block  4
+call   16 returned 1
+        4:   93-block  5
+branch 17 taken 3 (fallthrough)
+branch 18 taken 1
+        3:   93-block  6
+call   19 returned 3
+        1:   93-block  7
+call   20 returned 1
+call   21 returned 1
+call   22 returned 1
+call   23 returned 1
+    %%%%%:   93-block  8
+    %%%%%:   93-block  9
+branch 24 never executed
+branch 25 never executed
+    %%%%%:   93-block 10
+call   26 never executed
+    %%%%%:   93-block 11
+    %%%%%:   93-block 12
+call   27 never executed
+    %%%%%:   93-block 13
+call   28 never executed
+    %%%%%:   93-block 14
+call   29 never executed
+    %%%%%:   93-block 15
+call   30 never executed
+    %%%%%:   93-block 16
+call   31 never executed
+        -:   94:    eph_i ti = {{20957, 2020,   1,  1,  3,  1,  88, 0,  0,  90000,  10},
+        -:   95:                {20957, 2020,   2,  1,  3,  2,  82, 0,  0,  25000,  10},
+        -:   96:                {22866, 2020,   1,  0,  3,  1,  31, 1,  3,  59000,  10},
+        -:   97:                {22866, 2020,   1,  1,  3,  2,  28, 1,  3,  0,      6},
+        7:   98:                {22114, 2020,   1,  0,  3,  1,  18, 0,  0,  20000,  10}};
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   98-block  0
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   98-block  1
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   98-block  2
+call   12 returned 1
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:   98-block  3
+call   16 returned 1
+call   17 returned 1
+branch 18 taken 1 (fallthrough)
+branch 19 taken 0 (throw)
+        1:   98-block  4
+call   20 returned 1
+call   21 returned 1
+branch 22 taken 1 (fallthrough)
+branch 23 taken 0 (throw)
+        1:   98-block  5
+call   24 returned 1
+        6:   98-block  6
+branch 25 taken 5 (fallthrough)
+branch 26 taken 1
+        5:   98-block  7
+call   27 returned 5
+        1:   98-block  8
+call   28 returned 1
+call   29 returned 1
+call   30 returned 1
+call   31 returned 1
+call   32 returned 1
+call   33 returned 1
+    %%%%%:   98-block  9
+    %%%%%:   98-block 10
+branch 34 never executed
+branch 35 never executed
+    %%%%%:   98-block 11
+call   36 never executed
+    %%%%%:   98-block 12
+    %%%%%:   98-block 13
+call   37 never executed
+    %%%%%:   98-block 14
+call   38 never executed
+    %%%%%:   98-block 15
+call   39 never executed
+    %%%%%:   98-block 16
+call   40 never executed
+    %%%%%:   98-block 17
+call   41 never executed
+    %%%%%:   98-block 18
+call   42 never executed
+        -:   99:
+        1:  100:    EXPECT_FALSE(esEncuestaValida(th, ti));
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  100-block  0
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  100-block  1
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:  100-block  2
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  100-block  3
+call   12 returned 1
+call   13 returned 1
+call   14 returned 1
+branch 15 taken 0 (fallthrough)
+branch 16 taken 1
+    $$$$$:  100-block  4
+call   17 never executed
+branch 18 never executed
+branch 19 never executed
+    $$$$$:  100-block  5
+call   20 never executed
+branch 21 never executed
+branch 22 never executed
+    $$$$$:  100-block  6
+call   23 never executed
+call   24 never executed
+branch 25 never executed
+branch 26 never executed
+    $$$$$:  100-block  7
+call   27 never executed
+branch 28 never executed
+branch 29 never executed
+    $$$$$:  100-block  8
+call   30 never executed
+call   31 never executed
+call   32 never executed
+        1:  100-block  9
+call   33 returned 1
+    %%%%%:  100-block 10
+    %%%%%:  100-block 11
+call   34 never executed
+    %%%%%:  100-block 12
+call   35 never executed
+    %%%%%:  100-block 13
+call   36 never executed
+    %%%%%:  100-block 14
+call   37 never executed
+    %%%%%:  100-block 15
+call   38 never executed
+    %%%%%:  100-block 16
+call   39 never executed
+    %%%%%:  100-block 17
+        1:  101:}
+    %%%%%:  101-block  0
+call    0 never executed
+        -:  102:
+function _ZN53esEncuestaValidaTEST_invalidaDistintoAnioHogares_TestD0Ev called 1 returned 100% blocks executed 100%
+function _ZN53esEncuestaValidaTEST_invalidaDistintoAnioHogares_TestD1Ev called 1 returned 100% blocks executed 100%
+function _ZN53esEncuestaValidaTEST_invalidaDistintoAnioHogares_Test8TestBodyEv called 1 returned 100% blocks executed 47%
+function _ZN53esEncuestaValidaTEST_invalidaDistintoAnioHogares_TestC1Ev called 1 returned 100% blocks executed 100%
+        8:  103:TEST(esEncuestaValidaTEST, invalidaDistintoAnioHogares) {
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:  103-block  0
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:  103-block  1
+call   10 returned 1
+branch 11 taken 1 (fallthrough)
+branch 12 taken 0 (throw)
+        1:  103-block  2
+call   13 returned 1
+call   14 returned 1
+call   15 returned 1
+    %%%%%:  103-block  3
+call   16 never executed
+    %%%%%:  103-block  4
+call   17 never executed
+    %%%%%:  103-block  5
+call   18 never executed
+call   19 never executed
+        1:  103-block  6
+        1:  103-block  7
+call   20 returned 1
+call   21 returned 1
+        1:  103-block  8
+        1:  103-block  9
+call   22 returned 1
+        1:  103-block 10
+        1:  103-block 11
+        1:  103-block 12
+call   23 returned 1
+        -:  104:    eph_h th = {{22114, 2020,   3,  319611, 629088, 3,  41, 0,  1,  3,  1,  2},
+        -:  105:                {22866, 2020,   3,  317157, 627217, 2,  42, 1,  1,  2,  2,  2},
+        5:  106:                {20957, 2021,   3,  313965, 623297, 1,  43, 0,  1,  3,  1,  2}};
+        1:  106-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  106-block  1
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:  106-block  2
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  106-block  3
+call   12 returned 1
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:  106-block  4
+call   16 returned 1
+        4:  106-block  5
+branch 17 taken 3 (fallthrough)
+branch 18 taken 1
+        3:  106-block  6
+call   19 returned 3
+        1:  106-block  7
+call   20 returned 1
+call   21 returned 1
+call   22 returned 1
+call   23 returned 1
+    %%%%%:  106-block  8
+    %%%%%:  106-block  9
+branch 24 never executed
+branch 25 never executed
+    %%%%%:  106-block 10
+call   26 never executed
+    %%%%%:  106-block 11
+    %%%%%:  106-block 12
+call   27 never executed
+    %%%%%:  106-block 13
+call   28 never executed
+    %%%%%:  106-block 14
+call   29 never executed
+    %%%%%:  106-block 15
+call   30 never executed
+    %%%%%:  106-block 16
+call   31 never executed
+        -:  107:    eph_i ti = {{20957, 2020,   1,  1,  3,  1,  88, 0,  0,  90000,  10},
+        -:  108:                {20957, 2020,   2,  1,  3,  2,  82, 0,  0,  25000,  10},
+        -:  109:                {22866, 2020,   1,  0,  3,  1,  31, 1,  3,  59000,  10},
+        -:  110:                {22866, 2020,   2,  1,  3,  2,  28, 1,  3,  0,      6},
+        7:  111:                {22114, 2020,   1,  0,  3,  1,  18, 0,  0,  20000,  10}};
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  111-block  0
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:  111-block  1
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  111-block  2
+call   12 returned 1
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:  111-block  3
+call   16 returned 1
+call   17 returned 1
+branch 18 taken 1 (fallthrough)
+branch 19 taken 0 (throw)
+        1:  111-block  4
+call   20 returned 1
+call   21 returned 1
+branch 22 taken 1 (fallthrough)
+branch 23 taken 0 (throw)
+        1:  111-block  5
+call   24 returned 1
+        6:  111-block  6
+branch 25 taken 5 (fallthrough)
+branch 26 taken 1
+        5:  111-block  7
+call   27 returned 5
+        1:  111-block  8
+call   28 returned 1
+call   29 returned 1
+call   30 returned 1
+call   31 returned 1
+call   32 returned 1
+call   33 returned 1
+    %%%%%:  111-block  9
+    %%%%%:  111-block 10
+branch 34 never executed
+branch 35 never executed
+    %%%%%:  111-block 11
+call   36 never executed
+    %%%%%:  111-block 12
+    %%%%%:  111-block 13
+call   37 never executed
+    %%%%%:  111-block 14
+call   38 never executed
+    %%%%%:  111-block 15
+call   39 never executed
+    %%%%%:  111-block 16
+call   40 never executed
+    %%%%%:  111-block 17
+call   41 never executed
+    %%%%%:  111-block 18
+call   42 never executed
+        -:  112:
+        1:  113:    EXPECT_FALSE(esEncuestaValida(th, ti));
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  113-block  0
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  113-block  1
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:  113-block  2
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  113-block  3
+call   12 returned 1
+call   13 returned 1
+call   14 returned 1
+branch 15 taken 0 (fallthrough)
+branch 16 taken 1
+    $$$$$:  113-block  4
+call   17 never executed
+branch 18 never executed
+branch 19 never executed
+    $$$$$:  113-block  5
+call   20 never executed
+branch 21 never executed
+branch 22 never executed
+    $$$$$:  113-block  6
+call   23 never executed
+call   24 never executed
+branch 25 never executed
+branch 26 never executed
+    $$$$$:  113-block  7
+call   27 never executed
+branch 28 never executed
+branch 29 never executed
+    $$$$$:  113-block  8
+call   30 never executed
+call   31 never executed
+call   32 never executed
+        1:  113-block  9
+call   33 returned 1
+    %%%%%:  113-block 10
+    %%%%%:  113-block 11
+call   34 never executed
+    %%%%%:  113-block 12
+call   35 never executed
+    %%%%%:  113-block 13
+call   36 never executed
+    %%%%%:  113-block 14
+call   37 never executed
+    %%%%%:  113-block 15
+call   38 never executed
+    %%%%%:  113-block 16
+call   39 never executed
+    %%%%%:  113-block 17
+        1:  114:}
+    %%%%%:  114-block  0
+call    0 never executed
+        -:  115:
+function _ZN69esEncuestaValidaTEST_invalidaDistintoAnioEntreHogaresEIndividuos_TestD0Ev called 1 returned 100% blocks executed 100%
+function _ZN69esEncuestaValidaTEST_invalidaDistintoAnioEntreHogaresEIndividuos_TestD1Ev called 1 returned 100% blocks executed 100%
+function _ZN69esEncuestaValidaTEST_invalidaDistintoAnioEntreHogaresEIndividuos_Test8TestBodyEv called 1 returned 100% blocks executed 47%
+function _ZN69esEncuestaValidaTEST_invalidaDistintoAnioEntreHogaresEIndividuos_TestC1Ev called 1 returned 100% blocks executed 100%
+        8:  116:TEST(esEncuestaValidaTEST, invalidaDistintoAnioEntreHogaresEIndividuos) {
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:  116-block  0
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:  116-block  1
+call   10 returned 1
+branch 11 taken 1 (fallthrough)
+branch 12 taken 0 (throw)
+        1:  116-block  2
+call   13 returned 1
+call   14 returned 1
+call   15 returned 1
+    %%%%%:  116-block  3
+call   16 never executed
+    %%%%%:  116-block  4
+call   17 never executed
+    %%%%%:  116-block  5
+call   18 never executed
+call   19 never executed
+        1:  116-block  6
+        1:  116-block  7
+call   20 returned 1
+call   21 returned 1
+        1:  116-block  8
+        1:  116-block  9
+call   22 returned 1
+        1:  116-block 10
+        1:  116-block 11
+        1:  116-block 12
+call   23 returned 1
+        -:  117:    eph_h th = {{22114, 2021,   3,  319611, 629088, 3,  41, 0,  1,  3,  1,  2},
+        -:  118:                {22866, 2021,   3,  317157, 627217, 2,  42, 1,  1,  2,  2,  2},
+        5:  119:                {20957, 2021,   3,  313965, 623297, 1,  43, 0,  1,  3,  1,  2}};
+        1:  119-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  119-block  1
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:  119-block  2
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  119-block  3
+call   12 returned 1
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:  119-block  4
+call   16 returned 1
+        4:  119-block  5
+branch 17 taken 3 (fallthrough)
+branch 18 taken 1
+        3:  119-block  6
+call   19 returned 3
+        1:  119-block  7
+call   20 returned 1
+call   21 returned 1
+call   22 returned 1
+call   23 returned 1
+    %%%%%:  119-block  8
+    %%%%%:  119-block  9
+branch 24 never executed
+branch 25 never executed
+    %%%%%:  119-block 10
+call   26 never executed
+    %%%%%:  119-block 11
+    %%%%%:  119-block 12
+call   27 never executed
+    %%%%%:  119-block 13
+call   28 never executed
+    %%%%%:  119-block 14
+call   29 never executed
+    %%%%%:  119-block 15
+call   30 never executed
+    %%%%%:  119-block 16
+call   31 never executed
+        -:  120:    eph_i ti = {{20957, 2020,   1,  1,  3,  1,  88, 0,  0,  90000,  10},
+        -:  121:                {20957, 2020,   2,  1,  3,  2,  82, 0,  0,  25000,  10},
+        -:  122:                {22866, 2020,   1,  0,  3,  1,  31, 1,  3,  59000,  10},
+        -:  123:                {22866, 2020,   2,  1,  3,  2,  28, 1,  3,  0,      6},
+        7:  124:                {22114, 2020,   1,  0,  3,  1,  18, 0,  0,  20000,  10}};
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  124-block  0
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:  124-block  1
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  124-block  2
+call   12 returned 1
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:  124-block  3
+call   16 returned 1
+call   17 returned 1
+branch 18 taken 1 (fallthrough)
+branch 19 taken 0 (throw)
+        1:  124-block  4
+call   20 returned 1
+call   21 returned 1
+branch 22 taken 1 (fallthrough)
+branch 23 taken 0 (throw)
+        1:  124-block  5
+call   24 returned 1
+        6:  124-block  6
+branch 25 taken 5 (fallthrough)
+branch 26 taken 1
+        5:  124-block  7
+call   27 returned 5
+        1:  124-block  8
+call   28 returned 1
+call   29 returned 1
+call   30 returned 1
+call   31 returned 1
+call   32 returned 1
+call   33 returned 1
+    %%%%%:  124-block  9
+    %%%%%:  124-block 10
+branch 34 never executed
+branch 35 never executed
+    %%%%%:  124-block 11
+call   36 never executed
+    %%%%%:  124-block 12
+    %%%%%:  124-block 13
+call   37 never executed
+    %%%%%:  124-block 14
+call   38 never executed
+    %%%%%:  124-block 15
+call   39 never executed
+    %%%%%:  124-block 16
+call   40 never executed
+    %%%%%:  124-block 17
+call   41 never executed
+    %%%%%:  124-block 18
+call   42 never executed
+        -:  125:
+        1:  126:    EXPECT_FALSE(esEncuestaValida(th, ti));
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  126-block  0
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  126-block  1
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:  126-block  2
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  126-block  3
+call   12 returned 1
+call   13 returned 1
+call   14 returned 1
+branch 15 taken 0 (fallthrough)
+branch 16 taken 1
+    $$$$$:  126-block  4
+call   17 never executed
+branch 18 never executed
+branch 19 never executed
+    $$$$$:  126-block  5
+call   20 never executed
+branch 21 never executed
+branch 22 never executed
+    $$$$$:  126-block  6
+call   23 never executed
+call   24 never executed
+branch 25 never executed
+branch 26 never executed
+    $$$$$:  126-block  7
+call   27 never executed
+branch 28 never executed
+branch 29 never executed
+    $$$$$:  126-block  8
+call   30 never executed
+call   31 never executed
+call   32 never executed
+        1:  126-block  9
+call   33 returned 1
+    %%%%%:  126-block 10
+    %%%%%:  126-block 11
+call   34 never executed
+    %%%%%:  126-block 12
+call   35 never executed
+    %%%%%:  126-block 13
+call   36 never executed
+    %%%%%:  126-block 14
+call   37 never executed
+    %%%%%:  126-block 15
+call   38 never executed
+    %%%%%:  126-block 16
+call   39 never executed
+    %%%%%:  126-block 17
+        1:  127:}
+    %%%%%:  127-block  0
+call    0 never executed
+        -:  128:
+function _ZN66esEncuestaValidaTEST_invalidaDistintoTrimestreEntreIndividuos_TestD0Ev called 1 returned 100% blocks executed 100%
+function _ZN66esEncuestaValidaTEST_invalidaDistintoTrimestreEntreIndividuos_TestD1Ev called 1 returned 100% blocks executed 100%
+function _ZN66esEncuestaValidaTEST_invalidaDistintoTrimestreEntreIndividuos_Test8TestBodyEv called 1 returned 100% blocks executed 47%
+function _ZN66esEncuestaValidaTEST_invalidaDistintoTrimestreEntreIndividuos_TestC1Ev called 1 returned 100% blocks executed 100%
+        8:  129:TEST(esEncuestaValidaTEST, invalidaDistintoTrimestreEntreIndividuos) {
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:  129-block  0
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:  129-block  1
+call   10 returned 1
+branch 11 taken 1 (fallthrough)
+branch 12 taken 0 (throw)
+        1:  129-block  2
+call   13 returned 1
+call   14 returned 1
+call   15 returned 1
+    %%%%%:  129-block  3
+call   16 never executed
+    %%%%%:  129-block  4
+call   17 never executed
+    %%%%%:  129-block  5
+call   18 never executed
+call   19 never executed
+        1:  129-block  6
+        1:  129-block  7
+call   20 returned 1
+call   21 returned 1
+        1:  129-block  8
+        1:  129-block  9
+call   22 returned 1
+        1:  129-block 10
+        1:  129-block 11
+        1:  129-block 12
+call   23 returned 1
+        -:  130:    eph_h th = {{22114, 2020,   3,  319611, 629088, 3,  41, 0,  1,  3,  1,  2},
+        -:  131:                {22866, 2020,   3,  317157, 627217, 2,  42, 1,  1,  2,  2,  2},
+        5:  132:                {20957, 2020,   3,  313965, 623297, 1,  43, 0,  1,  3,  1,  2}};
+        1:  132-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  132-block  1
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:  132-block  2
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  132-block  3
+call   12 returned 1
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:  132-block  4
+call   16 returned 1
+        4:  132-block  5
+branch 17 taken 3 (fallthrough)
+branch 18 taken 1
+        3:  132-block  6
+call   19 returned 3
+        1:  132-block  7
+call   20 returned 1
+call   21 returned 1
+call   22 returned 1
+call   23 returned 1
+    %%%%%:  132-block  8
+    %%%%%:  132-block  9
+branch 24 never executed
+branch 25 never executed
+    %%%%%:  132-block 10
+call   26 never executed
+    %%%%%:  132-block 11
+    %%%%%:  132-block 12
+call   27 never executed
+    %%%%%:  132-block 13
+call   28 never executed
+    %%%%%:  132-block 14
+call   29 never executed
+    %%%%%:  132-block 15
+call   30 never executed
+    %%%%%:  132-block 16
+call   31 never executed
+        -:  133:    eph_i ti = {{20957, 2020,   1,  1,  3,  1,  88, 0,  0,  90000,  10},
+        -:  134:                {20957, 2020,   2,  1,  3,  2,  82, 0,  0,  25000,  10},
+        -:  135:                {22866, 2020,   1,  0,  3,  1,  31, 1,  3,  59000,  10},
+        -:  136:                {22866, 2020,   2,  1,  3,  2,  28, 1,  3,  0,      6},
+        7:  137:                {22114, 2020,   1,  0,  2,  1,  18, 0,  0,  20000,  10}};
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  137-block  0
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:  137-block  1
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  137-block  2
+call   12 returned 1
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:  137-block  3
+call   16 returned 1
+call   17 returned 1
+branch 18 taken 1 (fallthrough)
+branch 19 taken 0 (throw)
+        1:  137-block  4
+call   20 returned 1
+call   21 returned 1
+branch 22 taken 1 (fallthrough)
+branch 23 taken 0 (throw)
+        1:  137-block  5
+call   24 returned 1
+        6:  137-block  6
+branch 25 taken 5 (fallthrough)
+branch 26 taken 1
+        5:  137-block  7
+call   27 returned 5
+        1:  137-block  8
+call   28 returned 1
+call   29 returned 1
+call   30 returned 1
+call   31 returned 1
+call   32 returned 1
+call   33 returned 1
+    %%%%%:  137-block  9
+    %%%%%:  137-block 10
+branch 34 never executed
+branch 35 never executed
+    %%%%%:  137-block 11
+call   36 never executed
+    %%%%%:  137-block 12
+    %%%%%:  137-block 13
+call   37 never executed
+    %%%%%:  137-block 14
+call   38 never executed
+    %%%%%:  137-block 15
+call   39 never executed
+    %%%%%:  137-block 16
+call   40 never executed
+    %%%%%:  137-block 17
+call   41 never executed
+    %%%%%:  137-block 18
+call   42 never executed
+        -:  138:
+        1:  139:    EXPECT_FALSE(esEncuestaValida(th, ti));
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  139-block  0
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  139-block  1
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:  139-block  2
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  139-block  3
+call   12 returned 1
+call   13 returned 1
+call   14 returned 1
+branch 15 taken 0 (fallthrough)
+branch 16 taken 1
+    $$$$$:  139-block  4
+call   17 never executed
+branch 18 never executed
+branch 19 never executed
+    $$$$$:  139-block  5
+call   20 never executed
+branch 21 never executed
+branch 22 never executed
+    $$$$$:  139-block  6
+call   23 never executed
+call   24 never executed
+branch 25 never executed
+branch 26 never executed
+    $$$$$:  139-block  7
+call   27 never executed
+branch 28 never executed
+branch 29 never executed
+    $$$$$:  139-block  8
+call   30 never executed
+call   31 never executed
+call   32 never executed
+        1:  139-block  9
+call   33 returned 1
+    %%%%%:  139-block 10
+    %%%%%:  139-block 11
+call   34 never executed
+    %%%%%:  139-block 12
+call   35 never executed
+    %%%%%:  139-block 13
+call   36 never executed
+    %%%%%:  139-block 14
+call   37 never executed
+    %%%%%:  139-block 15
+call   38 never executed
+    %%%%%:  139-block 16
+call   39 never executed
+    %%%%%:  139-block 17
+        1:  140:}
+    %%%%%:  140-block  0
+call    0 never executed
+function _ZN65esEncuestaValidaTEST_invalidaDormitoriosMayoresAHabitaciones_TestD0Ev called 1 returned 100% blocks executed 100%
+function _ZN65esEncuestaValidaTEST_invalidaDormitoriosMayoresAHabitaciones_TestD1Ev called 1 returned 100% blocks executed 100%
+function _ZN65esEncuestaValidaTEST_invalidaDormitoriosMayoresAHabitaciones_Test8TestBodyEv called 1 returned 100% blocks executed 47%
+function _ZN65esEncuestaValidaTEST_invalidaDormitoriosMayoresAHabitaciones_TestC1Ev called 1 returned 100% blocks executed 100%
+        8:  141:TEST(esEncuestaValidaTEST, invalidaDormitoriosMayoresAHabitaciones) {
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:  141-block  0
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:  141-block  1
+call   10 returned 1
+branch 11 taken 1 (fallthrough)
+branch 12 taken 0 (throw)
+        1:  141-block  2
+call   13 returned 1
+call   14 returned 1
+call   15 returned 1
+    %%%%%:  141-block  3
+call   16 never executed
+    %%%%%:  141-block  4
+call   17 never executed
+    %%%%%:  141-block  5
+call   18 never executed
+call   19 never executed
+        1:  141-block  6
+        1:  141-block  7
+call   20 returned 1
+call   21 returned 1
+        1:  141-block  8
+        1:  141-block  9
+call   22 returned 1
+        1:  141-block 10
+        1:  141-block 11
+        1:  141-block 12
+call   23 returned 1
+        -:  142:    //                                                cantidad de dormitorios
+        -:  143:    //                                        cantidad de habitaciones  |
+        -:  144:    //                                                              |   |
+        -:  145:    //                                                              v   v
+        -:  146:    eph_h th = {{22114, 2020,   3,  319611, 629088, 3,  41, 0,  1,  3,  1,  2},
+        -:  147:                {22866, 2020,   1,  317157, 627217, 2,  42, 1,  1,  2,  5,  2},
+        5:  148:                {20957, 2020,   3,  313965, 623297, 1,  43, 0,  1,  3,  1,  2}};
+        1:  148-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  148-block  1
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:  148-block  2
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  148-block  3
+call   12 returned 1
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:  148-block  4
+call   16 returned 1
+        4:  148-block  5
+branch 17 taken 3 (fallthrough)
+branch 18 taken 1
+        3:  148-block  6
+call   19 returned 3
+        1:  148-block  7
+call   20 returned 1
+call   21 returned 1
+call   22 returned 1
+call   23 returned 1
+    %%%%%:  148-block  8
+    %%%%%:  148-block  9
+branch 24 never executed
+branch 25 never executed
+    %%%%%:  148-block 10
+call   26 never executed
+    %%%%%:  148-block 11
+    %%%%%:  148-block 12
+call   27 never executed
+    %%%%%:  148-block 13
+call   28 never executed
+    %%%%%:  148-block 14
+call   29 never executed
+    %%%%%:  148-block 15
+call   30 never executed
+    %%%%%:  148-block 16
+call   31 never executed
+        -:  149:    eph_i ti = {{20957, 2020,   1,  1,  3,  1,  88, 0,  0,  90000,  10},
+        -:  150:                {20957, 2020,   2,  1,  3,  2,  82, 0,  0,  25000,  10},
+        -:  151:                {22866, 2020,   1,  0,  3,  1,  31, 1,  3,  59000,  10},
+        -:  152:                {22866, 2020,   2,  1,  3,  2,  28, 1,  3,  0,      6},
+        7:  153:                {22114, 2020,   1,  0,  3,  1,  18, 0,  0,  20000,  10}};
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  153-block  0
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:  153-block  1
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  153-block  2
+call   12 returned 1
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:  153-block  3
+call   16 returned 1
+call   17 returned 1
+branch 18 taken 1 (fallthrough)
+branch 19 taken 0 (throw)
+        1:  153-block  4
+call   20 returned 1
+call   21 returned 1
+branch 22 taken 1 (fallthrough)
+branch 23 taken 0 (throw)
+        1:  153-block  5
+call   24 returned 1
+        6:  153-block  6
+branch 25 taken 5 (fallthrough)
+branch 26 taken 1
+        5:  153-block  7
+call   27 returned 5
+        1:  153-block  8
+call   28 returned 1
+call   29 returned 1
+call   30 returned 1
+call   31 returned 1
+call   32 returned 1
+call   33 returned 1
+    %%%%%:  153-block  9
+    %%%%%:  153-block 10
+branch 34 never executed
+branch 35 never executed
+    %%%%%:  153-block 11
+call   36 never executed
+    %%%%%:  153-block 12
+    %%%%%:  153-block 13
+call   37 never executed
+    %%%%%:  153-block 14
+call   38 never executed
+    %%%%%:  153-block 15
+call   39 never executed
+    %%%%%:  153-block 16
+call   40 never executed
+    %%%%%:  153-block 17
+call   41 never executed
+    %%%%%:  153-block 18
+call   42 never executed
+        -:  154:
+        1:  155:    EXPECT_FALSE(esEncuestaValida(th, ti));
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  155-block  0
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  155-block  1
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:  155-block  2
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  155-block  3
+call   12 returned 1
+call   13 returned 1
+call   14 returned 1
+branch 15 taken 0 (fallthrough)
+branch 16 taken 1
+    $$$$$:  155-block  4
+call   17 never executed
+branch 18 never executed
+branch 19 never executed
+    $$$$$:  155-block  5
+call   20 never executed
+branch 21 never executed
+branch 22 never executed
+    $$$$$:  155-block  6
+call   23 never executed
+call   24 never executed
+branch 25 never executed
+branch 26 never executed
+    $$$$$:  155-block  7
+call   27 never executed
+branch 28 never executed
+branch 29 never executed
+    $$$$$:  155-block  8
+call   30 never executed
+call   31 never executed
+call   32 never executed
+        1:  155-block  9
+call   33 returned 1
+    %%%%%:  155-block 10
+    %%%%%:  155-block 11
+call   34 never executed
+    %%%%%:  155-block 12
+call   35 never executed
+    %%%%%:  155-block 13
+call   36 never executed
+    %%%%%:  155-block 14
+call   37 never executed
+    %%%%%:  155-block 15
+call   38 never executed
+    %%%%%:  155-block 16
+call   39 never executed
+    %%%%%:  155-block 17
+        1:  156:}
+    %%%%%:  156-block  0
+call    0 never executed
+        -:  157:
+function _ZN63esEncuestaValidaTEST_validaMenosOIgualA20MiembrosEnElHogar_TestD0Ev called 1 returned 100% blocks executed 100%
+function _ZN63esEncuestaValidaTEST_validaMenosOIgualA20MiembrosEnElHogar_TestD1Ev called 1 returned 100% blocks executed 100%
+function _ZN63esEncuestaValidaTEST_validaMenosOIgualA20MiembrosEnElHogar_Test8TestBodyEv called 1 returned 100% blocks executed 44%
+function _ZN63esEncuestaValidaTEST_validaMenosOIgualA20MiembrosEnElHogar_TestC1Ev called 1 returned 100% blocks executed 100%
+        8:  158:TEST(esEncuestaValidaTEST, validaMenosOIgualA20MiembrosEnElHogar) {
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:  158-block  0
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:  158-block  1
+call   10 returned 1
+branch 11 taken 1 (fallthrough)
+branch 12 taken 0 (throw)
+        1:  158-block  2
+call   13 returned 1
+call   14 returned 1
+call   15 returned 1
+    %%%%%:  158-block  3
+call   16 never executed
+    %%%%%:  158-block  4
+call   17 never executed
+    %%%%%:  158-block  5
+call   18 never executed
+call   19 never executed
+        1:  158-block  6
+        1:  158-block  7
+call   20 returned 1
+call   21 returned 1
+        1:  158-block  8
+        1:  158-block  9
+call   22 returned 1
+        1:  158-block 10
+        1:  158-block 11
+        1:  158-block 12
+call   23 returned 1
+        3:  159:    eph_h th = {{22114, 2020,   3,  319611, 629088, 3,  41, 0,  1,  3,  1,  2}};
+        1:  159-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  159-block  1
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:  159-block  2
+call    8 returned 1
+        2:  159-block  3
+branch  9 taken 1 (fallthrough)
+branch 10 taken 1
+        1:  159-block  4
+call   11 returned 1
+        1:  159-block  5
+call   12 returned 1
+call   13 returned 1
+    %%%%%:  159-block  6
+    %%%%%:  159-block  7
+branch 14 never executed
+branch 15 never executed
+    %%%%%:  159-block  8
+call   16 never executed
+    %%%%%:  159-block  9
+    %%%%%:  159-block 10
+call   17 never executed
+    %%%%%:  159-block 11
+call   18 never executed
+    %%%%%:  159-block 12
+call   19 never executed
+        2:  160:    eph_i ti;
+call    0 returned 1
+call    1 returned 1
+    %%%%%:  160-block  0
+call    2 never executed
+        -:  161:
+       21:  162:    for (int i = 1; i <= 20; i++) {
+       21:  162-block  0
+branch  0 taken 20 (fallthrough)
+branch  1 taken 1
+       40:  163:        individuo individuo_actual = {22114, 2020,   1,  0,  3,  1,  18, 0,  0,  20000,  10};
+       20:  163-block  0
+call    0 returned 20
+call    1 returned 20
+branch  2 taken 20 (fallthrough)
+branch  3 taken 0 (throw)
+       20:  163-block  1
+call    4 returned 20
+       20:  163-block  2
+call    5 returned 20
+    %%%%%:  163-block  3
+call    6 never executed
+    %%%%%:  163-block  4
+       20:  164:        individuo_actual[COMPONENTE] = i;
+call    0 returned 20
+       20:  165:        ti.push_back(individuo_actual);
+call    0 returned 20
+branch  1 taken 20 (fallthrough)
+branch  2 taken 0 (throw)
+        -:  166:    }
+        -:  167:
+        1:  168:    EXPECT_TRUE(esEncuestaValida(th, ti));
+        1:  168-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  168-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  168-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:  168-block  3
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  168-block  4
+call   12 returned 1
+call   13 returned 1
+call   14 returned 1
+branch 15 taken 0 (fallthrough)
+branch 16 taken 1
+    $$$$$:  168-block  5
+call   17 never executed
+branch 18 never executed
+branch 19 never executed
+    $$$$$:  168-block  6
+call   20 never executed
+branch 21 never executed
+branch 22 never executed
+    $$$$$:  168-block  7
+call   23 never executed
+call   24 never executed
+branch 25 never executed
+branch 26 never executed
+    $$$$$:  168-block  8
+call   27 never executed
+branch 28 never executed
+branch 29 never executed
+    $$$$$:  168-block  9
+call   30 never executed
+call   31 never executed
+call   32 never executed
+        1:  168-block 10
+call   33 returned 1
+    %%%%%:  168-block 11
+    %%%%%:  168-block 12
+call   34 never executed
+    %%%%%:  168-block 13
+call   35 never executed
+    %%%%%:  168-block 14
+call   36 never executed
+    %%%%%:  168-block 15
+call   37 never executed
+    %%%%%:  168-block 16
+call   38 never executed
+    %%%%%:  168-block 17
+call   39 never executed
+    %%%%%:  168-block 18
+        1:  169:}
+    %%%%%:  169-block  0
+call    0 never executed
+        -:  170:
+function _ZN51esEncuestaValidaTEST_invalidaTrimestreNegativo_TestD0Ev called 1 returned 100% blocks executed 100%
+function _ZN51esEncuestaValidaTEST_invalidaTrimestreNegativo_TestD1Ev called 1 returned 100% blocks executed 100%
+function _ZN51esEncuestaValidaTEST_invalidaTrimestreNegativo_Test8TestBodyEv called 1 returned 100% blocks executed 42%
+function _ZN51esEncuestaValidaTEST_invalidaTrimestreNegativo_TestC1Ev called 1 returned 100% blocks executed 100%
+        8:  171:TEST(esEncuestaValidaTEST, invalidaTrimestreNegativo) {
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:  171-block  0
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:  171-block  1
+call   10 returned 1
+branch 11 taken 1 (fallthrough)
+branch 12 taken 0 (throw)
+        1:  171-block  2
+call   13 returned 1
+call   14 returned 1
+call   15 returned 1
+    %%%%%:  171-block  3
+call   16 never executed
+    %%%%%:  171-block  4
+call   17 never executed
+    %%%%%:  171-block  5
+call   18 never executed
+call   19 never executed
+        1:  171-block  6
+        1:  171-block  7
+call   20 returned 1
+call   21 returned 1
+        1:  171-block  8
+        1:  171-block  9
+call   22 returned 1
+        1:  171-block 10
+        1:  171-block 11
+        1:  171-block 12
+call   23 returned 1
+        3:  172:    eph_h th = {{22114, 2020,   -3,  319611, 629088, 3,  41, 0,  1,  3,  1,  2}};
+        1:  172-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  172-block  1
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:  172-block  2
+call    8 returned 1
+        2:  172-block  3
+branch  9 taken 1 (fallthrough)
+branch 10 taken 1
+        1:  172-block  4
+call   11 returned 1
+        1:  172-block  5
+call   12 returned 1
+call   13 returned 1
+    %%%%%:  172-block  6
+    %%%%%:  172-block  7
+branch 14 never executed
+branch 15 never executed
+    %%%%%:  172-block  8
+call   16 never executed
+    %%%%%:  172-block  9
+    %%%%%:  172-block 10
+call   17 never executed
+    %%%%%:  172-block 11
+call   18 never executed
+    %%%%%:  172-block 12
+call   19 never executed
+        3:  173:    eph_i ti = {{22114, 2020,   1,  0,  -3,  1,  18, 0,  0,  20000,  10}};
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  173-block  0
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:  173-block  1
+call    8 returned 1
+        2:  173-block  2
+branch  9 taken 1 (fallthrough)
+branch 10 taken 1
+        1:  173-block  3
+call   11 returned 1
+        1:  173-block  4
+call   12 returned 1
+call   13 returned 1
+    %%%%%:  173-block  5
+    %%%%%:  173-block  6
+branch 14 never executed
+branch 15 never executed
+    %%%%%:  173-block  7
+call   16 never executed
+    %%%%%:  173-block  8
+    %%%%%:  173-block  9
+call   17 never executed
+    %%%%%:  173-block 10
+call   18 never executed
+        -:  174:
+        1:  175:    EXPECT_FALSE(esEncuestaValida(th, ti));
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  175-block  0
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  175-block  1
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:  175-block  2
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  175-block  3
+call   12 returned 1
+call   13 returned 1
+call   14 returned 1
+branch 15 taken 0 (fallthrough)
+branch 16 taken 1
+    $$$$$:  175-block  4
+call   17 never executed
+branch 18 never executed
+branch 19 never executed
+    $$$$$:  175-block  5
+call   20 never executed
+branch 21 never executed
+branch 22 never executed
+    $$$$$:  175-block  6
+call   23 never executed
+call   24 never executed
+branch 25 never executed
+branch 26 never executed
+    $$$$$:  175-block  7
+call   27 never executed
+branch 28 never executed
+branch 29 never executed
+    $$$$$:  175-block  8
+call   30 never executed
+call   31 never executed
+call   32 never executed
+        1:  175-block  9
+call   33 returned 1
+    %%%%%:  175-block 10
+    %%%%%:  175-block 11
+call   34 never executed
+    %%%%%:  175-block 12
+call   35 never executed
+    %%%%%:  175-block 13
+call   36 never executed
+    %%%%%:  175-block 14
+call   37 never executed
+    %%%%%:  175-block 15
+call   38 never executed
+    %%%%%:  175-block 16
+call   39 never executed
+    %%%%%:  175-block 17
+        1:  176:}
+    %%%%%:  176-block  0
+call    0 never executed
+        -:  177:
+function _ZN48esEncuestaValidaTEST_validaTrimestreEnRango_TestD0Ev called 1 returned 100% blocks executed 100%
+function _ZN48esEncuestaValidaTEST_validaTrimestreEnRango_TestD1Ev called 1 returned 100% blocks executed 100%
+function _ZN48esEncuestaValidaTEST_validaTrimestreEnRango_Test8TestBodyEv called 1 returned 100% blocks executed 40%
+function _ZN48esEncuestaValidaTEST_validaTrimestreEnRango_TestC1Ev called 1 returned 100% blocks executed 100%
+        8:  178:TEST(esEncuestaValidaTEST, validaTrimestreEnRango) {
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:  178-block  0
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:  178-block  1
+call   10 returned 1
+branch 11 taken 1 (fallthrough)
+branch 12 taken 0 (throw)
+        1:  178-block  2
+call   13 returned 1
+call   14 returned 1
+call   15 returned 1
+    %%%%%:  178-block  3
+call   16 never executed
+    %%%%%:  178-block  4
+call   17 never executed
+    %%%%%:  178-block  5
+call   18 never executed
+call   19 never executed
+        1:  178-block  6
+        1:  178-block  7
+call   20 returned 1
+call   21 returned 1
+        1:  178-block  8
+        1:  178-block  9
+call   22 returned 1
+        1:  178-block 10
+        1:  178-block 11
+        1:  178-block 12
+call   23 returned 1
+        3:  179:    eph_h th = {{22114, 2020,   3,  319611, 629088, 3,  41, 0,  1,  3,  1,  2}};
+        1:  179-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  179-block  1
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:  179-block  2
+call    8 returned 1
+        2:  179-block  3
+branch  9 taken 1 (fallthrough)
+branch 10 taken 1
+        1:  179-block  4
+call   11 returned 1
+        1:  179-block  5
+call   12 returned 1
+call   13 returned 1
+    %%%%%:  179-block  6
+    %%%%%:  179-block  7
+branch 14 never executed
+branch 15 never executed
+    %%%%%:  179-block  8
+call   16 never executed
+    %%%%%:  179-block  9
+    %%%%%:  179-block 10
+call   17 never executed
+    %%%%%:  179-block 11
+call   18 never executed
+    %%%%%:  179-block 12
+call   19 never executed
+        3:  180:    eph_i ti = {{22114, 2020,   1,  0,  3,  1,  18, 0,  0,  20000,  10}};
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  180-block  0
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:  180-block  1
+call    8 returned 1
+        2:  180-block  2
+branch  9 taken 1 (fallthrough)
+branch 10 taken 1
+        1:  180-block  3
+call   11 returned 1
+        1:  180-block  4
+call   12 returned 1
+call   13 returned 1
+    %%%%%:  180-block  5
+    %%%%%:  180-block  6
+branch 14 never executed
+branch 15 never executed
+    %%%%%:  180-block  7
+call   16 never executed
+    %%%%%:  180-block  8
+    %%%%%:  180-block  9
+call   17 never executed
+    %%%%%:  180-block 10
+call   18 never executed
+        1:  181:    EXPECT_TRUE(esEncuestaValida(th, ti));
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  181-block  0
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  181-block  1
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:  181-block  2
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  181-block  3
+call   12 returned 1
+call   13 returned 1
+call   14 returned 1
+branch 15 taken 0 (fallthrough)
+branch 16 taken 1
+    $$$$$:  181-block  4
+call   17 never executed
+branch 18 never executed
+branch 19 never executed
+    $$$$$:  181-block  5
+call   20 never executed
+branch 21 never executed
+branch 22 never executed
+    $$$$$:  181-block  6
+call   23 never executed
+call   24 never executed
+branch 25 never executed
+branch 26 never executed
+    $$$$$:  181-block  7
+call   27 never executed
+branch 28 never executed
+branch 29 never executed
+    $$$$$:  181-block  8
+call   30 never executed
+call   31 never executed
+call   32 never executed
+        1:  181-block  9
+call   33 returned 1
+    %%%%%:  181-block 10
+    %%%%%:  181-block 11
+call   34 never executed
+    %%%%%:  181-block 12
+call   35 never executed
+    %%%%%:  181-block 13
+call   36 never executed
+    %%%%%:  181-block 14
+call   37 never executed
+    %%%%%:  181-block 15
+call   38 never executed
+    %%%%%:  181-block 16
+call   39 never executed
+    %%%%%:  181-block 17
+        -:  182:
+        1:  183:    th[0][HOGTRIMESTRE] = 1;
+call    0 returned 1
+call    1 returned 1
+        1:  184:    ti[0][INDTRIMESTRE] = 1;
+call    0 returned 1
+call    1 returned 1
+        1:  185:    EXPECT_TRUE(esEncuestaValida(th, ti));
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  185-block  0
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  185-block  1
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:  185-block  2
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  185-block  3
+call   12 returned 1
+call   13 returned 1
+call   14 returned 1
+branch 15 taken 0 (fallthrough)
+branch 16 taken 1
+    $$$$$:  185-block  4
+call   17 never executed
+branch 18 never executed
+branch 19 never executed
+    $$$$$:  185-block  5
+call   20 never executed
+branch 21 never executed
+branch 22 never executed
+    $$$$$:  185-block  6
+call   23 never executed
+call   24 never executed
+branch 25 never executed
+branch 26 never executed
+    $$$$$:  185-block  7
+call   27 never executed
+branch 28 never executed
+branch 29 never executed
+    $$$$$:  185-block  8
+call   30 never executed
+call   31 never executed
+call   32 never executed
+        1:  185-block  9
+call   33 returned 1
+    %%%%%:  185-block 10
+    %%%%%:  185-block 11
+call   34 never executed
+    %%%%%:  185-block 12
+call   35 never executed
+    %%%%%:  185-block 13
+call   36 never executed
+    %%%%%:  185-block 14
+call   37 never executed
+    %%%%%:  185-block 15
+call   38 never executed
+    %%%%%:  185-block 16
+call   39 never executed
+    %%%%%:  185-block 17
+        1:  186:}
+    %%%%%:  186-block  0
+call    0 never executed
+        -:  187:
+function _ZN44esEncuestaValidaTEST_validaAnioNegativo_TestD0Ev called 1 returned 100% blocks executed 100%
+function _ZN44esEncuestaValidaTEST_validaAnioNegativo_TestD1Ev called 1 returned 100% blocks executed 100%
+function _ZN44esEncuestaValidaTEST_validaAnioNegativo_Test8TestBodyEv called 1 returned 100% blocks executed 42%
+function _ZN44esEncuestaValidaTEST_validaAnioNegativo_TestC1Ev called 1 returned 100% blocks executed 100%
+        8:  188:TEST(esEncuestaValidaTEST, validaAnioNegativo) {
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:  188-block  0
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:  188-block  1
+call   10 returned 1
+branch 11 taken 1 (fallthrough)
+branch 12 taken 0 (throw)
+        1:  188-block  2
+call   13 returned 1
+call   14 returned 1
+call   15 returned 1
+    %%%%%:  188-block  3
+call   16 never executed
+    %%%%%:  188-block  4
+call   17 never executed
+    %%%%%:  188-block  5
+call   18 never executed
+call   19 never executed
+        1:  188-block  6
+        1:  188-block  7
+call   20 returned 1
+call   21 returned 1
+        1:  188-block  8
+        1:  188-block  9
+call   22 returned 1
+        1:  188-block 10
+        1:  188-block 11
+        1:  188-block 12
+call   23 returned 1
+        3:  189:    eph_h th = {{22114, -2020,   3,  319611, 629088, 3,  41, 0,  1,  3,  1,  2}};
+        1:  189-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  189-block  1
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:  189-block  2
+call    8 returned 1
+        2:  189-block  3
+branch  9 taken 1 (fallthrough)
+branch 10 taken 1
+        1:  189-block  4
+call   11 returned 1
+        1:  189-block  5
+call   12 returned 1
+call   13 returned 1
+    %%%%%:  189-block  6
+    %%%%%:  189-block  7
+branch 14 never executed
+branch 15 never executed
+    %%%%%:  189-block  8
+call   16 never executed
+    %%%%%:  189-block  9
+    %%%%%:  189-block 10
+call   17 never executed
+    %%%%%:  189-block 11
+call   18 never executed
+    %%%%%:  189-block 12
+call   19 never executed
+        3:  190:    eph_i ti = {{22114, -2020,   1,  0,  3,  1,  18, 0,  0,  20000,  10}};
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  190-block  0
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:  190-block  1
+call    8 returned 1
+        2:  190-block  2
+branch  9 taken 1 (fallthrough)
+branch 10 taken 1
+        1:  190-block  3
+call   11 returned 1
+        1:  190-block  4
+call   12 returned 1
+call   13 returned 1
+    %%%%%:  190-block  5
+    %%%%%:  190-block  6
+branch 14 never executed
+branch 15 never executed
+    %%%%%:  190-block  7
+call   16 never executed
+    %%%%%:  190-block  8
+    %%%%%:  190-block  9
+call   17 never executed
+    %%%%%:  190-block 10
+call   18 never executed
+        1:  191:    EXPECT_TRUE(esEncuestaValida(th, ti));
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  191-block  0
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  191-block  1
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:  191-block  2
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  191-block  3
+call   12 returned 1
+call   13 returned 1
+call   14 returned 1
+branch 15 taken 0 (fallthrough)
+branch 16 taken 1
+    $$$$$:  191-block  4
+call   17 never executed
+branch 18 never executed
+branch 19 never executed
+    $$$$$:  191-block  5
+call   20 never executed
+branch 21 never executed
+branch 22 never executed
+    $$$$$:  191-block  6
+call   23 never executed
+call   24 never executed
+branch 25 never executed
+branch 26 never executed
+    $$$$$:  191-block  7
+call   27 never executed
+branch 28 never executed
+branch 29 never executed
+    $$$$$:  191-block  8
+call   30 never executed
+call   31 never executed
+call   32 never executed
+        1:  191-block  9
+call   33 returned 1
+    %%%%%:  191-block 10
+    %%%%%:  191-block 11
+call   34 never executed
+    %%%%%:  191-block 12
+call   35 never executed
+    %%%%%:  191-block 13
+call   36 never executed
+    %%%%%:  191-block 14
+call   37 never executed
+    %%%%%:  191-block 15
+call   38 never executed
+    %%%%%:  191-block 16
+call   39 never executed
+    %%%%%:  191-block 17
+        1:  192:}
+    %%%%%:  192-block  0
+call    0 never executed
+        -:  193:
+function _ZN43esEncuestaValidaTEST_validaeph2018_100_TestD0Ev called 1 returned 100% blocks executed 100%
+function _ZN43esEncuestaValidaTEST_validaeph2018_100_TestD1Ev called 1 returned 100% blocks executed 100%
+function _ZN43esEncuestaValidaTEST_validaeph2018_100_Test8TestBodyEv called 1 returned 100% blocks executed 39%
+function _ZN43esEncuestaValidaTEST_validaeph2018_100_TestC1Ev called 1 returned 100% blocks executed 100%
+        8:  194:TEST(esEncuestaValidaTEST, validaeph2018_100) {
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:  194-block  0
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:  194-block  1
+call   10 returned 1
+branch 11 taken 1 (fallthrough)
+branch 12 taken 0 (throw)
+        1:  194-block  2
+call   13 returned 1
+call   14 returned 1
+call   15 returned 1
+    %%%%%:  194-block  3
+call   16 never executed
+    %%%%%:  194-block  4
+call   17 never executed
+    %%%%%:  194-block  5
+call   18 never executed
+call   19 never executed
+        1:  194-block  6
+        1:  194-block  7
+call   20 returned 1
+call   21 returned 1
+        1:  194-block  8
+        1:  194-block  9
+call   22 returned 1
+        1:  194-block 10
+        1:  194-block 11
+        1:  194-block 12
+call   23 returned 1
+        2:  195:    eph_h th;
+        1:  195-block  0
+call    0 returned 1
+call    1 returned 1
+    %%%%%:  195-block  1
+call    2 never executed
+        2:  196:    eph_i ti;
+call    0 returned 1
+call    1 returned 1
+    %%%%%:  196-block  0
+call    2 never executed
+        1:  197:    leerEncuesta ( "eph_3c_2018_100", th, ti );
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  197-block  0
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:  197-block  1
+call    7 returned 1
+call    8 returned 1
+    %%%%%:  197-block  2
+call    9 never executed
+    %%%%%:  197-block  3
+call   10 never executed
+        -:  198:
+        1:  199:    EXPECT_TRUE(esEncuestaValida(th, ti) );
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  199-block  0
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  199-block  1
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:  199-block  2
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  199-block  3
+call   12 returned 1
+call   13 returned 1
+call   14 returned 1
+branch 15 taken 0 (fallthrough)
+branch 16 taken 1
+    $$$$$:  199-block  4
+call   17 never executed
+branch 18 never executed
+branch 19 never executed
+    $$$$$:  199-block  5
+call   20 never executed
+branch 21 never executed
+branch 22 never executed
+    $$$$$:  199-block  6
+call   23 never executed
+call   24 never executed
+branch 25 never executed
+branch 26 never executed
+    $$$$$:  199-block  7
+call   27 never executed
+branch 28 never executed
+branch 29 never executed
+    $$$$$:  199-block  8
+call   30 never executed
+call   31 never executed
+call   32 never executed
+        1:  199-block  9
+call   33 returned 1
+    %%%%%:  199-block 10
+    %%%%%:  199-block 11
+call   34 never executed
+    %%%%%:  199-block 12
+call   35 never executed
+    %%%%%:  199-block 13
+call   36 never executed
+    %%%%%:  199-block 14
+call   37 never executed
+    %%%%%:  199-block 15
+call   38 never executed
+    %%%%%:  199-block 16
+call   39 never executed
+    %%%%%:  199-block 17
+        1:  200:}
+        -:  201:
+function _ZN43esEncuestaValidaTEST_validaeph2020_100_TestD0Ev called 1 returned 100% blocks executed 100%
+function _ZN43esEncuestaValidaTEST_validaeph2020_100_TestD1Ev called 1 returned 100% blocks executed 100%
+function _ZN43esEncuestaValidaTEST_validaeph2020_100_Test8TestBodyEv called 1 returned 100% blocks executed 39%
+function _ZN43esEncuestaValidaTEST_validaeph2020_100_TestC1Ev called 1 returned 100% blocks executed 100%
+        8:  202:TEST(esEncuestaValidaTEST, validaeph2020_100) {
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:  202-block  0
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:  202-block  1
+call   10 returned 1
+branch 11 taken 1 (fallthrough)
+branch 12 taken 0 (throw)
+        1:  202-block  2
+call   13 returned 1
+call   14 returned 1
+call   15 returned 1
+    %%%%%:  202-block  3
+call   16 never executed
+    %%%%%:  202-block  4
+call   17 never executed
+    %%%%%:  202-block  5
+call   18 never executed
+        1:  202-block  6
+        1:  202-block  7
+call   19 returned 1
+call   20 returned 1
+        1:  202-block  8
+        1:  202-block  9
+call   21 returned 1
+        1:  202-block 10
+        1:  202-block 11
+        1:  202-block 12
+call   22 returned 1
+        2:  203:    eph_h th;
+        1:  203-block  0
+call    0 returned 1
+call    1 returned 1
+    %%%%%:  203-block  1
+call    2 never executed
+        2:  204:    eph_i ti;
+call    0 returned 1
+call    1 returned 1
+    %%%%%:  204-block  0
+call    2 never executed
+        1:  205:    leerEncuesta ( "eph_3c_2020_100", th, ti );
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  205-block  0
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:  205-block  1
+call    7 returned 1
+call    8 returned 1
+    %%%%%:  205-block  2
+call    9 never executed
+    %%%%%:  205-block  3
+call   10 never executed
+        -:  206:
+        1:  207:    EXPECT_TRUE(  esEncuestaValida(th, ti) );
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  207-block  0
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  207-block  1
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:  207-block  2
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  207-block  3
+call   12 returned 1
+call   13 returned 1
+call   14 returned 1
+branch 15 taken 0 (fallthrough)
+branch 16 taken 1
+    $$$$$:  207-block  4
+call   17 never executed
+branch 18 never executed
+branch 19 never executed
+    $$$$$:  207-block  5
+call   20 never executed
+branch 21 never executed
+branch 22 never executed
+    $$$$$:  207-block  6
+call   23 never executed
+call   24 never executed
+branch 25 never executed
+branch 26 never executed
+    $$$$$:  207-block  7
+call   27 never executed
+branch 28 never executed
+branch 29 never executed
+    $$$$$:  207-block  8
+call   30 never executed
+call   31 never executed
+call   32 never executed
+        1:  207-block  9
+call   33 returned 1
+    %%%%%:  207-block 10
+    %%%%%:  207-block 11
+call   34 never executed
+    %%%%%:  207-block 12
+call   35 never executed
+    %%%%%:  207-block 13
+call   36 never executed
+    %%%%%:  207-block 14
+call   37 never executed
+    %%%%%:  207-block 15
+call   38 never executed
+    %%%%%:  207-block 16
+call   39 never executed
+    %%%%%:  207-block 17
+function _GLOBAL__sub_I__ZN32esEncuestaValidaTEST_valida_Test10test_info_E called 1 returned 100% blocks executed 100%
+function _Z41__static_initialization_and_destruction_0ii called 1 returned 100% blocks executed 64%
+        5:  208:}
+        1:  208-block  0
+        1:  208-block  1
+call    0 returned 1
+        1:  208-block  2
+        1:  208-block  3
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0
+        1:  208-block  4
+branch  3 taken 1 (fallthrough)
+branch  4 taken 0
+        1:  208-block  5
+        -:  209:

@@ -1,0 +1,1318 @@
+        -:    0:Source:C:/Users/valum/Documents/GitHub/TPI-AED1-2C2021/test/creceElTeleworkingEnCiudadesGrandesTEST.cpp
+        -:    0:Graph:C:\Users\valum\Documents\GitHub\TPI-AED1-2C2021\cmake-build-debug-coverage\CMakeFiles\tpi.dir\test\creceElTeleworkingEnCiudadesGrandesTEST.gcno
+        -:    0:Data:C:\Users\valum\Documents\GitHub\TPI-AED1-2C2021\cmake-build-debug-coverage\CMakeFiles\tpi.dir\test\creceElTeleworkingEnCiudadesGrandesTEST.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:#include "../definiciones.h"
+        -:    2:#include "../Funciones_TPI.h"
+        -:    3:#include "../ejercicios.h"
+        -:    4:#include "gtest/gtest.h"
+        -:    5:#include <iostream>
+        -:    6:#include <string>
+        -:    7:
+        -:    8:using namespace std;
+        -:    9:
+function _ZN50creceElTeleworkingEnCiudadesGrandesTEST_crece_TestD0Ev called 1 returned 100% blocks executed 100%
+function _ZN50creceElTeleworkingEnCiudadesGrandesTEST_crece_TestD1Ev called 1 returned 100% blocks executed 100%
+function _ZN50creceElTeleworkingEnCiudadesGrandesTEST_crece_Test8TestBodyEv called 1 returned 100% blocks executed 47%
+function _ZN50creceElTeleworkingEnCiudadesGrandesTEST_crece_TestC1Ev called 1 returned 100% blocks executed 100%
+        8:   10:TEST(creceElTeleworkingEnCiudadesGrandesTEST, crece) {
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   10-block  0
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:   10-block  1
+call   10 returned 1
+branch 11 taken 1 (fallthrough)
+branch 12 taken 0 (throw)
+        1:   10-block  2
+call   13 returned 1
+call   14 returned 1
+call   15 returned 1
+    %%%%%:   10-block  3
+call   16 never executed
+    %%%%%:   10-block  4
+call   17 never executed
+    %%%%%:   10-block  5
+call   18 never executed
+call   19 never executed
+        1:   10-block  6
+        1:   10-block  7
+call   20 returned 1
+call   21 returned 1
+        1:   10-block  8
+        1:   10-block  9
+call   22 returned 1
+        1:   10-block 10
+        1:   10-block 11
+        1:   10-block 12
+call   23 returned 1
+        -:   11:
+        -:   12:
+        -:   13://                                                        +500  Tipo       Lugar para trabajar
+        -:   14://                                                           v   v           v
+        -:   15:    eph_h t1h = {{22114, 2018,   3,  319611, 629088, 3,  41, 1,  1,  3,  1,  2}, // Esta no: Sin lugar para trabajar
+        -:   16:                {31117, 2018,   3,  332870, 642475, 3,  40, 1,  1,  6,  6,  1},
+        -:   17:                {22866, 2018,   3,  317157, 627217, 2,  42, 1,  3,  2,  2,  1},// Esta no: Hotel
+        6:   18:                {20957, 2018,   3,  313965, 623297, 1,  43, 0,  1,  3,  1,  1}};// Esta no: menos 500
+        1:   18-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   18-block  1
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   18-block  2
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   18-block  3
+call   12 returned 1
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:   18-block  4
+call   16 returned 1
+call   17 returned 1
+branch 18 taken 1 (fallthrough)
+branch 19 taken 0 (throw)
+        1:   18-block  5
+call   20 returned 1
+        5:   18-block  6
+branch 21 taken 4 (fallthrough)
+branch 22 taken 1
+        4:   18-block  7
+call   23 returned 4
+        1:   18-block  8
+call   24 returned 1
+call   25 returned 1
+call   26 returned 1
+call   27 returned 1
+call   28 returned 1
+    %%%%%:   18-block  9
+    %%%%%:   18-block 10
+branch 29 never executed
+branch 30 never executed
+    %%%%%:   18-block 11
+call   31 never executed
+    %%%%%:   18-block 12
+    %%%%%:   18-block 13
+call   32 never executed
+    %%%%%:   18-block 14
+call   33 never executed
+    %%%%%:   18-block 15
+call   34 never executed
+    %%%%%:   18-block 16
+call   35 never executed
+    %%%%%:   18-block 17
+call   36 never executed
+    %%%%%:   18-block 18
+call   37 never executed
+        -:   19:
+        -:   20://                                                                   Ubicación
+        -:   21://                                                                   v
+        -:   22:    eph_i t1i = {{20957, 2018,   1,  1,  3,  1,  88, 0,  0,  90000,  1},
+        -:   23:                {20957, 2018,   2,  1,  3,  2,  82, 0,  0,  25000,  1},
+        -:   24:                {22866, 2018,   1,  0,  3,  1,  31, 1,  3,  59000,  1},
+        -:   25:                {22866, 2018,   2,  1,  3,  2,  28, 1,  3,  0,      6}, // Esta no: Hotel
+        -:   26:                {31117, 2018,   3,  0,  3,  2,  46, 1,  3,  17000,  1},
+        -:   27:                {31117, 2018,   4,  0,  3,  1,  20, 1,  3,  5000,   6},
+        -:   28:                {31117, 2018,   5,  0,  3,  2,  15, 0,  0,  5000,   1},
+       10:   29:                {22114, 2018,   1,  0,  3,  1,  18, 0,  0,  20000,  1}};
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   29-block  0
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   29-block  1
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   29-block  2
+call   12 returned 1
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:   29-block  3
+call   16 returned 1
+call   17 returned 1
+branch 18 taken 1 (fallthrough)
+branch 19 taken 0 (throw)
+        1:   29-block  4
+call   20 returned 1
+call   21 returned 1
+branch 22 taken 1 (fallthrough)
+branch 23 taken 0 (throw)
+        1:   29-block  5
+call   24 returned 1
+call   25 returned 1
+branch 26 taken 1 (fallthrough)
+branch 27 taken 0 (throw)
+        1:   29-block  6
+call   28 returned 1
+call   29 returned 1
+branch 30 taken 1 (fallthrough)
+branch 31 taken 0 (throw)
+        1:   29-block  7
+call   32 returned 1
+call   33 returned 1
+branch 34 taken 1 (fallthrough)
+branch 35 taken 0 (throw)
+        1:   29-block  8
+call   36 returned 1
+        9:   29-block  9
+branch 37 taken 8 (fallthrough)
+branch 38 taken 1
+        8:   29-block 10
+call   39 returned 8
+        1:   29-block 11
+call   40 returned 1
+call   41 returned 1
+call   42 returned 1
+call   43 returned 1
+call   44 returned 1
+call   45 returned 1
+call   46 returned 1
+call   47 returned 1
+call   48 returned 1
+    %%%%%:   29-block 12
+    %%%%%:   29-block 13
+branch 49 never executed
+branch 50 never executed
+    %%%%%:   29-block 14
+call   51 never executed
+    %%%%%:   29-block 15
+    %%%%%:   29-block 16
+call   52 never executed
+    %%%%%:   29-block 17
+call   53 never executed
+    %%%%%:   29-block 18
+call   54 never executed
+    %%%%%:   29-block 19
+call   55 never executed
+    %%%%%:   29-block 20
+call   56 never executed
+    %%%%%:   29-block 21
+call   57 never executed
+    %%%%%:   29-block 22
+call   58 never executed
+    %%%%%:   29-block 23
+call   59 never executed
+    %%%%%:   29-block 24
+call   60 never executed
+    %%%%%:   29-block 25
+call   61 never executed
+        -:   30:
+        -:   31:
+        -:   32://                                                        +500  Tipo       Lugar para trabajar
+        -:   33://                                                           v   v           v
+        -:   34:    eph_h t2h = {{22114, 2020,   3,  319611, 629088, 3,  41, 1,  1,  3,  1,  2}, // Esta no: Sin lugar para trabajar
+        -:   35:                {31117, 2020,   3,  332870, 642475, 3,  40, 1,  1,  6,  6,  1},
+        -:   36:                {22866, 2020,   3,  317157, 627217, 2,  42, 1,  3,  2,  2,  1},// Esta no: Hotel
+        6:   37:                {20957, 2020,   3,  313965, 623297, 1,  43, 0,  1,  3,  1,  1}};// Esta no: menos 500
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   37-block  0
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   37-block  1
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   37-block  2
+call   12 returned 1
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:   37-block  3
+call   16 returned 1
+call   17 returned 1
+branch 18 taken 1 (fallthrough)
+branch 19 taken 0 (throw)
+        1:   37-block  4
+call   20 returned 1
+        5:   37-block  5
+branch 21 taken 4 (fallthrough)
+branch 22 taken 1
+        4:   37-block  6
+call   23 returned 4
+        1:   37-block  7
+call   24 returned 1
+call   25 returned 1
+call   26 returned 1
+call   27 returned 1
+call   28 returned 1
+    %%%%%:   37-block  8
+    %%%%%:   37-block  9
+branch 29 never executed
+branch 30 never executed
+    %%%%%:   37-block 10
+call   31 never executed
+    %%%%%:   37-block 11
+    %%%%%:   37-block 12
+call   32 never executed
+    %%%%%:   37-block 13
+call   33 never executed
+    %%%%%:   37-block 14
+call   34 never executed
+    %%%%%:   37-block 15
+call   35 never executed
+    %%%%%:   37-block 16
+call   36 never executed
+    %%%%%:   37-block 17
+call   37 never executed
+        -:   38:
+        -:   39:    eph_i t2i = {{20957, 2020,   1,  1,  3,  1,  88, 0,  0,  90000,  1},
+        -:   40:                {20957, 2020,   2,  1,  3,  2,  82, 0,  0,  25000,  1},
+        -:   41:                {22866, 2020,   1,  0,  3,  1,  31, 1,  3,  59000,  1},
+        -:   42:                {22866, 2020,   2,  1,  3,  2,  28, 1,  3,  0,      6}, // Esta no: Hotel
+        -:   43:                {31117, 2020,   3,  0,  3,  2,  46, 1,  3,  17000,  1},
+        -:   44:                {31117, 2020,   4,  0,  3,  1,  20, 1,  3,  5000,   6},
+        -:   45:                {31117, 2020,   5,  0,  3,  2,  15, 1,  0,  5000,   6},
+       10:   46:                {22114, 2020,   1,  0,  3,  1,  18, 0,  0,  20000,  1}};
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   46-block  0
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   46-block  1
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   46-block  2
+call   12 returned 1
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:   46-block  3
+call   16 returned 1
+call   17 returned 1
+branch 18 taken 1 (fallthrough)
+branch 19 taken 0 (throw)
+        1:   46-block  4
+call   20 returned 1
+call   21 returned 1
+branch 22 taken 1 (fallthrough)
+branch 23 taken 0 (throw)
+        1:   46-block  5
+call   24 returned 1
+call   25 returned 1
+branch 26 taken 1 (fallthrough)
+branch 27 taken 0 (throw)
+        1:   46-block  6
+call   28 returned 1
+call   29 returned 1
+branch 30 taken 1 (fallthrough)
+branch 31 taken 0 (throw)
+        1:   46-block  7
+call   32 returned 1
+call   33 returned 1
+branch 34 taken 1 (fallthrough)
+branch 35 taken 0 (throw)
+        1:   46-block  8
+call   36 returned 1
+        9:   46-block  9
+branch 37 taken 8 (fallthrough)
+branch 38 taken 1
+        8:   46-block 10
+call   39 returned 8
+        1:   46-block 11
+call   40 returned 1
+call   41 returned 1
+call   42 returned 1
+call   43 returned 1
+call   44 returned 1
+call   45 returned 1
+call   46 returned 1
+call   47 returned 1
+call   48 returned 1
+    %%%%%:   46-block 12
+    %%%%%:   46-block 13
+branch 49 never executed
+branch 50 never executed
+    %%%%%:   46-block 14
+call   51 never executed
+    %%%%%:   46-block 15
+    %%%%%:   46-block 16
+call   52 never executed
+    %%%%%:   46-block 17
+call   53 never executed
+    %%%%%:   46-block 18
+call   54 never executed
+    %%%%%:   46-block 19
+call   55 never executed
+    %%%%%:   46-block 20
+call   56 never executed
+    %%%%%:   46-block 21
+call   57 never executed
+    %%%%%:   46-block 22
+call   58 never executed
+    %%%%%:   46-block 23
+call   59 never executed
+    %%%%%:   46-block 24
+call   60 never executed
+        -:   47:
+        1:   48:    EXPECT_TRUE(esEncuestaValida(t1h, t1i));
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   48-block  0
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   48-block  1
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   48-block  2
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   48-block  3
+call   12 returned 1
+call   13 returned 1
+call   14 returned 1
+branch 15 taken 0 (fallthrough)
+branch 16 taken 1
+    $$$$$:   48-block  4
+call   17 never executed
+branch 18 never executed
+branch 19 never executed
+    $$$$$:   48-block  5
+call   20 never executed
+branch 21 never executed
+branch 22 never executed
+    $$$$$:   48-block  6
+call   23 never executed
+call   24 never executed
+branch 25 never executed
+branch 26 never executed
+    $$$$$:   48-block  7
+call   27 never executed
+branch 28 never executed
+branch 29 never executed
+    $$$$$:   48-block  8
+call   30 never executed
+call   31 never executed
+call   32 never executed
+        1:   48-block  9
+call   33 returned 1
+    %%%%%:   48-block 10
+    %%%%%:   48-block 11
+call   34 never executed
+    %%%%%:   48-block 12
+call   35 never executed
+    %%%%%:   48-block 13
+call   36 never executed
+    %%%%%:   48-block 14
+call   37 never executed
+    %%%%%:   48-block 15
+call   38 never executed
+    %%%%%:   48-block 16
+call   39 never executed
+    %%%%%:   48-block 17
+        1:   49:    EXPECT_TRUE(esEncuestaValida(t2h, t2i));
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   49-block  0
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   49-block  1
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   49-block  2
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   49-block  3
+call   12 returned 1
+call   13 returned 1
+call   14 returned 1
+branch 15 taken 0 (fallthrough)
+branch 16 taken 1
+    $$$$$:   49-block  4
+call   17 never executed
+branch 18 never executed
+branch 19 never executed
+    $$$$$:   49-block  5
+call   20 never executed
+branch 21 never executed
+branch 22 never executed
+    $$$$$:   49-block  6
+call   23 never executed
+call   24 never executed
+branch 25 never executed
+branch 26 never executed
+    $$$$$:   49-block  7
+call   27 never executed
+branch 28 never executed
+branch 29 never executed
+    $$$$$:   49-block  8
+call   30 never executed
+call   31 never executed
+call   32 never executed
+        1:   49-block  9
+call   33 returned 1
+    %%%%%:   49-block 10
+    %%%%%:   49-block 11
+call   34 never executed
+    %%%%%:   49-block 12
+call   35 never executed
+    %%%%%:   49-block 13
+call   36 never executed
+    %%%%%:   49-block 14
+call   37 never executed
+    %%%%%:   49-block 15
+call   38 never executed
+    %%%%%:   49-block 16
+call   39 never executed
+    %%%%%:   49-block 17
+        -:   50:
+        1:   51:    EXPECT_EQ( true, creceElTeleworkingEnCiudadesGrandes(t1h, t1i, t2h, t2i) );
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   51-block  0
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   51-block  1
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   51-block  2
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   51-block  3
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:   51-block  4
+call   15 returned 1
+branch 16 taken 1 (fallthrough)
+branch 17 taken 0 (throw)
+        1:   51-block  5
+call   18 returned 1
+call   19 returned 1
+call   20 returned 1
+call   21 returned 1
+call   22 returned 1
+branch 23 taken 0 (fallthrough)
+branch 24 taken 1
+    $$$$$:   51-block  6
+call   25 never executed
+branch 26 never executed
+branch 27 never executed
+    $$$$$:   51-block  7
+call   28 never executed
+branch 29 never executed
+branch 30 never executed
+    $$$$$:   51-block  8
+call   31 never executed
+branch 32 never executed
+branch 33 never executed
+    $$$$$:   51-block  9
+call   34 never executed
+branch 35 never executed
+branch 36 never executed
+    $$$$$:   51-block 10
+call   37 never executed
+call   38 never executed
+        1:   51-block 11
+call   39 returned 1
+    %%%%%:   51-block 12
+    %%%%%:   51-block 13
+    %%%%%:   51-block 14
+call   40 never executed
+    %%%%%:   51-block 15
+call   41 never executed
+    %%%%%:   51-block 16
+call   42 never executed
+    %%%%%:   51-block 17
+call   43 never executed
+    %%%%%:   51-block 18
+call   44 never executed
+    %%%%%:   51-block 19
+call   45 never executed
+    %%%%%:   51-block 20
+call   46 never executed
+    %%%%%:   51-block 21
+        1:   52:}
+    %%%%%:   52-block  0
+call    0 never executed
+        -:   53:
+        -:   54:
+function _ZN52creceElTeleworkingEnCiudadesGrandesTEST_nocrece_TestD0Ev called 1 returned 100% blocks executed 100%
+function _ZN52creceElTeleworkingEnCiudadesGrandesTEST_nocrece_TestD1Ev called 1 returned 100% blocks executed 100%
+function _ZN52creceElTeleworkingEnCiudadesGrandesTEST_nocrece_Test8TestBodyEv called 1 returned 100% blocks executed 47%
+function _ZN52creceElTeleworkingEnCiudadesGrandesTEST_nocrece_TestC1Ev called 1 returned 100% blocks executed 100%
+        8:   55:TEST(creceElTeleworkingEnCiudadesGrandesTEST, nocrece) {
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   55-block  0
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:   55-block  1
+call   10 returned 1
+branch 11 taken 1 (fallthrough)
+branch 12 taken 0 (throw)
+        1:   55-block  2
+call   13 returned 1
+call   14 returned 1
+call   15 returned 1
+    %%%%%:   55-block  3
+call   16 never executed
+    %%%%%:   55-block  4
+call   17 never executed
+    %%%%%:   55-block  5
+call   18 never executed
+call   19 never executed
+        1:   55-block  6
+        1:   55-block  7
+call   20 returned 1
+call   21 returned 1
+        1:   55-block  8
+        1:   55-block  9
+call   22 returned 1
+        1:   55-block 10
+        1:   55-block 11
+        1:   55-block 12
+call   23 returned 1
+        -:   56:
+        -:   57://                                                        +500  Tipo       Lugar para trabajar
+        -:   58://                                                           v   v           v
+        -:   59:    eph_h t1h = {{22114, 2018,   3,  319611, 629088, 3,  41, 1,  1,  3,  1,  2}, // Esta no: Sin lugar para trabajar
+        -:   60:                 {31117, 2018,   3,  332870, 642475, 3,  40, 1,  1,  6,  6,  1},
+        -:   61:                 {22866, 2018,   3,  317157, 627217, 2,  42, 1,  3,  2,  2,  1},// Esta no: Hotel
+        6:   62:                 {20957, 2018,   3,  313965, 623297, 1,  43, 0,  1,  3,  1,  1}};// Esta no: menos 500
+        1:   62-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   62-block  1
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   62-block  2
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   62-block  3
+call   12 returned 1
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:   62-block  4
+call   16 returned 1
+call   17 returned 1
+branch 18 taken 1 (fallthrough)
+branch 19 taken 0 (throw)
+        1:   62-block  5
+call   20 returned 1
+        5:   62-block  6
+branch 21 taken 4 (fallthrough)
+branch 22 taken 1
+        4:   62-block  7
+call   23 returned 4
+        1:   62-block  8
+call   24 returned 1
+call   25 returned 1
+call   26 returned 1
+call   27 returned 1
+call   28 returned 1
+    %%%%%:   62-block  9
+    %%%%%:   62-block 10
+branch 29 never executed
+branch 30 never executed
+    %%%%%:   62-block 11
+call   31 never executed
+    %%%%%:   62-block 12
+    %%%%%:   62-block 13
+call   32 never executed
+    %%%%%:   62-block 14
+call   33 never executed
+    %%%%%:   62-block 15
+call   34 never executed
+    %%%%%:   62-block 16
+call   35 never executed
+    %%%%%:   62-block 17
+call   36 never executed
+    %%%%%:   62-block 18
+call   37 never executed
+        -:   63:
+        -:   64://                                                                   Ubicación
+        -:   65://                                                                   v
+        -:   66:    eph_i t1i = {{20957, 2018,   1,  1,  3,  1,  88, 0,  0,  90000,  1},
+        -:   67:                 {20957, 2018,   2,  1,  3,  2,  82, 0,  0,  25000,  1},
+        -:   68:                 {22866, 2018,   1,  0,  3,  1,  31, 1,  3,  59000,  1},
+        -:   69:                 {22866, 2018,   2,  1,  3,  2,  28, 1,  3,  0,      6}, // Esta no: Hotel
+        -:   70:                 {31117, 2018,   3,  0,  3,  2,  46, 1,  3,  17000,  1},
+        -:   71:                 {31117, 2018,   4,  0,  3,  1,  20, 1,  3,  5000,   6},
+        -:   72:                 {31117, 2018,   5,  0,  3,  2,  15, 0,  0,  5000,   1},
+       10:   73:                 {22114, 2018,   1,  0,  3,  1,  18, 0,  0,  20000,  1}};
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   73-block  0
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   73-block  1
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   73-block  2
+call   12 returned 1
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:   73-block  3
+call   16 returned 1
+call   17 returned 1
+branch 18 taken 1 (fallthrough)
+branch 19 taken 0 (throw)
+        1:   73-block  4
+call   20 returned 1
+call   21 returned 1
+branch 22 taken 1 (fallthrough)
+branch 23 taken 0 (throw)
+        1:   73-block  5
+call   24 returned 1
+call   25 returned 1
+branch 26 taken 1 (fallthrough)
+branch 27 taken 0 (throw)
+        1:   73-block  6
+call   28 returned 1
+call   29 returned 1
+branch 30 taken 1 (fallthrough)
+branch 31 taken 0 (throw)
+        1:   73-block  7
+call   32 returned 1
+call   33 returned 1
+branch 34 taken 1 (fallthrough)
+branch 35 taken 0 (throw)
+        1:   73-block  8
+call   36 returned 1
+        9:   73-block  9
+branch 37 taken 8 (fallthrough)
+branch 38 taken 1
+        8:   73-block 10
+call   39 returned 8
+        1:   73-block 11
+call   40 returned 1
+call   41 returned 1
+call   42 returned 1
+call   43 returned 1
+call   44 returned 1
+call   45 returned 1
+call   46 returned 1
+call   47 returned 1
+call   48 returned 1
+    %%%%%:   73-block 12
+    %%%%%:   73-block 13
+branch 49 never executed
+branch 50 never executed
+    %%%%%:   73-block 14
+call   51 never executed
+    %%%%%:   73-block 15
+    %%%%%:   73-block 16
+call   52 never executed
+    %%%%%:   73-block 17
+call   53 never executed
+    %%%%%:   73-block 18
+call   54 never executed
+    %%%%%:   73-block 19
+call   55 never executed
+    %%%%%:   73-block 20
+call   56 never executed
+    %%%%%:   73-block 21
+call   57 never executed
+    %%%%%:   73-block 22
+call   58 never executed
+    %%%%%:   73-block 23
+call   59 never executed
+    %%%%%:   73-block 24
+call   60 never executed
+    %%%%%:   73-block 25
+call   61 never executed
+        -:   74:
+        -:   75:
+        -:   76://                                                        +500  Tipo       Lugar para trabajar
+        -:   77://                                                           v   v           v
+        -:   78:    eph_h t2h = {{22114, 2020,   3,  319611, 629088, 3,  41, 1,  1,  3,  1,  2}, // Esta no: Sin lugar para trabajar
+        -:   79:                 {31117, 2020,   3,  332870, 642475, 3,  40, 1,  1,  6,  6,  1},
+        -:   80:                 {22866, 2020,   3,  317157, 627217, 2,  42, 1,  3,  2,  2,  1},// Esta no: Hotel
+        6:   81:                 {20957, 2020,   3,  313965, 623297, 1,  43, 0,  1,  3,  1,  1}};// Esta no: menos 500
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   81-block  0
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   81-block  1
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   81-block  2
+call   12 returned 1
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:   81-block  3
+call   16 returned 1
+call   17 returned 1
+branch 18 taken 1 (fallthrough)
+branch 19 taken 0 (throw)
+        1:   81-block  4
+call   20 returned 1
+        5:   81-block  5
+branch 21 taken 4 (fallthrough)
+branch 22 taken 1
+        4:   81-block  6
+call   23 returned 4
+        1:   81-block  7
+call   24 returned 1
+call   25 returned 1
+call   26 returned 1
+call   27 returned 1
+call   28 returned 1
+    %%%%%:   81-block  8
+    %%%%%:   81-block  9
+branch 29 never executed
+branch 30 never executed
+    %%%%%:   81-block 10
+call   31 never executed
+    %%%%%:   81-block 11
+    %%%%%:   81-block 12
+call   32 never executed
+    %%%%%:   81-block 13
+call   33 never executed
+    %%%%%:   81-block 14
+call   34 never executed
+    %%%%%:   81-block 15
+call   35 never executed
+    %%%%%:   81-block 16
+call   36 never executed
+    %%%%%:   81-block 17
+call   37 never executed
+        -:   82:
+        -:   83:    eph_i t2i = {{20957, 2020,   1,  1,  3,  1,  88, 0,  0,  90000,  1},
+        -:   84:                 {20957, 2020,   2,  1,  3,  2,  82, 0,  0,  25000,  1},
+        -:   85:                 {22866, 2020,   1,  0,  3,  1,  31, 1,  3,  59000,  1},
+        -:   86:                 {22866, 2020,   2,  1,  3,  2,  28, 1,  3,  0,      6}, // Esta no: Hotel
+        -:   87:                 {31117, 2020,   3,  0,  3,  2,  46, 1,  3,  17000,  1},
+        -:   88:                 {31117, 2020,   4,  0,  3,  1,  20, 1,  3,  5000,   6},
+        -:   89:                 {31117, 2020,   5,  0,  3,  2,  15, -1,  0,  5000,   6}, // estado no informado
+       10:   90:                 {22114, 2020,   1,  0,  3,  1,  18, 0,  0,  20000,  1}};
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   90-block  0
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   90-block  1
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   90-block  2
+call   12 returned 1
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:   90-block  3
+call   16 returned 1
+call   17 returned 1
+branch 18 taken 1 (fallthrough)
+branch 19 taken 0 (throw)
+        1:   90-block  4
+call   20 returned 1
+call   21 returned 1
+branch 22 taken 1 (fallthrough)
+branch 23 taken 0 (throw)
+        1:   90-block  5
+call   24 returned 1
+call   25 returned 1
+branch 26 taken 1 (fallthrough)
+branch 27 taken 0 (throw)
+        1:   90-block  6
+call   28 returned 1
+call   29 returned 1
+branch 30 taken 1 (fallthrough)
+branch 31 taken 0 (throw)
+        1:   90-block  7
+call   32 returned 1
+call   33 returned 1
+branch 34 taken 1 (fallthrough)
+branch 35 taken 0 (throw)
+        1:   90-block  8
+call   36 returned 1
+        9:   90-block  9
+branch 37 taken 8 (fallthrough)
+branch 38 taken 1
+        8:   90-block 10
+call   39 returned 8
+        1:   90-block 11
+call   40 returned 1
+call   41 returned 1
+call   42 returned 1
+call   43 returned 1
+call   44 returned 1
+call   45 returned 1
+call   46 returned 1
+call   47 returned 1
+call   48 returned 1
+    %%%%%:   90-block 12
+    %%%%%:   90-block 13
+branch 49 never executed
+branch 50 never executed
+    %%%%%:   90-block 14
+call   51 never executed
+    %%%%%:   90-block 15
+    %%%%%:   90-block 16
+call   52 never executed
+    %%%%%:   90-block 17
+call   53 never executed
+    %%%%%:   90-block 18
+call   54 never executed
+    %%%%%:   90-block 19
+call   55 never executed
+    %%%%%:   90-block 20
+call   56 never executed
+    %%%%%:   90-block 21
+call   57 never executed
+    %%%%%:   90-block 22
+call   58 never executed
+    %%%%%:   90-block 23
+call   59 never executed
+    %%%%%:   90-block 24
+call   60 never executed
+        -:   91:
+        1:   92:    EXPECT_TRUE(esEncuestaValida(t1h, t1i));
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   92-block  0
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   92-block  1
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   92-block  2
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   92-block  3
+call   12 returned 1
+call   13 returned 1
+call   14 returned 1
+branch 15 taken 0 (fallthrough)
+branch 16 taken 1
+    $$$$$:   92-block  4
+call   17 never executed
+branch 18 never executed
+branch 19 never executed
+    $$$$$:   92-block  5
+call   20 never executed
+branch 21 never executed
+branch 22 never executed
+    $$$$$:   92-block  6
+call   23 never executed
+call   24 never executed
+branch 25 never executed
+branch 26 never executed
+    $$$$$:   92-block  7
+call   27 never executed
+branch 28 never executed
+branch 29 never executed
+    $$$$$:   92-block  8
+call   30 never executed
+call   31 never executed
+call   32 never executed
+        1:   92-block  9
+call   33 returned 1
+    %%%%%:   92-block 10
+    %%%%%:   92-block 11
+call   34 never executed
+    %%%%%:   92-block 12
+call   35 never executed
+    %%%%%:   92-block 13
+call   36 never executed
+    %%%%%:   92-block 14
+call   37 never executed
+    %%%%%:   92-block 15
+call   38 never executed
+    %%%%%:   92-block 16
+call   39 never executed
+    %%%%%:   92-block 17
+        1:   93:    EXPECT_TRUE(esEncuestaValida(t2h, t2i));
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   93-block  0
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   93-block  1
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   93-block  2
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   93-block  3
+call   12 returned 1
+call   13 returned 1
+call   14 returned 1
+branch 15 taken 0 (fallthrough)
+branch 16 taken 1
+    $$$$$:   93-block  4
+call   17 never executed
+branch 18 never executed
+branch 19 never executed
+    $$$$$:   93-block  5
+call   20 never executed
+branch 21 never executed
+branch 22 never executed
+    $$$$$:   93-block  6
+call   23 never executed
+call   24 never executed
+branch 25 never executed
+branch 26 never executed
+    $$$$$:   93-block  7
+call   27 never executed
+branch 28 never executed
+branch 29 never executed
+    $$$$$:   93-block  8
+call   30 never executed
+call   31 never executed
+call   32 never executed
+        1:   93-block  9
+call   33 returned 1
+    %%%%%:   93-block 10
+    %%%%%:   93-block 11
+call   34 never executed
+    %%%%%:   93-block 12
+call   35 never executed
+    %%%%%:   93-block 13
+call   36 never executed
+    %%%%%:   93-block 14
+call   37 never executed
+    %%%%%:   93-block 15
+call   38 never executed
+    %%%%%:   93-block 16
+call   39 never executed
+    %%%%%:   93-block 17
+        -:   94:
+        1:   95:    EXPECT_FALSE(creceElTeleworkingEnCiudadesGrandes(t1h, t1i, t2h, t2i) );
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   95-block  0
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   95-block  1
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:   95-block  2
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   95-block  3
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:   95-block  4
+call   15 returned 1
+branch 16 taken 1 (fallthrough)
+branch 17 taken 0 (throw)
+        1:   95-block  5
+call   18 returned 1
+call   19 returned 1
+call   20 returned 1
+call   21 returned 1
+call   22 returned 1
+branch 23 taken 0 (fallthrough)
+branch 24 taken 1
+    $$$$$:   95-block  6
+call   25 never executed
+branch 26 never executed
+branch 27 never executed
+    $$$$$:   95-block  7
+call   28 never executed
+branch 29 never executed
+branch 30 never executed
+    $$$$$:   95-block  8
+call   31 never executed
+call   32 never executed
+branch 33 never executed
+branch 34 never executed
+    $$$$$:   95-block  9
+call   35 never executed
+branch 36 never executed
+branch 37 never executed
+    $$$$$:   95-block 10
+call   38 never executed
+call   39 never executed
+call   40 never executed
+        1:   95-block 11
+call   41 returned 1
+    %%%%%:   95-block 12
+    %%%%%:   95-block 13
+call   42 never executed
+    %%%%%:   95-block 14
+call   43 never executed
+    %%%%%:   95-block 15
+call   44 never executed
+    %%%%%:   95-block 16
+call   45 never executed
+    %%%%%:   95-block 17
+call   46 never executed
+    %%%%%:   95-block 18
+call   47 never executed
+    %%%%%:   95-block 19
+call   48 never executed
+    %%%%%:   95-block 20
+call   49 never executed
+    %%%%%:   95-block 21
+        1:   96:}
+    %%%%%:   96-block  0
+call    0 never executed
+        -:   97:
+function _ZN57creceElTeleworkingEnCiudadesGrandesTEST_eph2016a2018_TestD0Ev called 1 returned 100% blocks executed 100%
+function _ZN57creceElTeleworkingEnCiudadesGrandesTEST_eph2016a2018_TestD1Ev called 1 returned 100% blocks executed 100%
+function _ZN57creceElTeleworkingEnCiudadesGrandesTEST_eph2016a2018_Test8TestBodyEv called 1 returned 100% blocks executed 43%
+function _ZN57creceElTeleworkingEnCiudadesGrandesTEST_eph2016a2018_TestC1Ev called 1 returned 100% blocks executed 100%
+        8:   98:TEST(creceElTeleworkingEnCiudadesGrandesTEST, eph2016a2018) {
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   98-block  0
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+        1:   98-block  1
+call   10 returned 1
+branch 11 taken 1 (fallthrough)
+branch 12 taken 0 (throw)
+        1:   98-block  2
+call   13 returned 1
+call   14 returned 1
+call   15 returned 1
+    %%%%%:   98-block  3
+call   16 never executed
+    %%%%%:   98-block  4
+call   17 never executed
+    %%%%%:   98-block  5
+call   18 never executed
+        1:   98-block  6
+        1:   98-block  7
+call   19 returned 1
+call   20 returned 1
+        1:   98-block  8
+        1:   98-block  9
+call   21 returned 1
+        1:   98-block 10
+        1:   98-block 11
+        1:   98-block 12
+call   22 returned 1
+        2:   99:    eph_h t1h;
+        1:   99-block  0
+call    0 returned 1
+call    1 returned 1
+    %%%%%:   99-block  1
+call    2 never executed
+        2:  100:    eph_i t1i;
+call    0 returned 1
+call    1 returned 1
+    %%%%%:  100-block  0
+call    2 never executed
+        1:  101:    leerEncuesta ( "eph_3c_2018_1000", t1h, t1i );
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  101-block  0
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:  101-block  1
+call    7 returned 1
+call    8 returned 1
+    %%%%%:  101-block  2
+call    9 never executed
+    %%%%%:  101-block  3
+call   10 never executed
+        -:  102:
+        2:  103:    eph_h t2h;
+call    0 returned 1
+call    1 returned 1
+    %%%%%:  103-block  0
+call    2 never executed
+        2:  104:    eph_i t2i;
+call    0 returned 1
+call    1 returned 1
+    %%%%%:  104-block  0
+call    2 never executed
+        1:  105:    leerEncuesta ( "eph_3c_2020_1000", t2h, t2i );
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  105-block  0
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:  105-block  1
+call    7 returned 1
+call    8 returned 1
+    %%%%%:  105-block  2
+call    9 never executed
+    %%%%%:  105-block  3
+call   10 never executed
+        -:  106:
+        1:  107:    EXPECT_TRUE(creceElTeleworkingEnCiudadesGrandes(t1h, t1i, t2h, t2i) );
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  107-block  0
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  107-block  1
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:  107-block  2
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  107-block  3
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:  107-block  4
+call   15 returned 1
+branch 16 taken 1 (fallthrough)
+branch 17 taken 0 (throw)
+        1:  107-block  5
+call   18 returned 1
+call   19 returned 1
+call   20 returned 1
+call   21 returned 1
+call   22 returned 1
+branch 23 taken 0 (fallthrough)
+branch 24 taken 1
+    $$$$$:  107-block  6
+call   25 never executed
+branch 26 never executed
+branch 27 never executed
+    $$$$$:  107-block  7
+call   28 never executed
+branch 29 never executed
+branch 30 never executed
+    $$$$$:  107-block  8
+call   31 never executed
+call   32 never executed
+branch 33 never executed
+branch 34 never executed
+    $$$$$:  107-block  9
+call   35 never executed
+branch 36 never executed
+branch 37 never executed
+    $$$$$:  107-block 10
+call   38 never executed
+call   39 never executed
+call   40 never executed
+        1:  107-block 11
+call   41 returned 1
+    %%%%%:  107-block 12
+    %%%%%:  107-block 13
+call   42 never executed
+    %%%%%:  107-block 14
+call   43 never executed
+    %%%%%:  107-block 15
+call   44 never executed
+    %%%%%:  107-block 16
+call   45 never executed
+    %%%%%:  107-block 17
+call   46 never executed
+    %%%%%:  107-block 18
+call   47 never executed
+    %%%%%:  107-block 19
+call   48 never executed
+    %%%%%:  107-block 20
+call   49 never executed
+    %%%%%:  107-block 21
+function _GLOBAL__sub_I__ZN50creceElTeleworkingEnCiudadesGrandesTEST_crece_Test10test_info_E called 1 returned 100% blocks executed 100%
+function _Z41__static_initialization_and_destruction_0ii called 1 returned 100% blocks executed 69%
+        5:  108:}
+        1:  108-block  0
+        1:  108-block  1
+call    0 returned 1
+        1:  108-block  2
+        1:  108-block  3
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0
+        1:  108-block  4
+branch  3 taken 1 (fallthrough)
+branch  4 taken 0
+        1:  108-block  5
